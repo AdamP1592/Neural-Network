@@ -1,26 +1,5928 @@
+Number of lines: 151
+Random Line15
+
 forwardPass:
 
-Neuron: (0, 0) Activation:1
-Neuron: (0, 1) Activation:3
+Neuron: (0, 0) Activation:5.7
+Neuron: (0, 1) Activation:4.4
 Neuron: (0, 2) Activation:1.5
-Neuron: (1, 0) Activation:1.95916
-Neuron: (1, 1) Activation:0.859916
+Neuron: (0, 3) Activation:0.4
+Neuron: (1, 0) Activation:0.0540017
+Neuron: (1, 1) Activation:0.371335
+Neuron: (1, 2) Activation:2.08693
+Neuron: (1, 3) Activation:0
+Neuron: (1, 4) Activation:1.50093
+Neuron: (1, 5) Activation:1.95718
+Neuron: (1, 6) Activation:0
+Neuron: (1, 7) Activation:0
 Neuron: (2, 0) Activation:0
-Neuron: (2, 1) Activation:0.593554
+Neuron: (2, 1) Activation:1.62527
+Neuron: (2, 2) Activation:0.491013
+Neuron: (2, 3) Activation:0
+Neuron: (2, 4) Activation:0
+Neuron: (2, 5) Activation:0.0834384
+Neuron: (2, 6) Activation:1.28809
+Neuron: (2, 7) Activation:0.049964
+Neuron: (3, 0) Activation:0.39994
+Neuron: (3, 1) Activation:0
+Neuron: (3, 2) Activation:0
 BackProp:
-Neuron: (2, 0) backProp:-0
-Neuron: (2, 1) backProp:0.593554
-Neuron: (1, 0) backProp:0.232624
-Neuron: (1, 1) backProp:-0.120291
-Neuron: (0, 0) backProp:0
-Neuron: (0, 1) backProp:0
-Neuron: (0, 2) backProp:-0
+Neuron: (3, 0) backProp:-0.60006
+Neuron: (3, 1) backProp:0
+Neuron: (3, 2) backProp:0
+Neuron: (2, 0) backProp Error:0
+Neuron: (2, 1) backProp Error:-0.00312779
+Neuron: (2, 2) backProp Error:-0.0331975
+Neuron: (2, 3) backProp Error:0
+Neuron: (2, 4) backProp Error:0
+Neuron: (2, 5) backProp Error:0.264907
+Neuron: (2, 6) backProp Error:-0.183886
+Neuron: (2, 7) backProp Error:-0.0769731
+Neuron: (1, 0) backProp Error:-0.00452752
+Neuron: (1, 1) backProp Error:0.0728977
+Neuron: (1, 2) backProp Error:-0.12947
+Neuron: (1, 3) backProp Error:0
+Neuron: (1, 4) backProp Error:0.0381453
+Neuron: (1, 5) backProp Error:-0.0275249
+Neuron: (1, 6) backProp Error:-0
+Neuron: (1, 7) backProp Error:0
+Neuron: (0, 0) backProp Error:-0
+Neuron: (0, 1) backProp Error:-0
+Neuron: (0, 2) backProp Error:0
+Neuron: (0, 3) backProp Error:0
+Number of lines: 150
+Random Line112
+
 forwardPass:
 
-Neuron: (0, 0) Activation:1
-Neuron: (0, 1) Activation:3
-Neuron: (0, 2) Activation:1.5
-Neuron: (1, 0) Activation:0
-Neuron: (1, 1) Activation:2.05531
-Neuron: (2, 0) Activation:0.946828
+Neuron: (0, 0) Activation:5.7
+Neuron: (0, 1) Activation:2.5
+Neuron: (0, 2) Activation:5
+Neuron: (0, 3) Activation:2
+Neuron: (1, 0) Activation:0.873158
+Neuron: (1, 1) Activation:0
+Neuron: (1, 2) Activation:8.06516
+Neuron: (1, 3) Activation:0.125185
+Neuron: (1, 4) Activation:1.39614
+Neuron: (1, 5) Activation:1.73284
+Neuron: (1, 6) Activation:0
+Neuron: (1, 7) Activation:0
+Neuron: (2, 0) Activation:0
+Neuron: (2, 1) Activation:1.40937
+Neuron: (2, 2) Activation:2.03125
+Neuron: (2, 3) Activation:0
+Neuron: (2, 4) Activation:2.18539
+Neuron: (2, 5) Activation:0
+Neuron: (2, 6) Activation:8.23287
+Neuron: (2, 7) Activation:2.72991
+Neuron: (3, 0) Activation:11.4058
+Neuron: (3, 1) Activation:1.48077
+Neuron: (3, 2) Activation:0
+BackProp:
+Neuron: (3, 0) backProp:11.4058
+Neuron: (3, 1) backProp:1.48077
+Neuron: (3, 2) backProp:-0
+Neuron: (2, 0) backProp Error:-0
+Neuron: (2, 1) backProp Error:10.4933
+Neuron: (2, 2) backProp Error:4.11362
+Neuron: (2, 3) backProp Error:-0
+Neuron: (2, 4) backProp Error:-2.45643
+Neuron: (2, 5) backProp Error:-0
+Neuron: (2, 6) backProp Error:12.2314
+Neuron: (2, 7) backProp Error:1.89361
+Neuron: (1, 0) backProp Error:-6.50335
+Neuron: (1, 1) backProp Error:0
+Neuron: (1, 2) backProp Error:11.2305
+Neuron: (1, 3) backProp Error:2.47358
+Neuron: (1, 4) backProp Error:13.078
+Neuron: (1, 5) backProp Error:9.56422
+Neuron: (1, 6) backProp Error:0
+Neuron: (1, 7) backProp Error:-0
+Neuron: (0, 0) backProp Error:0
+Neuron: (0, 1) backProp Error:0
+Neuron: (0, 2) backProp Error:-0
+Neuron: (0, 3) backProp Error:0
+Number of lines: 149
+Random Line67
+
+forwardPass:
+
+Neuron: (0, 0) Activation:6.2
+Neuron: (0, 1) Activation:2.2
+Neuron: (0, 2) Activation:4.5
+Neuron: (0, 3) Activation:1.5
+Neuron: (1, 0) Activation:438.77
+Neuron: (1, 1) Activation:0
+Neuron: (1, 2) Activation:0
+Neuron: (1, 3) Activation:0
+Neuron: (1, 4) Activation:0
+Neuron: (1, 5) Activation:0
+Neuron: (1, 6) Activation:0
+Neuron: (1, 7) Activation:0
+Neuron: (2, 0) Activation:0
 Neuron: (2, 1) Activation:0
+Neuron: (2, 2) Activation:0
+Neuron: (2, 3) Activation:114.416
+Neuron: (2, 4) Activation:940.867
+Neuron: (2, 5) Activation:0
+Neuron: (2, 6) Activation:0
+Neuron: (2, 7) Activation:0
+Neuron: (3, 0) Activation:0
+Neuron: (3, 1) Activation:0
+Neuron: (3, 2) Activation:482.599
+BackProp:
+Neuron: (3, 0) backProp:0
+Neuron: (3, 1) backProp:-0
+Neuron: (3, 2) backProp:482.599
+Neuron: (2, 0) backProp Error:0
+Neuron: (2, 1) backProp Error:0
+Neuron: (2, 2) backProp Error:-0
+Neuron: (2, 3) backProp Error:146.174
+Neuron: (2, 4) backProp Error:227.308
+Neuron: (2, 5) backProp Error:0
+Neuron: (2, 6) backProp Error:-0
+Neuron: (2, 7) backProp Error:0
+Neuron: (1, 0) backProp Error:517.764
+Neuron: (1, 1) backProp Error:-0
+Neuron: (1, 2) backProp Error:0
+Neuron: (1, 3) backProp Error:0
+Neuron: (1, 4) backProp Error:0
+Neuron: (1, 5) backProp Error:0
+Neuron: (1, 6) backProp Error:-0
+Neuron: (1, 7) backProp Error:0
+Neuron: (0, 0) backProp Error:0
+Neuron: (0, 1) backProp Error:0
+Neuron: (0, 2) backProp Error:0
+Neuron: (0, 3) backProp Error:0
+Number of lines: 148
+Random Line56
+
+forwardPass:
+
+Neuron: (0, 0) Activation:4.9
+Neuron: (0, 1) Activation:2.4
+Neuron: (0, 2) Activation:3.3
+Neuron: (0, 3) Activation:1
+Neuron: (1, 0) Activation:0
+Neuron: (1, 1) Activation:0
+Neuron: (1, 2) Activation:0
+Neuron: (1, 3) Activation:0
+Neuron: (1, 4) Activation:0
+Neuron: (1, 5) Activation:0
+Neuron: (1, 6) Activation:0
+Neuron: (1, 7) Activation:0
+Neuron: (2, 0) Activation:0
+Neuron: (2, 1) Activation:0
+Neuron: (2, 2) Activation:0
+Neuron: (2, 3) Activation:0
+Neuron: (2, 4) Activation:0
+Neuron: (2, 5) Activation:0
+Neuron: (2, 6) Activation:0
+Neuron: (2, 7) Activation:0
+Neuron: (3, 0) Activation:0
+Neuron: (3, 1) Activation:0
+Neuron: (3, 2) Activation:0
+BackProp:
+Neuron: (3, 0) backProp:0
+Neuron: (3, 1) backProp:-0
+Neuron: (3, 2) backProp:0
+Neuron: (2, 0) backProp Error:0
+Neuron: (2, 1) backProp Error:0
+Neuron: (2, 2) backProp Error:0
+Neuron: (2, 3) backProp Error:0
+Neuron: (2, 4) backProp Error:0
+Neuron: (2, 5) backProp Error:0
+Neuron: (2, 6) backProp Error:0
+Neuron: (2, 7) backProp Error:0
+Neuron: (1, 0) backProp Error:0
+Neuron: (1, 1) backProp Error:0
+Neuron: (1, 2) backProp Error:0
+Neuron: (1, 3) backProp Error:0
+Neuron: (1, 4) backProp Error:0
+Neuron: (1, 5) backProp Error:0
+Neuron: (1, 6) backProp Error:0
+Neuron: (1, 7) backProp Error:0
+Neuron: (0, 0) backProp Error:0
+Neuron: (0, 1) backProp Error:0
+Neuron: (0, 2) backProp Error:0
+Neuron: (0, 3) backProp Error:0
+Number of lines: 147
+Random Line25
+
+forwardPass:
+
+Neuron: (0, 0) Activation:5
+Neuron: (0, 1) Activation:3.4
+Neuron: (0, 2) Activation:1.6
+Neuron: (0, 3) Activation:0.4
+Neuron: (1, 0) Activation:0
+Neuron: (1, 1) Activation:0
+Neuron: (1, 2) Activation:0
+Neuron: (1, 3) Activation:0
+Neuron: (1, 4) Activation:0
+Neuron: (1, 5) Activation:0
+Neuron: (1, 6) Activation:0
+Neuron: (1, 7) Activation:0
+Neuron: (2, 0) Activation:0
+Neuron: (2, 1) Activation:0
+Neuron: (2, 2) Activation:0
+Neuron: (2, 3) Activation:0
+Neuron: (2, 4) Activation:0
+Neuron: (2, 5) Activation:0
+Neuron: (2, 6) Activation:0
+Neuron: (2, 7) Activation:0
+Neuron: (3, 0) Activation:0
+Neuron: (3, 1) Activation:0
+Neuron: (3, 2) Activation:0
+BackProp:
+Neuron: (3, 0) backProp:-0
+Neuron: (3, 1) backProp:0
+Neuron: (3, 2) backProp:0
+Neuron: (2, 0) backProp Error:0
+Neuron: (2, 1) backProp Error:0
+Neuron: (2, 2) backProp Error:0
+Neuron: (2, 3) backProp Error:0
+Neuron: (2, 4) backProp Error:0
+Neuron: (2, 5) backProp Error:0
+Neuron: (2, 6) backProp Error:0
+Neuron: (2, 7) backProp Error:0
+Neuron: (1, 0) backProp Error:0
+Neuron: (1, 1) backProp Error:0
+Neuron: (1, 2) backProp Error:0
+Neuron: (1, 3) backProp Error:0
+Neuron: (1, 4) backProp Error:0
+Neuron: (1, 5) backProp Error:0
+Neuron: (1, 6) backProp Error:0
+Neuron: (1, 7) backProp Error:0
+Neuron: (0, 0) backProp Error:0
+Neuron: (0, 1) backProp Error:0
+Neuron: (0, 2) backProp Error:0
+Neuron: (0, 3) backProp Error:0
+Number of lines: 146
+Random Line75
+
+forwardPass:
+
+Neuron: (0, 0) Activation:5.7
+Neuron: (0, 1) Activation:2.6
+Neuron: (0, 2) Activation:3.5
+Neuron: (0, 3) Activation:1
+Neuron: (1, 0) Activation:0
+Neuron: (1, 1) Activation:0
+Neuron: (1, 2) Activation:0
+Neuron: (1, 3) Activation:0
+Neuron: (1, 4) Activation:0
+Neuron: (1, 5) Activation:0
+Neuron: (1, 6) Activation:0
+Neuron: (1, 7) Activation:0
+Neuron: (2, 0) Activation:0
+Neuron: (2, 1) Activation:0
+Neuron: (2, 2) Activation:0
+Neuron: (2, 3) Activation:0
+Neuron: (2, 4) Activation:0
+Neuron: (2, 5) Activation:0
+Neuron: (2, 6) Activation:0
+Neuron: (2, 7) Activation:0
+Neuron: (3, 0) Activation:0
+Neuron: (3, 1) Activation:0
+Neuron: (3, 2) Activation:0
+BackProp:
+Neuron: (3, 0) backProp:0
+Neuron: (3, 1) backProp:-0
+Neuron: (3, 2) backProp:0
+Neuron: (2, 0) backProp Error:0
+Neuron: (2, 1) backProp Error:0
+Neuron: (2, 2) backProp Error:0
+Neuron: (2, 3) backProp Error:0
+Neuron: (2, 4) backProp Error:0
+Neuron: (2, 5) backProp Error:0
+Neuron: (2, 6) backProp Error:0
+Neuron: (2, 7) backProp Error:0
+Neuron: (1, 0) backProp Error:0
+Neuron: (1, 1) backProp Error:0
+Neuron: (1, 2) backProp Error:0
+Neuron: (1, 3) backProp Error:0
+Neuron: (1, 4) backProp Error:0
+Neuron: (1, 5) backProp Error:0
+Neuron: (1, 6) backProp Error:0
+Neuron: (1, 7) backProp Error:0
+Neuron: (0, 0) backProp Error:0
+Neuron: (0, 1) backProp Error:0
+Neuron: (0, 2) backProp Error:0
+Neuron: (0, 3) backProp Error:0
+Number of lines: 145
+Random Line76
+
+forwardPass:
+
+Neuron: (0, 0) Activation:5.5
+Neuron: (0, 1) Activation:2.4
+Neuron: (0, 2) Activation:3.7
+Neuron: (0, 3) Activation:1
+Neuron: (1, 0) Activation:0
+Neuron: (1, 1) Activation:0
+Neuron: (1, 2) Activation:0
+Neuron: (1, 3) Activation:0
+Neuron: (1, 4) Activation:0
+Neuron: (1, 5) Activation:0
+Neuron: (1, 6) Activation:0
+Neuron: (1, 7) Activation:0
+Neuron: (2, 0) Activation:0
+Neuron: (2, 1) Activation:0
+Neuron: (2, 2) Activation:0
+Neuron: (2, 3) Activation:0
+Neuron: (2, 4) Activation:0
+Neuron: (2, 5) Activation:0
+Neuron: (2, 6) Activation:0
+Neuron: (2, 7) Activation:0
+Neuron: (3, 0) Activation:0
+Neuron: (3, 1) Activation:0
+Neuron: (3, 2) Activation:0
+BackProp:
+Neuron: (3, 0) backProp:0
+Neuron: (3, 1) backProp:-0
+Neuron: (3, 2) backProp:0
+Neuron: (2, 0) backProp Error:0
+Neuron: (2, 1) backProp Error:0
+Neuron: (2, 2) backProp Error:0
+Neuron: (2, 3) backProp Error:0
+Neuron: (2, 4) backProp Error:0
+Neuron: (2, 5) backProp Error:0
+Neuron: (2, 6) backProp Error:0
+Neuron: (2, 7) backProp Error:0
+Neuron: (1, 0) backProp Error:0
+Neuron: (1, 1) backProp Error:0
+Neuron: (1, 2) backProp Error:0
+Neuron: (1, 3) backProp Error:0
+Neuron: (1, 4) backProp Error:0
+Neuron: (1, 5) backProp Error:0
+Neuron: (1, 6) backProp Error:0
+Neuron: (1, 7) backProp Error:0
+Neuron: (0, 0) backProp Error:0
+Neuron: (0, 1) backProp Error:0
+Neuron: (0, 2) backProp Error:0
+Neuron: (0, 3) backProp Error:0
+Number of lines: 144
+Random Line56
+
+forwardPass:
+
+Neuron: (0, 0) Activation:5.2
+Neuron: (0, 1) Activation:2.7
+Neuron: (0, 2) Activation:3.9
+Neuron: (0, 3) Activation:1.4
+Neuron: (1, 0) Activation:0
+Neuron: (1, 1) Activation:0
+Neuron: (1, 2) Activation:0
+Neuron: (1, 3) Activation:0
+Neuron: (1, 4) Activation:0
+Neuron: (1, 5) Activation:0
+Neuron: (1, 6) Activation:0
+Neuron: (1, 7) Activation:0
+Neuron: (2, 0) Activation:0
+Neuron: (2, 1) Activation:0
+Neuron: (2, 2) Activation:0
+Neuron: (2, 3) Activation:0
+Neuron: (2, 4) Activation:0
+Neuron: (2, 5) Activation:0
+Neuron: (2, 6) Activation:0
+Neuron: (2, 7) Activation:0
+Neuron: (3, 0) Activation:0
+Neuron: (3, 1) Activation:0
+Neuron: (3, 2) Activation:0
+BackProp:
+Neuron: (3, 0) backProp:0
+Neuron: (3, 1) backProp:-0
+Neuron: (3, 2) backProp:0
+Neuron: (2, 0) backProp Error:0
+Neuron: (2, 1) backProp Error:0
+Neuron: (2, 2) backProp Error:0
+Neuron: (2, 3) backProp Error:0
+Neuron: (2, 4) backProp Error:0
+Neuron: (2, 5) backProp Error:0
+Neuron: (2, 6) backProp Error:0
+Neuron: (2, 7) backProp Error:0
+Neuron: (1, 0) backProp Error:0
+Neuron: (1, 1) backProp Error:0
+Neuron: (1, 2) backProp Error:0
+Neuron: (1, 3) backProp Error:0
+Neuron: (1, 4) backProp Error:0
+Neuron: (1, 5) backProp Error:0
+Neuron: (1, 6) backProp Error:0
+Neuron: (1, 7) backProp Error:0
+Neuron: (0, 0) backProp Error:0
+Neuron: (0, 1) backProp Error:0
+Neuron: (0, 2) backProp Error:0
+Neuron: (0, 3) backProp Error:0
+Number of lines: 143
+Random Line12
+
+forwardPass:
+
+Neuron: (0, 0) Activation:4.8
+Neuron: (0, 1) Activation:3
+Neuron: (0, 2) Activation:1.4
+Neuron: (0, 3) Activation:0.1
+Neuron: (1, 0) Activation:0
+Neuron: (1, 1) Activation:0
+Neuron: (1, 2) Activation:0
+Neuron: (1, 3) Activation:0
+Neuron: (1, 4) Activation:0
+Neuron: (1, 5) Activation:0
+Neuron: (1, 6) Activation:0
+Neuron: (1, 7) Activation:0
+Neuron: (2, 0) Activation:0
+Neuron: (2, 1) Activation:0
+Neuron: (2, 2) Activation:0
+Neuron: (2, 3) Activation:0
+Neuron: (2, 4) Activation:0
+Neuron: (2, 5) Activation:0
+Neuron: (2, 6) Activation:0
+Neuron: (2, 7) Activation:0
+Neuron: (3, 0) Activation:0
+Neuron: (3, 1) Activation:0
+Neuron: (3, 2) Activation:0
+BackProp:
+Neuron: (3, 0) backProp:-0
+Neuron: (3, 1) backProp:0
+Neuron: (3, 2) backProp:0
+Neuron: (2, 0) backProp Error:0
+Neuron: (2, 1) backProp Error:0
+Neuron: (2, 2) backProp Error:0
+Neuron: (2, 3) backProp Error:0
+Neuron: (2, 4) backProp Error:0
+Neuron: (2, 5) backProp Error:0
+Neuron: (2, 6) backProp Error:0
+Neuron: (2, 7) backProp Error:0
+Neuron: (1, 0) backProp Error:0
+Neuron: (1, 1) backProp Error:0
+Neuron: (1, 2) backProp Error:0
+Neuron: (1, 3) backProp Error:0
+Neuron: (1, 4) backProp Error:0
+Neuron: (1, 5) backProp Error:0
+Neuron: (1, 6) backProp Error:0
+Neuron: (1, 7) backProp Error:0
+Neuron: (0, 0) backProp Error:0
+Neuron: (0, 1) backProp Error:0
+Neuron: (0, 2) backProp Error:0
+Neuron: (0, 3) backProp Error:0
+Number of lines: 142
+Random Line10
+
+forwardPass:
+
+Neuron: (0, 0) Activation:5.4
+Neuron: (0, 1) Activation:3.7
+Neuron: (0, 2) Activation:1.5
+Neuron: (0, 3) Activation:0.2
+Neuron: (1, 0) Activation:0
+Neuron: (1, 1) Activation:0
+Neuron: (1, 2) Activation:0
+Neuron: (1, 3) Activation:0
+Neuron: (1, 4) Activation:0
+Neuron: (1, 5) Activation:0
+Neuron: (1, 6) Activation:0
+Neuron: (1, 7) Activation:0
+Neuron: (2, 0) Activation:0
+Neuron: (2, 1) Activation:0
+Neuron: (2, 2) Activation:0
+Neuron: (2, 3) Activation:0
+Neuron: (2, 4) Activation:0
+Neuron: (2, 5) Activation:0
+Neuron: (2, 6) Activation:0
+Neuron: (2, 7) Activation:0
+Neuron: (3, 0) Activation:0
+Neuron: (3, 1) Activation:0
+Neuron: (3, 2) Activation:0
+BackProp:
+Neuron: (3, 0) backProp:-0
+Neuron: (3, 1) backProp:0
+Neuron: (3, 2) backProp:0
+Neuron: (2, 0) backProp Error:0
+Neuron: (2, 1) backProp Error:0
+Neuron: (2, 2) backProp Error:0
+Neuron: (2, 3) backProp Error:0
+Neuron: (2, 4) backProp Error:0
+Neuron: (2, 5) backProp Error:0
+Neuron: (2, 6) backProp Error:0
+Neuron: (2, 7) backProp Error:0
+Neuron: (1, 0) backProp Error:0
+Neuron: (1, 1) backProp Error:0
+Neuron: (1, 2) backProp Error:0
+Neuron: (1, 3) backProp Error:0
+Neuron: (1, 4) backProp Error:0
+Neuron: (1, 5) backProp Error:0
+Neuron: (1, 6) backProp Error:0
+Neuron: (1, 7) backProp Error:0
+Neuron: (0, 0) backProp Error:0
+Neuron: (0, 1) backProp Error:0
+Neuron: (0, 2) backProp Error:0
+Neuron: (0, 3) backProp Error:0
+Number of lines: 141
+Random Line24
+
+forwardPass:
+
+Neuron: (0, 0) Activation:5.2
+Neuron: (0, 1) Activation:3.4
+Neuron: (0, 2) Activation:1.4
+Neuron: (0, 3) Activation:0.2
+Neuron: (1, 0) Activation:0
+Neuron: (1, 1) Activation:0
+Neuron: (1, 2) Activation:0
+Neuron: (1, 3) Activation:0
+Neuron: (1, 4) Activation:0
+Neuron: (1, 5) Activation:0
+Neuron: (1, 6) Activation:0
+Neuron: (1, 7) Activation:0
+Neuron: (2, 0) Activation:0
+Neuron: (2, 1) Activation:0
+Neuron: (2, 2) Activation:0
+Neuron: (2, 3) Activation:0
+Neuron: (2, 4) Activation:0
+Neuron: (2, 5) Activation:0
+Neuron: (2, 6) Activation:0
+Neuron: (2, 7) Activation:0
+Neuron: (3, 0) Activation:0
+Neuron: (3, 1) Activation:0
+Neuron: (3, 2) Activation:0
+BackProp:
+Neuron: (3, 0) backProp:-0
+Neuron: (3, 1) backProp:0
+Neuron: (3, 2) backProp:0
+Neuron: (2, 0) backProp Error:0
+Neuron: (2, 1) backProp Error:0
+Neuron: (2, 2) backProp Error:0
+Neuron: (2, 3) backProp Error:0
+Neuron: (2, 4) backProp Error:0
+Neuron: (2, 5) backProp Error:0
+Neuron: (2, 6) backProp Error:0
+Neuron: (2, 7) backProp Error:0
+Neuron: (1, 0) backProp Error:0
+Neuron: (1, 1) backProp Error:0
+Neuron: (1, 2) backProp Error:0
+Neuron: (1, 3) backProp Error:0
+Neuron: (1, 4) backProp Error:0
+Neuron: (1, 5) backProp Error:0
+Neuron: (1, 6) backProp Error:0
+Neuron: (1, 7) backProp Error:0
+Neuron: (0, 0) backProp Error:0
+Neuron: (0, 1) backProp Error:0
+Neuron: (0, 2) backProp Error:0
+Neuron: (0, 3) backProp Error:0
+Number of lines: 140
+Random Line129
+
+forwardPass:
+
+Neuron: (0, 0) Activation:6.7
+Neuron: (0, 1) Activation:3.1
+Neuron: (0, 2) Activation:5.6
+Neuron: (0, 3) Activation:2.4
+Neuron: (1, 0) Activation:0
+Neuron: (1, 1) Activation:0
+Neuron: (1, 2) Activation:0
+Neuron: (1, 3) Activation:0
+Neuron: (1, 4) Activation:0
+Neuron: (1, 5) Activation:0
+Neuron: (1, 6) Activation:0
+Neuron: (1, 7) Activation:0
+Neuron: (2, 0) Activation:0
+Neuron: (2, 1) Activation:0
+Neuron: (2, 2) Activation:0
+Neuron: (2, 3) Activation:0
+Neuron: (2, 4) Activation:0
+Neuron: (2, 5) Activation:0
+Neuron: (2, 6) Activation:0
+Neuron: (2, 7) Activation:0
+Neuron: (3, 0) Activation:0
+Neuron: (3, 1) Activation:0
+Neuron: (3, 2) Activation:0
+BackProp:
+Neuron: (3, 0) backProp:0
+Neuron: (3, 1) backProp:0
+Neuron: (3, 2) backProp:-0
+Neuron: (2, 0) backProp Error:0
+Neuron: (2, 1) backProp Error:0
+Neuron: (2, 2) backProp Error:0
+Neuron: (2, 3) backProp Error:0
+Neuron: (2, 4) backProp Error:0
+Neuron: (2, 5) backProp Error:0
+Neuron: (2, 6) backProp Error:0
+Neuron: (2, 7) backProp Error:0
+Neuron: (1, 0) backProp Error:0
+Neuron: (1, 1) backProp Error:0
+Neuron: (1, 2) backProp Error:0
+Neuron: (1, 3) backProp Error:0
+Neuron: (1, 4) backProp Error:0
+Neuron: (1, 5) backProp Error:0
+Neuron: (1, 6) backProp Error:0
+Neuron: (1, 7) backProp Error:0
+Neuron: (0, 0) backProp Error:0
+Neuron: (0, 1) backProp Error:0
+Neuron: (0, 2) backProp Error:0
+Neuron: (0, 3) backProp Error:0
+Number of lines: 139
+Random Line58
+
+forwardPass:
+
+Neuron: (0, 0) Activation:6.7
+Neuron: (0, 1) Activation:3.1
+Neuron: (0, 2) Activation:4.4
+Neuron: (0, 3) Activation:1.4
+Neuron: (1, 0) Activation:0
+Neuron: (1, 1) Activation:0
+Neuron: (1, 2) Activation:0
+Neuron: (1, 3) Activation:0
+Neuron: (1, 4) Activation:0
+Neuron: (1, 5) Activation:0
+Neuron: (1, 6) Activation:0
+Neuron: (1, 7) Activation:0
+Neuron: (2, 0) Activation:0
+Neuron: (2, 1) Activation:0
+Neuron: (2, 2) Activation:0
+Neuron: (2, 3) Activation:0
+Neuron: (2, 4) Activation:0
+Neuron: (2, 5) Activation:0
+Neuron: (2, 6) Activation:0
+Neuron: (2, 7) Activation:0
+Neuron: (3, 0) Activation:0
+Neuron: (3, 1) Activation:0
+Neuron: (3, 2) Activation:0
+BackProp:
+Neuron: (3, 0) backProp:0
+Neuron: (3, 1) backProp:-0
+Neuron: (3, 2) backProp:0
+Neuron: (2, 0) backProp Error:0
+Neuron: (2, 1) backProp Error:0
+Neuron: (2, 2) backProp Error:0
+Neuron: (2, 3) backProp Error:0
+Neuron: (2, 4) backProp Error:0
+Neuron: (2, 5) backProp Error:0
+Neuron: (2, 6) backProp Error:0
+Neuron: (2, 7) backProp Error:0
+Neuron: (1, 0) backProp Error:0
+Neuron: (1, 1) backProp Error:0
+Neuron: (1, 2) backProp Error:0
+Neuron: (1, 3) backProp Error:0
+Neuron: (1, 4) backProp Error:0
+Neuron: (1, 5) backProp Error:0
+Neuron: (1, 6) backProp Error:0
+Neuron: (1, 7) backProp Error:0
+Neuron: (0, 0) backProp Error:0
+Neuron: (0, 1) backProp Error:0
+Neuron: (0, 2) backProp Error:0
+Neuron: (0, 3) backProp Error:0
+Number of lines: 138
+Random Line121
+
+forwardPass:
+
+Neuron: (0, 0) Activation:6.3
+Neuron: (0, 1) Activation:2.8
+Neuron: (0, 2) Activation:5.1
+Neuron: (0, 3) Activation:1.5
+Neuron: (1, 0) Activation:0
+Neuron: (1, 1) Activation:0
+Neuron: (1, 2) Activation:0
+Neuron: (1, 3) Activation:0
+Neuron: (1, 4) Activation:0
+Neuron: (1, 5) Activation:0
+Neuron: (1, 6) Activation:0
+Neuron: (1, 7) Activation:0
+Neuron: (2, 0) Activation:0
+Neuron: (2, 1) Activation:0
+Neuron: (2, 2) Activation:0
+Neuron: (2, 3) Activation:0
+Neuron: (2, 4) Activation:0
+Neuron: (2, 5) Activation:0
+Neuron: (2, 6) Activation:0
+Neuron: (2, 7) Activation:0
+Neuron: (3, 0) Activation:0
+Neuron: (3, 1) Activation:0
+Neuron: (3, 2) Activation:0
+BackProp:
+Neuron: (3, 0) backProp:0
+Neuron: (3, 1) backProp:0
+Neuron: (3, 2) backProp:-0
+Neuron: (2, 0) backProp Error:0
+Neuron: (2, 1) backProp Error:0
+Neuron: (2, 2) backProp Error:0
+Neuron: (2, 3) backProp Error:0
+Neuron: (2, 4) backProp Error:0
+Neuron: (2, 5) backProp Error:0
+Neuron: (2, 6) backProp Error:0
+Neuron: (2, 7) backProp Error:0
+Neuron: (1, 0) backProp Error:0
+Neuron: (1, 1) backProp Error:0
+Neuron: (1, 2) backProp Error:0
+Neuron: (1, 3) backProp Error:0
+Neuron: (1, 4) backProp Error:0
+Neuron: (1, 5) backProp Error:0
+Neuron: (1, 6) backProp Error:0
+Neuron: (1, 7) backProp Error:0
+Neuron: (0, 0) backProp Error:0
+Neuron: (0, 1) backProp Error:0
+Neuron: (0, 2) backProp Error:0
+Neuron: (0, 3) backProp Error:0
+Number of lines: 137
+Random Line82
+
+forwardPass:
+
+Neuron: (0, 0) Activation:5
+Neuron: (0, 1) Activation:2.3
+Neuron: (0, 2) Activation:3.3
+Neuron: (0, 3) Activation:1
+Neuron: (1, 0) Activation:0
+Neuron: (1, 1) Activation:0
+Neuron: (1, 2) Activation:0
+Neuron: (1, 3) Activation:0
+Neuron: (1, 4) Activation:0
+Neuron: (1, 5) Activation:0
+Neuron: (1, 6) Activation:0
+Neuron: (1, 7) Activation:0
+Neuron: (2, 0) Activation:0
+Neuron: (2, 1) Activation:0
+Neuron: (2, 2) Activation:0
+Neuron: (2, 3) Activation:0
+Neuron: (2, 4) Activation:0
+Neuron: (2, 5) Activation:0
+Neuron: (2, 6) Activation:0
+Neuron: (2, 7) Activation:0
+Neuron: (3, 0) Activation:0
+Neuron: (3, 1) Activation:0
+Neuron: (3, 2) Activation:0
+BackProp:
+Neuron: (3, 0) backProp:0
+Neuron: (3, 1) backProp:-0
+Neuron: (3, 2) backProp:0
+Neuron: (2, 0) backProp Error:0
+Neuron: (2, 1) backProp Error:0
+Neuron: (2, 2) backProp Error:0
+Neuron: (2, 3) backProp Error:0
+Neuron: (2, 4) backProp Error:0
+Neuron: (2, 5) backProp Error:0
+Neuron: (2, 6) backProp Error:0
+Neuron: (2, 7) backProp Error:0
+Neuron: (1, 0) backProp Error:0
+Neuron: (1, 1) backProp Error:0
+Neuron: (1, 2) backProp Error:0
+Neuron: (1, 3) backProp Error:0
+Neuron: (1, 4) backProp Error:0
+Neuron: (1, 5) backProp Error:0
+Neuron: (1, 6) backProp Error:0
+Neuron: (1, 7) backProp Error:0
+Neuron: (0, 0) backProp Error:0
+Neuron: (0, 1) backProp Error:0
+Neuron: (0, 2) backProp Error:0
+Neuron: (0, 3) backProp Error:0
+Number of lines: 136
+Random Line90
+
+forwardPass:
+
+Neuron: (0, 0) Activation:7.1
+Neuron: (0, 1) Activation:3
+Neuron: (0, 2) Activation:5.9
+Neuron: (0, 3) Activation:2.1
+Neuron: (1, 0) Activation:0
+Neuron: (1, 1) Activation:0
+Neuron: (1, 2) Activation:0
+Neuron: (1, 3) Activation:0
+Neuron: (1, 4) Activation:0
+Neuron: (1, 5) Activation:0
+Neuron: (1, 6) Activation:0
+Neuron: (1, 7) Activation:0
+Neuron: (2, 0) Activation:0
+Neuron: (2, 1) Activation:0
+Neuron: (2, 2) Activation:0
+Neuron: (2, 3) Activation:0
+Neuron: (2, 4) Activation:0
+Neuron: (2, 5) Activation:0
+Neuron: (2, 6) Activation:0
+Neuron: (2, 7) Activation:0
+Neuron: (3, 0) Activation:0
+Neuron: (3, 1) Activation:0
+Neuron: (3, 2) Activation:0
+BackProp:
+Neuron: (3, 0) backProp:0
+Neuron: (3, 1) backProp:0
+Neuron: (3, 2) backProp:-0
+Neuron: (2, 0) backProp Error:0
+Neuron: (2, 1) backProp Error:0
+Neuron: (2, 2) backProp Error:0
+Neuron: (2, 3) backProp Error:0
+Neuron: (2, 4) backProp Error:0
+Neuron: (2, 5) backProp Error:0
+Neuron: (2, 6) backProp Error:0
+Neuron: (2, 7) backProp Error:0
+Neuron: (1, 0) backProp Error:0
+Neuron: (1, 1) backProp Error:0
+Neuron: (1, 2) backProp Error:0
+Neuron: (1, 3) backProp Error:0
+Neuron: (1, 4) backProp Error:0
+Neuron: (1, 5) backProp Error:0
+Neuron: (1, 6) backProp Error:0
+Neuron: (1, 7) backProp Error:0
+Neuron: (0, 0) backProp Error:0
+Neuron: (0, 1) backProp Error:0
+Neuron: (0, 2) backProp Error:0
+Neuron: (0, 3) backProp Error:0
+Number of lines: 135
+Random Line74
+
+forwardPass:
+
+Neuron: (0, 0) Activation:6
+Neuron: (0, 1) Activation:3.4
+Neuron: (0, 2) Activation:4.5
+Neuron: (0, 3) Activation:1.6
+Neuron: (1, 0) Activation:0
+Neuron: (1, 1) Activation:0
+Neuron: (1, 2) Activation:0
+Neuron: (1, 3) Activation:0
+Neuron: (1, 4) Activation:0
+Neuron: (1, 5) Activation:0
+Neuron: (1, 6) Activation:0
+Neuron: (1, 7) Activation:0
+Neuron: (2, 0) Activation:0
+Neuron: (2, 1) Activation:0
+Neuron: (2, 2) Activation:0
+Neuron: (2, 3) Activation:0
+Neuron: (2, 4) Activation:0
+Neuron: (2, 5) Activation:0
+Neuron: (2, 6) Activation:0
+Neuron: (2, 7) Activation:0
+Neuron: (3, 0) Activation:0
+Neuron: (3, 1) Activation:0
+Neuron: (3, 2) Activation:0
+BackProp:
+Neuron: (3, 0) backProp:0
+Neuron: (3, 1) backProp:-0
+Neuron: (3, 2) backProp:0
+Neuron: (2, 0) backProp Error:0
+Neuron: (2, 1) backProp Error:0
+Neuron: (2, 2) backProp Error:0
+Neuron: (2, 3) backProp Error:0
+Neuron: (2, 4) backProp Error:0
+Neuron: (2, 5) backProp Error:0
+Neuron: (2, 6) backProp Error:0
+Neuron: (2, 7) backProp Error:0
+Neuron: (1, 0) backProp Error:0
+Neuron: (1, 1) backProp Error:0
+Neuron: (1, 2) backProp Error:0
+Neuron: (1, 3) backProp Error:0
+Neuron: (1, 4) backProp Error:0
+Neuron: (1, 5) backProp Error:0
+Neuron: (1, 6) backProp Error:0
+Neuron: (1, 7) backProp Error:0
+Neuron: (0, 0) backProp Error:0
+Neuron: (0, 1) backProp Error:0
+Neuron: (0, 2) backProp Error:0
+Neuron: (0, 3) backProp Error:0
+Number of lines: 134
+Random Line42
+
+forwardPass:
+
+Neuron: (0, 0) Activation:4.6
+Neuron: (0, 1) Activation:3.2
+Neuron: (0, 2) Activation:1.4
+Neuron: (0, 3) Activation:0.2
+Neuron: (1, 0) Activation:0
+Neuron: (1, 1) Activation:0
+Neuron: (1, 2) Activation:0
+Neuron: (1, 3) Activation:0
+Neuron: (1, 4) Activation:0
+Neuron: (1, 5) Activation:0
+Neuron: (1, 6) Activation:0
+Neuron: (1, 7) Activation:0
+Neuron: (2, 0) Activation:0
+Neuron: (2, 1) Activation:0
+Neuron: (2, 2) Activation:0
+Neuron: (2, 3) Activation:0
+Neuron: (2, 4) Activation:0
+Neuron: (2, 5) Activation:0
+Neuron: (2, 6) Activation:0
+Neuron: (2, 7) Activation:0
+Neuron: (3, 0) Activation:0
+Neuron: (3, 1) Activation:0
+Neuron: (3, 2) Activation:0
+BackProp:
+Neuron: (3, 0) backProp:-0
+Neuron: (3, 1) backProp:0
+Neuron: (3, 2) backProp:0
+Neuron: (2, 0) backProp Error:0
+Neuron: (2, 1) backProp Error:0
+Neuron: (2, 2) backProp Error:0
+Neuron: (2, 3) backProp Error:0
+Neuron: (2, 4) backProp Error:0
+Neuron: (2, 5) backProp Error:0
+Neuron: (2, 6) backProp Error:0
+Neuron: (2, 7) backProp Error:0
+Neuron: (1, 0) backProp Error:0
+Neuron: (1, 1) backProp Error:0
+Neuron: (1, 2) backProp Error:0
+Neuron: (1, 3) backProp Error:0
+Neuron: (1, 4) backProp Error:0
+Neuron: (1, 5) backProp Error:0
+Neuron: (1, 6) backProp Error:0
+Neuron: (1, 7) backProp Error:0
+Neuron: (0, 0) backProp Error:0
+Neuron: (0, 1) backProp Error:0
+Neuron: (0, 2) backProp Error:0
+Neuron: (0, 3) backProp Error:0
+Number of lines: 133
+Random Line1
+
+forwardPass:
+
+Neuron: (0, 0) Activation:4.9
+Neuron: (0, 1) Activation:3
+Neuron: (0, 2) Activation:1.4
+Neuron: (0, 3) Activation:0.2
+Neuron: (1, 0) Activation:0
+Neuron: (1, 1) Activation:0
+Neuron: (1, 2) Activation:0
+Neuron: (1, 3) Activation:0
+Neuron: (1, 4) Activation:0
+Neuron: (1, 5) Activation:0
+Neuron: (1, 6) Activation:0
+Neuron: (1, 7) Activation:0
+Neuron: (2, 0) Activation:0
+Neuron: (2, 1) Activation:0
+Neuron: (2, 2) Activation:0
+Neuron: (2, 3) Activation:0
+Neuron: (2, 4) Activation:0
+Neuron: (2, 5) Activation:0
+Neuron: (2, 6) Activation:0
+Neuron: (2, 7) Activation:0
+Neuron: (3, 0) Activation:0
+Neuron: (3, 1) Activation:0
+Neuron: (3, 2) Activation:0
+BackProp:
+Neuron: (3, 0) backProp:-0
+Neuron: (3, 1) backProp:0
+Neuron: (3, 2) backProp:0
+Neuron: (2, 0) backProp Error:0
+Neuron: (2, 1) backProp Error:0
+Neuron: (2, 2) backProp Error:0
+Neuron: (2, 3) backProp Error:0
+Neuron: (2, 4) backProp Error:0
+Neuron: (2, 5) backProp Error:0
+Neuron: (2, 6) backProp Error:0
+Neuron: (2, 7) backProp Error:0
+Neuron: (1, 0) backProp Error:0
+Neuron: (1, 1) backProp Error:0
+Neuron: (1, 2) backProp Error:0
+Neuron: (1, 3) backProp Error:0
+Neuron: (1, 4) backProp Error:0
+Neuron: (1, 5) backProp Error:0
+Neuron: (1, 6) backProp Error:0
+Neuron: (1, 7) backProp Error:0
+Neuron: (0, 0) backProp Error:0
+Neuron: (0, 1) backProp Error:0
+Neuron: (0, 2) backProp Error:0
+Neuron: (0, 3) backProp Error:0
+Number of lines: 132
+Random Line34
+
+forwardPass:
+
+Neuron: (0, 0) Activation:5
+Neuron: (0, 1) Activation:3.5
+Neuron: (0, 2) Activation:1.3
+Neuron: (0, 3) Activation:0.3
+Neuron: (1, 0) Activation:0
+Neuron: (1, 1) Activation:0
+Neuron: (1, 2) Activation:0
+Neuron: (1, 3) Activation:0
+Neuron: (1, 4) Activation:0
+Neuron: (1, 5) Activation:0
+Neuron: (1, 6) Activation:0
+Neuron: (1, 7) Activation:0
+Neuron: (2, 0) Activation:0
+Neuron: (2, 1) Activation:0
+Neuron: (2, 2) Activation:0
+Neuron: (2, 3) Activation:0
+Neuron: (2, 4) Activation:0
+Neuron: (2, 5) Activation:0
+Neuron: (2, 6) Activation:0
+Neuron: (2, 7) Activation:0
+Neuron: (3, 0) Activation:0
+Neuron: (3, 1) Activation:0
+Neuron: (3, 2) Activation:0
+BackProp:
+Neuron: (3, 0) backProp:-0
+Neuron: (3, 1) backProp:0
+Neuron: (3, 2) backProp:0
+Neuron: (2, 0) backProp Error:0
+Neuron: (2, 1) backProp Error:0
+Neuron: (2, 2) backProp Error:0
+Neuron: (2, 3) backProp Error:0
+Neuron: (2, 4) backProp Error:0
+Neuron: (2, 5) backProp Error:0
+Neuron: (2, 6) backProp Error:0
+Neuron: (2, 7) backProp Error:0
+Neuron: (1, 0) backProp Error:0
+Neuron: (1, 1) backProp Error:0
+Neuron: (1, 2) backProp Error:0
+Neuron: (1, 3) backProp Error:0
+Neuron: (1, 4) backProp Error:0
+Neuron: (1, 5) backProp Error:0
+Neuron: (1, 6) backProp Error:0
+Neuron: (1, 7) backProp Error:0
+Neuron: (0, 0) backProp Error:0
+Neuron: (0, 1) backProp Error:0
+Neuron: (0, 2) backProp Error:0
+Neuron: (0, 3) backProp Error:0
+Number of lines: 131
+Random Line80
+
+forwardPass:
+
+Neuron: (0, 0) Activation:5.7
+Neuron: (0, 1) Activation:2.9
+Neuron: (0, 2) Activation:4.2
+Neuron: (0, 3) Activation:1.3
+Neuron: (1, 0) Activation:0
+Neuron: (1, 1) Activation:0
+Neuron: (1, 2) Activation:0
+Neuron: (1, 3) Activation:0
+Neuron: (1, 4) Activation:0
+Neuron: (1, 5) Activation:0
+Neuron: (1, 6) Activation:0
+Neuron: (1, 7) Activation:0
+Neuron: (2, 0) Activation:0
+Neuron: (2, 1) Activation:0
+Neuron: (2, 2) Activation:0
+Neuron: (2, 3) Activation:0
+Neuron: (2, 4) Activation:0
+Neuron: (2, 5) Activation:0
+Neuron: (2, 6) Activation:0
+Neuron: (2, 7) Activation:0
+Neuron: (3, 0) Activation:0
+Neuron: (3, 1) Activation:0
+Neuron: (3, 2) Activation:0
+BackProp:
+Neuron: (3, 0) backProp:0
+Neuron: (3, 1) backProp:-0
+Neuron: (3, 2) backProp:0
+Neuron: (2, 0) backProp Error:0
+Neuron: (2, 1) backProp Error:0
+Neuron: (2, 2) backProp Error:0
+Neuron: (2, 3) backProp Error:0
+Neuron: (2, 4) backProp Error:0
+Neuron: (2, 5) backProp Error:0
+Neuron: (2, 6) backProp Error:0
+Neuron: (2, 7) backProp Error:0
+Neuron: (1, 0) backProp Error:0
+Neuron: (1, 1) backProp Error:0
+Neuron: (1, 2) backProp Error:0
+Neuron: (1, 3) backProp Error:0
+Neuron: (1, 4) backProp Error:0
+Neuron: (1, 5) backProp Error:0
+Neuron: (1, 6) backProp Error:0
+Neuron: (1, 7) backProp Error:0
+Neuron: (0, 0) backProp Error:0
+Neuron: (0, 1) backProp Error:0
+Neuron: (0, 2) backProp Error:0
+Neuron: (0, 3) backProp Error:0
+Number of lines: 130
+Random Line127
+
+forwardPass:
+
+Neuron: (0, 0) Activation:6.2
+Neuron: (0, 1) Activation:3.4
+Neuron: (0, 2) Activation:5.4
+Neuron: (0, 3) Activation:2.3
+Neuron: (1, 0) Activation:0
+Neuron: (1, 1) Activation:0
+Neuron: (1, 2) Activation:0
+Neuron: (1, 3) Activation:0
+Neuron: (1, 4) Activation:0
+Neuron: (1, 5) Activation:0
+Neuron: (1, 6) Activation:0
+Neuron: (1, 7) Activation:0
+Neuron: (2, 0) Activation:0
+Neuron: (2, 1) Activation:0
+Neuron: (2, 2) Activation:0
+Neuron: (2, 3) Activation:0
+Neuron: (2, 4) Activation:0
+Neuron: (2, 5) Activation:0
+Neuron: (2, 6) Activation:0
+Neuron: (2, 7) Activation:0
+Neuron: (3, 0) Activation:0
+Neuron: (3, 1) Activation:0
+Neuron: (3, 2) Activation:0
+BackProp:
+Neuron: (3, 0) backProp:0
+Neuron: (3, 1) backProp:0
+Neuron: (3, 2) backProp:-0
+Neuron: (2, 0) backProp Error:0
+Neuron: (2, 1) backProp Error:0
+Neuron: (2, 2) backProp Error:0
+Neuron: (2, 3) backProp Error:0
+Neuron: (2, 4) backProp Error:0
+Neuron: (2, 5) backProp Error:0
+Neuron: (2, 6) backProp Error:0
+Neuron: (2, 7) backProp Error:0
+Neuron: (1, 0) backProp Error:0
+Neuron: (1, 1) backProp Error:0
+Neuron: (1, 2) backProp Error:0
+Neuron: (1, 3) backProp Error:0
+Neuron: (1, 4) backProp Error:0
+Neuron: (1, 5) backProp Error:0
+Neuron: (1, 6) backProp Error:0
+Neuron: (1, 7) backProp Error:0
+Neuron: (0, 0) backProp Error:0
+Neuron: (0, 1) backProp Error:0
+Neuron: (0, 2) backProp Error:0
+Neuron: (0, 3) backProp Error:0
+Number of lines: 129
+Random Line29
+
+forwardPass:
+
+Neuron: (0, 0) Activation:5
+Neuron: (0, 1) Activation:3.2
+Neuron: (0, 2) Activation:1.2
+Neuron: (0, 3) Activation:0.2
+Neuron: (1, 0) Activation:0
+Neuron: (1, 1) Activation:0
+Neuron: (1, 2) Activation:0
+Neuron: (1, 3) Activation:0
+Neuron: (1, 4) Activation:0
+Neuron: (1, 5) Activation:0
+Neuron: (1, 6) Activation:0
+Neuron: (1, 7) Activation:0
+Neuron: (2, 0) Activation:0
+Neuron: (2, 1) Activation:0
+Neuron: (2, 2) Activation:0
+Neuron: (2, 3) Activation:0
+Neuron: (2, 4) Activation:0
+Neuron: (2, 5) Activation:0
+Neuron: (2, 6) Activation:0
+Neuron: (2, 7) Activation:0
+Neuron: (3, 0) Activation:0
+Neuron: (3, 1) Activation:0
+Neuron: (3, 2) Activation:0
+BackProp:
+Neuron: (3, 0) backProp:-0
+Neuron: (3, 1) backProp:0
+Neuron: (3, 2) backProp:0
+Neuron: (2, 0) backProp Error:0
+Neuron: (2, 1) backProp Error:0
+Neuron: (2, 2) backProp Error:0
+Neuron: (2, 3) backProp Error:0
+Neuron: (2, 4) backProp Error:0
+Neuron: (2, 5) backProp Error:0
+Neuron: (2, 6) backProp Error:0
+Neuron: (2, 7) backProp Error:0
+Neuron: (1, 0) backProp Error:0
+Neuron: (1, 1) backProp Error:0
+Neuron: (1, 2) backProp Error:0
+Neuron: (1, 3) backProp Error:0
+Neuron: (1, 4) backProp Error:0
+Neuron: (1, 5) backProp Error:0
+Neuron: (1, 6) backProp Error:0
+Neuron: (1, 7) backProp Error:0
+Neuron: (0, 0) backProp Error:0
+Neuron: (0, 1) backProp Error:0
+Neuron: (0, 2) backProp Error:0
+Neuron: (0, 3) backProp Error:0
+Number of lines: 128
+Random Line93
+
+forwardPass:
+
+Neuron: (0, 0) Activation:6.8
+Neuron: (0, 1) Activation:3
+Neuron: (0, 2) Activation:5.5
+Neuron: (0, 3) Activation:2.1
+Neuron: (1, 0) Activation:0
+Neuron: (1, 1) Activation:0
+Neuron: (1, 2) Activation:0
+Neuron: (1, 3) Activation:0
+Neuron: (1, 4) Activation:0
+Neuron: (1, 5) Activation:0
+Neuron: (1, 6) Activation:0
+Neuron: (1, 7) Activation:0
+Neuron: (2, 0) Activation:0
+Neuron: (2, 1) Activation:0
+Neuron: (2, 2) Activation:0
+Neuron: (2, 3) Activation:0
+Neuron: (2, 4) Activation:0
+Neuron: (2, 5) Activation:0
+Neuron: (2, 6) Activation:0
+Neuron: (2, 7) Activation:0
+Neuron: (3, 0) Activation:0
+Neuron: (3, 1) Activation:0
+Neuron: (3, 2) Activation:0
+BackProp:
+Neuron: (3, 0) backProp:0
+Neuron: (3, 1) backProp:0
+Neuron: (3, 2) backProp:-0
+Neuron: (2, 0) backProp Error:0
+Neuron: (2, 1) backProp Error:0
+Neuron: (2, 2) backProp Error:0
+Neuron: (2, 3) backProp Error:0
+Neuron: (2, 4) backProp Error:0
+Neuron: (2, 5) backProp Error:0
+Neuron: (2, 6) backProp Error:0
+Neuron: (2, 7) backProp Error:0
+Neuron: (1, 0) backProp Error:0
+Neuron: (1, 1) backProp Error:0
+Neuron: (1, 2) backProp Error:0
+Neuron: (1, 3) backProp Error:0
+Neuron: (1, 4) backProp Error:0
+Neuron: (1, 5) backProp Error:0
+Neuron: (1, 6) backProp Error:0
+Neuron: (1, 7) backProp Error:0
+Neuron: (0, 0) backProp Error:0
+Neuron: (0, 1) backProp Error:0
+Neuron: (0, 2) backProp Error:0
+Neuron: (0, 3) backProp Error:0
+Number of lines: 127
+Random Line98
+
+forwardPass:
+
+Neuron: (0, 0) Activation:6
+Neuron: (0, 1) Activation:2.2
+Neuron: (0, 2) Activation:5
+Neuron: (0, 3) Activation:1.5
+Neuron: (1, 0) Activation:0
+Neuron: (1, 1) Activation:0
+Neuron: (1, 2) Activation:0
+Neuron: (1, 3) Activation:0
+Neuron: (1, 4) Activation:0
+Neuron: (1, 5) Activation:0
+Neuron: (1, 6) Activation:0
+Neuron: (1, 7) Activation:0
+Neuron: (2, 0) Activation:0
+Neuron: (2, 1) Activation:0
+Neuron: (2, 2) Activation:0
+Neuron: (2, 3) Activation:0
+Neuron: (2, 4) Activation:0
+Neuron: (2, 5) Activation:0
+Neuron: (2, 6) Activation:0
+Neuron: (2, 7) Activation:0
+Neuron: (3, 0) Activation:0
+Neuron: (3, 1) Activation:0
+Neuron: (3, 2) Activation:0
+BackProp:
+Neuron: (3, 0) backProp:0
+Neuron: (3, 1) backProp:0
+Neuron: (3, 2) backProp:-0
+Neuron: (2, 0) backProp Error:0
+Neuron: (2, 1) backProp Error:0
+Neuron: (2, 2) backProp Error:0
+Neuron: (2, 3) backProp Error:0
+Neuron: (2, 4) backProp Error:0
+Neuron: (2, 5) backProp Error:0
+Neuron: (2, 6) backProp Error:0
+Neuron: (2, 7) backProp Error:0
+Neuron: (1, 0) backProp Error:0
+Neuron: (1, 1) backProp Error:0
+Neuron: (1, 2) backProp Error:0
+Neuron: (1, 3) backProp Error:0
+Neuron: (1, 4) backProp Error:0
+Neuron: (1, 5) backProp Error:0
+Neuron: (1, 6) backProp Error:0
+Neuron: (1, 7) backProp Error:0
+Neuron: (0, 0) backProp Error:0
+Neuron: (0, 1) backProp Error:0
+Neuron: (0, 2) backProp Error:0
+Neuron: (0, 3) backProp Error:0
+Number of lines: 126
+Random Line28
+
+forwardPass:
+
+Neuron: (0, 0) Activation:4.9
+Neuron: (0, 1) Activation:3.1
+Neuron: (0, 2) Activation:1.5
+Neuron: (0, 3) Activation:0.1
+Neuron: (1, 0) Activation:0
+Neuron: (1, 1) Activation:0
+Neuron: (1, 2) Activation:0
+Neuron: (1, 3) Activation:0
+Neuron: (1, 4) Activation:0
+Neuron: (1, 5) Activation:0
+Neuron: (1, 6) Activation:0
+Neuron: (1, 7) Activation:0
+Neuron: (2, 0) Activation:0
+Neuron: (2, 1) Activation:0
+Neuron: (2, 2) Activation:0
+Neuron: (2, 3) Activation:0
+Neuron: (2, 4) Activation:0
+Neuron: (2, 5) Activation:0
+Neuron: (2, 6) Activation:0
+Neuron: (2, 7) Activation:0
+Neuron: (3, 0) Activation:0
+Neuron: (3, 1) Activation:0
+Neuron: (3, 2) Activation:0
+BackProp:
+Neuron: (3, 0) backProp:-0
+Neuron: (3, 1) backProp:0
+Neuron: (3, 2) backProp:0
+Neuron: (2, 0) backProp Error:0
+Neuron: (2, 1) backProp Error:0
+Neuron: (2, 2) backProp Error:0
+Neuron: (2, 3) backProp Error:0
+Neuron: (2, 4) backProp Error:0
+Neuron: (2, 5) backProp Error:0
+Neuron: (2, 6) backProp Error:0
+Neuron: (2, 7) backProp Error:0
+Neuron: (1, 0) backProp Error:0
+Neuron: (1, 1) backProp Error:0
+Neuron: (1, 2) backProp Error:0
+Neuron: (1, 3) backProp Error:0
+Neuron: (1, 4) backProp Error:0
+Neuron: (1, 5) backProp Error:0
+Neuron: (1, 6) backProp Error:0
+Neuron: (1, 7) backProp Error:0
+Neuron: (0, 0) backProp Error:0
+Neuron: (0, 1) backProp Error:0
+Neuron: (0, 2) backProp Error:0
+Neuron: (0, 3) backProp Error:0
+Number of lines: 125
+Random Line87
+
+forwardPass:
+
+Neuron: (0, 0) Activation:7.3
+Neuron: (0, 1) Activation:2.9
+Neuron: (0, 2) Activation:6.3
+Neuron: (0, 3) Activation:1.8
+Neuron: (1, 0) Activation:0
+Neuron: (1, 1) Activation:0
+Neuron: (1, 2) Activation:0
+Neuron: (1, 3) Activation:0
+Neuron: (1, 4) Activation:0
+Neuron: (1, 5) Activation:0
+Neuron: (1, 6) Activation:0
+Neuron: (1, 7) Activation:0
+Neuron: (2, 0) Activation:0
+Neuron: (2, 1) Activation:0
+Neuron: (2, 2) Activation:0
+Neuron: (2, 3) Activation:0
+Neuron: (2, 4) Activation:0
+Neuron: (2, 5) Activation:0
+Neuron: (2, 6) Activation:0
+Neuron: (2, 7) Activation:0
+Neuron: (3, 0) Activation:0
+Neuron: (3, 1) Activation:0
+Neuron: (3, 2) Activation:0
+BackProp:
+Neuron: (3, 0) backProp:0
+Neuron: (3, 1) backProp:0
+Neuron: (3, 2) backProp:-0
+Neuron: (2, 0) backProp Error:0
+Neuron: (2, 1) backProp Error:0
+Neuron: (2, 2) backProp Error:0
+Neuron: (2, 3) backProp Error:0
+Neuron: (2, 4) backProp Error:0
+Neuron: (2, 5) backProp Error:0
+Neuron: (2, 6) backProp Error:0
+Neuron: (2, 7) backProp Error:0
+Neuron: (1, 0) backProp Error:0
+Neuron: (1, 1) backProp Error:0
+Neuron: (1, 2) backProp Error:0
+Neuron: (1, 3) backProp Error:0
+Neuron: (1, 4) backProp Error:0
+Neuron: (1, 5) backProp Error:0
+Neuron: (1, 6) backProp Error:0
+Neuron: (1, 7) backProp Error:0
+Neuron: (0, 0) backProp Error:0
+Neuron: (0, 1) backProp Error:0
+Neuron: (0, 2) backProp Error:0
+Neuron: (0, 3) backProp Error:0
+Number of lines: 124
+Random Line21
+
+forwardPass:
+
+Neuron: (0, 0) Activation:5
+Neuron: (0, 1) Activation:3
+Neuron: (0, 2) Activation:1.6
+Neuron: (0, 3) Activation:0.2
+Neuron: (1, 0) Activation:0
+Neuron: (1, 1) Activation:0
+Neuron: (1, 2) Activation:0
+Neuron: (1, 3) Activation:0
+Neuron: (1, 4) Activation:0
+Neuron: (1, 5) Activation:0
+Neuron: (1, 6) Activation:0
+Neuron: (1, 7) Activation:0
+Neuron: (2, 0) Activation:0
+Neuron: (2, 1) Activation:0
+Neuron: (2, 2) Activation:0
+Neuron: (2, 3) Activation:0
+Neuron: (2, 4) Activation:0
+Neuron: (2, 5) Activation:0
+Neuron: (2, 6) Activation:0
+Neuron: (2, 7) Activation:0
+Neuron: (3, 0) Activation:0
+Neuron: (3, 1) Activation:0
+Neuron: (3, 2) Activation:0
+BackProp:
+Neuron: (3, 0) backProp:-0
+Neuron: (3, 1) backProp:0
+Neuron: (3, 2) backProp:0
+Neuron: (2, 0) backProp Error:0
+Neuron: (2, 1) backProp Error:0
+Neuron: (2, 2) backProp Error:0
+Neuron: (2, 3) backProp Error:0
+Neuron: (2, 4) backProp Error:0
+Neuron: (2, 5) backProp Error:0
+Neuron: (2, 6) backProp Error:0
+Neuron: (2, 7) backProp Error:0
+Neuron: (1, 0) backProp Error:0
+Neuron: (1, 1) backProp Error:0
+Neuron: (1, 2) backProp Error:0
+Neuron: (1, 3) backProp Error:0
+Neuron: (1, 4) backProp Error:0
+Neuron: (1, 5) backProp Error:0
+Neuron: (1, 6) backProp Error:0
+Neuron: (1, 7) backProp Error:0
+Neuron: (0, 0) backProp Error:0
+Neuron: (0, 1) backProp Error:0
+Neuron: (0, 2) backProp Error:0
+Neuron: (0, 3) backProp Error:0
+Number of lines: 123
+Random Line91
+
+forwardPass:
+
+Neuron: (0, 0) Activation:6.4
+Neuron: (0, 1) Activation:3.2
+Neuron: (0, 2) Activation:5.3
+Neuron: (0, 3) Activation:2.3
+Neuron: (1, 0) Activation:0
+Neuron: (1, 1) Activation:0
+Neuron: (1, 2) Activation:0
+Neuron: (1, 3) Activation:0
+Neuron: (1, 4) Activation:0
+Neuron: (1, 5) Activation:0
+Neuron: (1, 6) Activation:0
+Neuron: (1, 7) Activation:0
+Neuron: (2, 0) Activation:0
+Neuron: (2, 1) Activation:0
+Neuron: (2, 2) Activation:0
+Neuron: (2, 3) Activation:0
+Neuron: (2, 4) Activation:0
+Neuron: (2, 5) Activation:0
+Neuron: (2, 6) Activation:0
+Neuron: (2, 7) Activation:0
+Neuron: (3, 0) Activation:0
+Neuron: (3, 1) Activation:0
+Neuron: (3, 2) Activation:0
+BackProp:
+Neuron: (3, 0) backProp:0
+Neuron: (3, 1) backProp:0
+Neuron: (3, 2) backProp:-0
+Neuron: (2, 0) backProp Error:0
+Neuron: (2, 1) backProp Error:0
+Neuron: (2, 2) backProp Error:0
+Neuron: (2, 3) backProp Error:0
+Neuron: (2, 4) backProp Error:0
+Neuron: (2, 5) backProp Error:0
+Neuron: (2, 6) backProp Error:0
+Neuron: (2, 7) backProp Error:0
+Neuron: (1, 0) backProp Error:0
+Neuron: (1, 1) backProp Error:0
+Neuron: (1, 2) backProp Error:0
+Neuron: (1, 3) backProp Error:0
+Neuron: (1, 4) backProp Error:0
+Neuron: (1, 5) backProp Error:0
+Neuron: (1, 6) backProp Error:0
+Neuron: (1, 7) backProp Error:0
+Neuron: (0, 0) backProp Error:0
+Neuron: (0, 1) backProp Error:0
+Neuron: (0, 2) backProp Error:0
+Neuron: (0, 3) backProp Error:0
+Number of lines: 122
+Random Line6
+
+forwardPass:
+
+Neuron: (0, 0) Activation:5
+Neuron: (0, 1) Activation:3.4
+Neuron: (0, 2) Activation:1.5
+Neuron: (0, 3) Activation:0.2
+Neuron: (1, 0) Activation:0
+Neuron: (1, 1) Activation:0
+Neuron: (1, 2) Activation:0
+Neuron: (1, 3) Activation:0
+Neuron: (1, 4) Activation:0
+Neuron: (1, 5) Activation:0
+Neuron: (1, 6) Activation:0
+Neuron: (1, 7) Activation:0
+Neuron: (2, 0) Activation:0
+Neuron: (2, 1) Activation:0
+Neuron: (2, 2) Activation:0
+Neuron: (2, 3) Activation:0
+Neuron: (2, 4) Activation:0
+Neuron: (2, 5) Activation:0
+Neuron: (2, 6) Activation:0
+Neuron: (2, 7) Activation:0
+Neuron: (3, 0) Activation:0
+Neuron: (3, 1) Activation:0
+Neuron: (3, 2) Activation:0
+BackProp:
+Neuron: (3, 0) backProp:-0
+Neuron: (3, 1) backProp:0
+Neuron: (3, 2) backProp:0
+Neuron: (2, 0) backProp Error:0
+Neuron: (2, 1) backProp Error:0
+Neuron: (2, 2) backProp Error:0
+Neuron: (2, 3) backProp Error:0
+Neuron: (2, 4) backProp Error:0
+Neuron: (2, 5) backProp Error:0
+Neuron: (2, 6) backProp Error:0
+Neuron: (2, 7) backProp Error:0
+Neuron: (1, 0) backProp Error:0
+Neuron: (1, 1) backProp Error:0
+Neuron: (1, 2) backProp Error:0
+Neuron: (1, 3) backProp Error:0
+Neuron: (1, 4) backProp Error:0
+Neuron: (1, 5) backProp Error:0
+Neuron: (1, 6) backProp Error:0
+Neuron: (1, 7) backProp Error:0
+Neuron: (0, 0) backProp Error:0
+Neuron: (0, 1) backProp Error:0
+Neuron: (0, 2) backProp Error:0
+Neuron: (0, 3) backProp Error:0
+Number of lines: 121
+Random Line115
+
+forwardPass:
+
+Neuron: (0, 0) Activation:6.7
+Neuron: (0, 1) Activation:3.3
+Neuron: (0, 2) Activation:5.7
+Neuron: (0, 3) Activation:2.5
+Neuron: (1, 0) Activation:0
+Neuron: (1, 1) Activation:0
+Neuron: (1, 2) Activation:0
+Neuron: (1, 3) Activation:0
+Neuron: (1, 4) Activation:0
+Neuron: (1, 5) Activation:0
+Neuron: (1, 6) Activation:0
+Neuron: (1, 7) Activation:0
+Neuron: (2, 0) Activation:0
+Neuron: (2, 1) Activation:0
+Neuron: (2, 2) Activation:0
+Neuron: (2, 3) Activation:0
+Neuron: (2, 4) Activation:0
+Neuron: (2, 5) Activation:0
+Neuron: (2, 6) Activation:0
+Neuron: (2, 7) Activation:0
+Neuron: (3, 0) Activation:0
+Neuron: (3, 1) Activation:0
+Neuron: (3, 2) Activation:0
+BackProp:
+Neuron: (3, 0) backProp:0
+Neuron: (3, 1) backProp:0
+Neuron: (3, 2) backProp:-0
+Neuron: (2, 0) backProp Error:0
+Neuron: (2, 1) backProp Error:0
+Neuron: (2, 2) backProp Error:0
+Neuron: (2, 3) backProp Error:0
+Neuron: (2, 4) backProp Error:0
+Neuron: (2, 5) backProp Error:0
+Neuron: (2, 6) backProp Error:0
+Neuron: (2, 7) backProp Error:0
+Neuron: (1, 0) backProp Error:0
+Neuron: (1, 1) backProp Error:0
+Neuron: (1, 2) backProp Error:0
+Neuron: (1, 3) backProp Error:0
+Neuron: (1, 4) backProp Error:0
+Neuron: (1, 5) backProp Error:0
+Neuron: (1, 6) backProp Error:0
+Neuron: (1, 7) backProp Error:0
+Neuron: (0, 0) backProp Error:0
+Neuron: (0, 1) backProp Error:0
+Neuron: (0, 2) backProp Error:0
+Neuron: (0, 3) backProp Error:0
+Number of lines: 120
+Random Line43
+
+forwardPass:
+
+Neuron: (0, 0) Activation:5.7
+Neuron: (0, 1) Activation:2.8
+Neuron: (0, 2) Activation:4.5
+Neuron: (0, 3) Activation:1.3
+Neuron: (1, 0) Activation:0
+Neuron: (1, 1) Activation:0
+Neuron: (1, 2) Activation:0
+Neuron: (1, 3) Activation:0
+Neuron: (1, 4) Activation:0
+Neuron: (1, 5) Activation:0
+Neuron: (1, 6) Activation:0
+Neuron: (1, 7) Activation:0
+Neuron: (2, 0) Activation:0
+Neuron: (2, 1) Activation:0
+Neuron: (2, 2) Activation:0
+Neuron: (2, 3) Activation:0
+Neuron: (2, 4) Activation:0
+Neuron: (2, 5) Activation:0
+Neuron: (2, 6) Activation:0
+Neuron: (2, 7) Activation:0
+Neuron: (3, 0) Activation:0
+Neuron: (3, 1) Activation:0
+Neuron: (3, 2) Activation:0
+BackProp:
+Neuron: (3, 0) backProp:0
+Neuron: (3, 1) backProp:-0
+Neuron: (3, 2) backProp:0
+Neuron: (2, 0) backProp Error:0
+Neuron: (2, 1) backProp Error:0
+Neuron: (2, 2) backProp Error:0
+Neuron: (2, 3) backProp Error:0
+Neuron: (2, 4) backProp Error:0
+Neuron: (2, 5) backProp Error:0
+Neuron: (2, 6) backProp Error:0
+Neuron: (2, 7) backProp Error:0
+Neuron: (1, 0) backProp Error:0
+Neuron: (1, 1) backProp Error:0
+Neuron: (1, 2) backProp Error:0
+Neuron: (1, 3) backProp Error:0
+Neuron: (1, 4) backProp Error:0
+Neuron: (1, 5) backProp Error:0
+Neuron: (1, 6) backProp Error:0
+Neuron: (1, 7) backProp Error:0
+Neuron: (0, 0) backProp Error:0
+Neuron: (0, 1) backProp Error:0
+Neuron: (0, 2) backProp Error:0
+Neuron: (0, 3) backProp Error:0
+Number of lines: 119
+Random Line2
+
+forwardPass:
+
+Neuron: (0, 0) Activation:4.6
+Neuron: (0, 1) Activation:3.1
+Neuron: (0, 2) Activation:1.5
+Neuron: (0, 3) Activation:0.2
+Neuron: (1, 0) Activation:0
+Neuron: (1, 1) Activation:0
+Neuron: (1, 2) Activation:0
+Neuron: (1, 3) Activation:0
+Neuron: (1, 4) Activation:0
+Neuron: (1, 5) Activation:0
+Neuron: (1, 6) Activation:0
+Neuron: (1, 7) Activation:0
+Neuron: (2, 0) Activation:0
+Neuron: (2, 1) Activation:0
+Neuron: (2, 2) Activation:0
+Neuron: (2, 3) Activation:0
+Neuron: (2, 4) Activation:0
+Neuron: (2, 5) Activation:0
+Neuron: (2, 6) Activation:0
+Neuron: (2, 7) Activation:0
+Neuron: (3, 0) Activation:0
+Neuron: (3, 1) Activation:0
+Neuron: (3, 2) Activation:0
+BackProp:
+Neuron: (3, 0) backProp:-0
+Neuron: (3, 1) backProp:0
+Neuron: (3, 2) backProp:0
+Neuron: (2, 0) backProp Error:0
+Neuron: (2, 1) backProp Error:0
+Neuron: (2, 2) backProp Error:0
+Neuron: (2, 3) backProp Error:0
+Neuron: (2, 4) backProp Error:0
+Neuron: (2, 5) backProp Error:0
+Neuron: (2, 6) backProp Error:0
+Neuron: (2, 7) backProp Error:0
+Neuron: (1, 0) backProp Error:0
+Neuron: (1, 1) backProp Error:0
+Neuron: (1, 2) backProp Error:0
+Neuron: (1, 3) backProp Error:0
+Neuron: (1, 4) backProp Error:0
+Neuron: (1, 5) backProp Error:0
+Neuron: (1, 6) backProp Error:0
+Neuron: (1, 7) backProp Error:0
+Neuron: (0, 0) backProp Error:0
+Neuron: (0, 1) backProp Error:0
+Neuron: (0, 2) backProp Error:0
+Neuron: (0, 3) backProp Error:0
+Number of lines: 118
+Random Line95
+
+forwardPass:
+
+Neuron: (0, 0) Activation:6.7
+Neuron: (0, 1) Activation:3.3
+Neuron: (0, 2) Activation:5.7
+Neuron: (0, 3) Activation:2.1
+Neuron: (1, 0) Activation:0
+Neuron: (1, 1) Activation:0
+Neuron: (1, 2) Activation:0
+Neuron: (1, 3) Activation:0
+Neuron: (1, 4) Activation:0
+Neuron: (1, 5) Activation:0
+Neuron: (1, 6) Activation:0
+Neuron: (1, 7) Activation:0
+Neuron: (2, 0) Activation:0
+Neuron: (2, 1) Activation:0
+Neuron: (2, 2) Activation:0
+Neuron: (2, 3) Activation:0
+Neuron: (2, 4) Activation:0
+Neuron: (2, 5) Activation:0
+Neuron: (2, 6) Activation:0
+Neuron: (2, 7) Activation:0
+Neuron: (3, 0) Activation:0
+Neuron: (3, 1) Activation:0
+Neuron: (3, 2) Activation:0
+BackProp:
+Neuron: (3, 0) backProp:0
+Neuron: (3, 1) backProp:0
+Neuron: (3, 2) backProp:-0
+Neuron: (2, 0) backProp Error:0
+Neuron: (2, 1) backProp Error:0
+Neuron: (2, 2) backProp Error:0
+Neuron: (2, 3) backProp Error:0
+Neuron: (2, 4) backProp Error:0
+Neuron: (2, 5) backProp Error:0
+Neuron: (2, 6) backProp Error:0
+Neuron: (2, 7) backProp Error:0
+Neuron: (1, 0) backProp Error:0
+Neuron: (1, 1) backProp Error:0
+Neuron: (1, 2) backProp Error:0
+Neuron: (1, 3) backProp Error:0
+Neuron: (1, 4) backProp Error:0
+Neuron: (1, 5) backProp Error:0
+Neuron: (1, 6) backProp Error:0
+Neuron: (1, 7) backProp Error:0
+Neuron: (0, 0) backProp Error:0
+Neuron: (0, 1) backProp Error:0
+Neuron: (0, 2) backProp Error:0
+Neuron: (0, 3) backProp Error:0
+Number of lines: 117
+Random Line53
+
+forwardPass:
+
+Neuron: (0, 0) Activation:6.1
+Neuron: (0, 1) Activation:2.8
+Neuron: (0, 2) Activation:4
+Neuron: (0, 3) Activation:1.3
+Neuron: (1, 0) Activation:0
+Neuron: (1, 1) Activation:0
+Neuron: (1, 2) Activation:0
+Neuron: (1, 3) Activation:0
+Neuron: (1, 4) Activation:0
+Neuron: (1, 5) Activation:0
+Neuron: (1, 6) Activation:0
+Neuron: (1, 7) Activation:0
+Neuron: (2, 0) Activation:0
+Neuron: (2, 1) Activation:0
+Neuron: (2, 2) Activation:0
+Neuron: (2, 3) Activation:0
+Neuron: (2, 4) Activation:0
+Neuron: (2, 5) Activation:0
+Neuron: (2, 6) Activation:0
+Neuron: (2, 7) Activation:0
+Neuron: (3, 0) Activation:0
+Neuron: (3, 1) Activation:0
+Neuron: (3, 2) Activation:0
+BackProp:
+Neuron: (3, 0) backProp:0
+Neuron: (3, 1) backProp:-0
+Neuron: (3, 2) backProp:0
+Neuron: (2, 0) backProp Error:0
+Neuron: (2, 1) backProp Error:0
+Neuron: (2, 2) backProp Error:0
+Neuron: (2, 3) backProp Error:0
+Neuron: (2, 4) backProp Error:0
+Neuron: (2, 5) backProp Error:0
+Neuron: (2, 6) backProp Error:0
+Neuron: (2, 7) backProp Error:0
+Neuron: (1, 0) backProp Error:0
+Neuron: (1, 1) backProp Error:0
+Neuron: (1, 2) backProp Error:0
+Neuron: (1, 3) backProp Error:0
+Neuron: (1, 4) backProp Error:0
+Neuron: (1, 5) backProp Error:0
+Neuron: (1, 6) backProp Error:0
+Neuron: (1, 7) backProp Error:0
+Neuron: (0, 0) backProp Error:0
+Neuron: (0, 1) backProp Error:0
+Neuron: (0, 2) backProp Error:0
+Neuron: (0, 3) backProp Error:0
+Number of lines: 116
+Random Line103
+
+forwardPass:
+
+Neuron: (0, 0) Activation:7.7
+Neuron: (0, 1) Activation:3
+Neuron: (0, 2) Activation:6.1
+Neuron: (0, 3) Activation:2.3
+Neuron: (1, 0) Activation:0
+Neuron: (1, 1) Activation:0
+Neuron: (1, 2) Activation:0
+Neuron: (1, 3) Activation:0
+Neuron: (1, 4) Activation:0
+Neuron: (1, 5) Activation:0
+Neuron: (1, 6) Activation:0
+Neuron: (1, 7) Activation:0
+Neuron: (2, 0) Activation:0
+Neuron: (2, 1) Activation:0
+Neuron: (2, 2) Activation:0
+Neuron: (2, 3) Activation:0
+Neuron: (2, 4) Activation:0
+Neuron: (2, 5) Activation:0
+Neuron: (2, 6) Activation:0
+Neuron: (2, 7) Activation:0
+Neuron: (3, 0) Activation:0
+Neuron: (3, 1) Activation:0
+Neuron: (3, 2) Activation:0
+BackProp:
+Neuron: (3, 0) backProp:0
+Neuron: (3, 1) backProp:0
+Neuron: (3, 2) backProp:-0
+Neuron: (2, 0) backProp Error:0
+Neuron: (2, 1) backProp Error:0
+Neuron: (2, 2) backProp Error:0
+Neuron: (2, 3) backProp Error:0
+Neuron: (2, 4) backProp Error:0
+Neuron: (2, 5) backProp Error:0
+Neuron: (2, 6) backProp Error:0
+Neuron: (2, 7) backProp Error:0
+Neuron: (1, 0) backProp Error:0
+Neuron: (1, 1) backProp Error:0
+Neuron: (1, 2) backProp Error:0
+Neuron: (1, 3) backProp Error:0
+Neuron: (1, 4) backProp Error:0
+Neuron: (1, 5) backProp Error:0
+Neuron: (1, 6) backProp Error:0
+Neuron: (1, 7) backProp Error:0
+Neuron: (0, 0) backProp Error:0
+Neuron: (0, 1) backProp Error:0
+Neuron: (0, 2) backProp Error:0
+Neuron: (0, 3) backProp Error:0
+Number of lines: 115
+Random Line48
+
+forwardPass:
+
+Neuron: (0, 0) Activation:5.6
+Neuron: (0, 1) Activation:2.9
+Neuron: (0, 2) Activation:3.6
+Neuron: (0, 3) Activation:1.3
+Neuron: (1, 0) Activation:0
+Neuron: (1, 1) Activation:0
+Neuron: (1, 2) Activation:0
+Neuron: (1, 3) Activation:0
+Neuron: (1, 4) Activation:0
+Neuron: (1, 5) Activation:0
+Neuron: (1, 6) Activation:0
+Neuron: (1, 7) Activation:0
+Neuron: (2, 0) Activation:0
+Neuron: (2, 1) Activation:0
+Neuron: (2, 2) Activation:0
+Neuron: (2, 3) Activation:0
+Neuron: (2, 4) Activation:0
+Neuron: (2, 5) Activation:0
+Neuron: (2, 6) Activation:0
+Neuron: (2, 7) Activation:0
+Neuron: (3, 0) Activation:0
+Neuron: (3, 1) Activation:0
+Neuron: (3, 2) Activation:0
+BackProp:
+Neuron: (3, 0) backProp:0
+Neuron: (3, 1) backProp:-0
+Neuron: (3, 2) backProp:0
+Neuron: (2, 0) backProp Error:0
+Neuron: (2, 1) backProp Error:0
+Neuron: (2, 2) backProp Error:0
+Neuron: (2, 3) backProp Error:0
+Neuron: (2, 4) backProp Error:0
+Neuron: (2, 5) backProp Error:0
+Neuron: (2, 6) backProp Error:0
+Neuron: (2, 7) backProp Error:0
+Neuron: (1, 0) backProp Error:0
+Neuron: (1, 1) backProp Error:0
+Neuron: (1, 2) backProp Error:0
+Neuron: (1, 3) backProp Error:0
+Neuron: (1, 4) backProp Error:0
+Neuron: (1, 5) backProp Error:0
+Neuron: (1, 6) backProp Error:0
+Neuron: (1, 7) backProp Error:0
+Neuron: (0, 0) backProp Error:0
+Neuron: (0, 1) backProp Error:0
+Neuron: (0, 2) backProp Error:0
+Neuron: (0, 3) backProp Error:0
+Number of lines: 114
+Random Line74
+
+forwardPass:
+
+Neuron: (0, 0) Activation:5.7
+Neuron: (0, 1) Activation:2.8
+Neuron: (0, 2) Activation:4.1
+Neuron: (0, 3) Activation:1.3
+Neuron: (1, 0) Activation:0
+Neuron: (1, 1) Activation:0
+Neuron: (1, 2) Activation:0
+Neuron: (1, 3) Activation:0
+Neuron: (1, 4) Activation:0
+Neuron: (1, 5) Activation:0
+Neuron: (1, 6) Activation:0
+Neuron: (1, 7) Activation:0
+Neuron: (2, 0) Activation:0
+Neuron: (2, 1) Activation:0
+Neuron: (2, 2) Activation:0
+Neuron: (2, 3) Activation:0
+Neuron: (2, 4) Activation:0
+Neuron: (2, 5) Activation:0
+Neuron: (2, 6) Activation:0
+Neuron: (2, 7) Activation:0
+Neuron: (3, 0) Activation:0
+Neuron: (3, 1) Activation:0
+Neuron: (3, 2) Activation:0
+BackProp:
+Neuron: (3, 0) backProp:0
+Neuron: (3, 1) backProp:-0
+Neuron: (3, 2) backProp:0
+Neuron: (2, 0) backProp Error:0
+Neuron: (2, 1) backProp Error:0
+Neuron: (2, 2) backProp Error:0
+Neuron: (2, 3) backProp Error:0
+Neuron: (2, 4) backProp Error:0
+Neuron: (2, 5) backProp Error:0
+Neuron: (2, 6) backProp Error:0
+Neuron: (2, 7) backProp Error:0
+Neuron: (1, 0) backProp Error:0
+Neuron: (1, 1) backProp Error:0
+Neuron: (1, 2) backProp Error:0
+Neuron: (1, 3) backProp Error:0
+Neuron: (1, 4) backProp Error:0
+Neuron: (1, 5) backProp Error:0
+Neuron: (1, 6) backProp Error:0
+Neuron: (1, 7) backProp Error:0
+Neuron: (0, 0) backProp Error:0
+Neuron: (0, 1) backProp Error:0
+Neuron: (0, 2) backProp Error:0
+Neuron: (0, 3) backProp Error:0
+Number of lines: 113
+Random Line111
+
+forwardPass:
+
+Neuron: (0, 0) Activation:5.9
+Neuron: (0, 1) Activation:3
+Neuron: (0, 2) Activation:5.1
+Neuron: (0, 3) Activation:1.8
+Neuron: (1, 0) Activation:0
+Neuron: (1, 1) Activation:0
+Neuron: (1, 2) Activation:0
+Neuron: (1, 3) Activation:0
+Neuron: (1, 4) Activation:0
+Neuron: (1, 5) Activation:0
+Neuron: (1, 6) Activation:0
+Neuron: (1, 7) Activation:0
+Neuron: (2, 0) Activation:0
+Neuron: (2, 1) Activation:0
+Neuron: (2, 2) Activation:0
+Neuron: (2, 3) Activation:0
+Neuron: (2, 4) Activation:0
+Neuron: (2, 5) Activation:0
+Neuron: (2, 6) Activation:0
+Neuron: (2, 7) Activation:0
+Neuron: (3, 0) Activation:0
+Neuron: (3, 1) Activation:0
+Neuron: (3, 2) Activation:0
+BackProp:
+Neuron: (3, 0) backProp:0
+Neuron: (3, 1) backProp:0
+Neuron: (3, 2) backProp:-0
+Neuron: (2, 0) backProp Error:0
+Neuron: (2, 1) backProp Error:0
+Neuron: (2, 2) backProp Error:0
+Neuron: (2, 3) backProp Error:0
+Neuron: (2, 4) backProp Error:0
+Neuron: (2, 5) backProp Error:0
+Neuron: (2, 6) backProp Error:0
+Neuron: (2, 7) backProp Error:0
+Neuron: (1, 0) backProp Error:0
+Neuron: (1, 1) backProp Error:0
+Neuron: (1, 2) backProp Error:0
+Neuron: (1, 3) backProp Error:0
+Neuron: (1, 4) backProp Error:0
+Neuron: (1, 5) backProp Error:0
+Neuron: (1, 6) backProp Error:0
+Neuron: (1, 7) backProp Error:0
+Neuron: (0, 0) backProp Error:0
+Neuron: (0, 1) backProp Error:0
+Neuron: (0, 2) backProp Error:0
+Neuron: (0, 3) backProp Error:0
+Number of lines: 112
+Random Line71
+
+forwardPass:
+
+Neuron: (0, 0) Activation:5.7
+Neuron: (0, 1) Activation:3
+Neuron: (0, 2) Activation:4.2
+Neuron: (0, 3) Activation:1.2
+Neuron: (1, 0) Activation:0
+Neuron: (1, 1) Activation:0
+Neuron: (1, 2) Activation:0
+Neuron: (1, 3) Activation:0
+Neuron: (1, 4) Activation:0
+Neuron: (1, 5) Activation:0
+Neuron: (1, 6) Activation:0
+Neuron: (1, 7) Activation:0
+Neuron: (2, 0) Activation:0
+Neuron: (2, 1) Activation:0
+Neuron: (2, 2) Activation:0
+Neuron: (2, 3) Activation:0
+Neuron: (2, 4) Activation:0
+Neuron: (2, 5) Activation:0
+Neuron: (2, 6) Activation:0
+Neuron: (2, 7) Activation:0
+Neuron: (3, 0) Activation:0
+Neuron: (3, 1) Activation:0
+Neuron: (3, 2) Activation:0
+BackProp:
+Neuron: (3, 0) backProp:0
+Neuron: (3, 1) backProp:-0
+Neuron: (3, 2) backProp:0
+Neuron: (2, 0) backProp Error:0
+Neuron: (2, 1) backProp Error:0
+Neuron: (2, 2) backProp Error:0
+Neuron: (2, 3) backProp Error:0
+Neuron: (2, 4) backProp Error:0
+Neuron: (2, 5) backProp Error:0
+Neuron: (2, 6) backProp Error:0
+Neuron: (2, 7) backProp Error:0
+Neuron: (1, 0) backProp Error:0
+Neuron: (1, 1) backProp Error:0
+Neuron: (1, 2) backProp Error:0
+Neuron: (1, 3) backProp Error:0
+Neuron: (1, 4) backProp Error:0
+Neuron: (1, 5) backProp Error:0
+Neuron: (1, 6) backProp Error:0
+Neuron: (1, 7) backProp Error:0
+Neuron: (0, 0) backProp Error:0
+Neuron: (0, 1) backProp Error:0
+Neuron: (0, 2) backProp Error:0
+Neuron: (0, 3) backProp Error:0
+Number of lines: 111
+Random Line39
+
+forwardPass:
+
+Neuron: (0, 0) Activation:6.9
+Neuron: (0, 1) Activation:3.1
+Neuron: (0, 2) Activation:4.9
+Neuron: (0, 3) Activation:1.5
+Neuron: (1, 0) Activation:0
+Neuron: (1, 1) Activation:0
+Neuron: (1, 2) Activation:0
+Neuron: (1, 3) Activation:0
+Neuron: (1, 4) Activation:0
+Neuron: (1, 5) Activation:0
+Neuron: (1, 6) Activation:0
+Neuron: (1, 7) Activation:0
+Neuron: (2, 0) Activation:0
+Neuron: (2, 1) Activation:0
+Neuron: (2, 2) Activation:0
+Neuron: (2, 3) Activation:0
+Neuron: (2, 4) Activation:0
+Neuron: (2, 5) Activation:0
+Neuron: (2, 6) Activation:0
+Neuron: (2, 7) Activation:0
+Neuron: (3, 0) Activation:0
+Neuron: (3, 1) Activation:0
+Neuron: (3, 2) Activation:0
+BackProp:
+Neuron: (3, 0) backProp:0
+Neuron: (3, 1) backProp:-0
+Neuron: (3, 2) backProp:0
+Neuron: (2, 0) backProp Error:0
+Neuron: (2, 1) backProp Error:0
+Neuron: (2, 2) backProp Error:0
+Neuron: (2, 3) backProp Error:0
+Neuron: (2, 4) backProp Error:0
+Neuron: (2, 5) backProp Error:0
+Neuron: (2, 6) backProp Error:0
+Neuron: (2, 7) backProp Error:0
+Neuron: (1, 0) backProp Error:0
+Neuron: (1, 1) backProp Error:0
+Neuron: (1, 2) backProp Error:0
+Neuron: (1, 3) backProp Error:0
+Neuron: (1, 4) backProp Error:0
+Neuron: (1, 5) backProp Error:0
+Neuron: (1, 6) backProp Error:0
+Neuron: (1, 7) backProp Error:0
+Neuron: (0, 0) backProp Error:0
+Neuron: (0, 1) backProp Error:0
+Neuron: (0, 2) backProp Error:0
+Neuron: (0, 3) backProp Error:0
+Number of lines: 110
+Random Line73
+
+forwardPass:
+
+Neuron: (0, 0) Activation:5.8
+Neuron: (0, 1) Activation:2.7
+Neuron: (0, 2) Activation:5.1
+Neuron: (0, 3) Activation:1.9
+Neuron: (1, 0) Activation:0
+Neuron: (1, 1) Activation:0
+Neuron: (1, 2) Activation:0
+Neuron: (1, 3) Activation:0
+Neuron: (1, 4) Activation:0
+Neuron: (1, 5) Activation:0
+Neuron: (1, 6) Activation:0
+Neuron: (1, 7) Activation:0
+Neuron: (2, 0) Activation:0
+Neuron: (2, 1) Activation:0
+Neuron: (2, 2) Activation:0
+Neuron: (2, 3) Activation:0
+Neuron: (2, 4) Activation:0
+Neuron: (2, 5) Activation:0
+Neuron: (2, 6) Activation:0
+Neuron: (2, 7) Activation:0
+Neuron: (3, 0) Activation:0
+Neuron: (3, 1) Activation:0
+Neuron: (3, 2) Activation:0
+BackProp:
+Neuron: (3, 0) backProp:0
+Neuron: (3, 1) backProp:0
+Neuron: (3, 2) backProp:-0
+Neuron: (2, 0) backProp Error:0
+Neuron: (2, 1) backProp Error:0
+Neuron: (2, 2) backProp Error:0
+Neuron: (2, 3) backProp Error:0
+Neuron: (2, 4) backProp Error:0
+Neuron: (2, 5) backProp Error:0
+Neuron: (2, 6) backProp Error:0
+Neuron: (2, 7) backProp Error:0
+Neuron: (1, 0) backProp Error:0
+Neuron: (1, 1) backProp Error:0
+Neuron: (1, 2) backProp Error:0
+Neuron: (1, 3) backProp Error:0
+Neuron: (1, 4) backProp Error:0
+Neuron: (1, 5) backProp Error:0
+Neuron: (1, 6) backProp Error:0
+Neuron: (1, 7) backProp Error:0
+Neuron: (0, 0) backProp Error:0
+Neuron: (0, 1) backProp Error:0
+Neuron: (0, 2) backProp Error:0
+Neuron: (0, 3) backProp Error:0
+Number of lines: 109
+Random Line67
+
+forwardPass:
+
+Neuron: (0, 0) Activation:6.1
+Neuron: (0, 1) Activation:3
+Neuron: (0, 2) Activation:4.6
+Neuron: (0, 3) Activation:1.4
+Neuron: (1, 0) Activation:0
+Neuron: (1, 1) Activation:0
+Neuron: (1, 2) Activation:0
+Neuron: (1, 3) Activation:0
+Neuron: (1, 4) Activation:0
+Neuron: (1, 5) Activation:0
+Neuron: (1, 6) Activation:0
+Neuron: (1, 7) Activation:0
+Neuron: (2, 0) Activation:0
+Neuron: (2, 1) Activation:0
+Neuron: (2, 2) Activation:0
+Neuron: (2, 3) Activation:0
+Neuron: (2, 4) Activation:0
+Neuron: (2, 5) Activation:0
+Neuron: (2, 6) Activation:0
+Neuron: (2, 7) Activation:0
+Neuron: (3, 0) Activation:0
+Neuron: (3, 1) Activation:0
+Neuron: (3, 2) Activation:0
+BackProp:
+Neuron: (3, 0) backProp:0
+Neuron: (3, 1) backProp:-0
+Neuron: (3, 2) backProp:0
+Neuron: (2, 0) backProp Error:0
+Neuron: (2, 1) backProp Error:0
+Neuron: (2, 2) backProp Error:0
+Neuron: (2, 3) backProp Error:0
+Neuron: (2, 4) backProp Error:0
+Neuron: (2, 5) backProp Error:0
+Neuron: (2, 6) backProp Error:0
+Neuron: (2, 7) backProp Error:0
+Neuron: (1, 0) backProp Error:0
+Neuron: (1, 1) backProp Error:0
+Neuron: (1, 2) backProp Error:0
+Neuron: (1, 3) backProp Error:0
+Neuron: (1, 4) backProp Error:0
+Neuron: (1, 5) backProp Error:0
+Neuron: (1, 6) backProp Error:0
+Neuron: (1, 7) backProp Error:0
+Neuron: (0, 0) backProp Error:0
+Neuron: (0, 1) backProp Error:0
+Neuron: (0, 2) backProp Error:0
+Neuron: (0, 3) backProp Error:0
+Number of lines: 108
+Random Line104
+
+forwardPass:
+
+Neuron: (0, 0) Activation:6.7
+Neuron: (0, 1) Activation:3
+Neuron: (0, 2) Activation:5.2
+Neuron: (0, 3) Activation:2.3
+Neuron: (1, 0) Activation:0
+Neuron: (1, 1) Activation:0
+Neuron: (1, 2) Activation:0
+Neuron: (1, 3) Activation:0
+Neuron: (1, 4) Activation:0
+Neuron: (1, 5) Activation:0
+Neuron: (1, 6) Activation:0
+Neuron: (1, 7) Activation:0
+Neuron: (2, 0) Activation:0
+Neuron: (2, 1) Activation:0
+Neuron: (2, 2) Activation:0
+Neuron: (2, 3) Activation:0
+Neuron: (2, 4) Activation:0
+Neuron: (2, 5) Activation:0
+Neuron: (2, 6) Activation:0
+Neuron: (2, 7) Activation:0
+Neuron: (3, 0) Activation:0
+Neuron: (3, 1) Activation:0
+Neuron: (3, 2) Activation:0
+BackProp:
+Neuron: (3, 0) backProp:0
+Neuron: (3, 1) backProp:0
+Neuron: (3, 2) backProp:-0
+Neuron: (2, 0) backProp Error:0
+Neuron: (2, 1) backProp Error:0
+Neuron: (2, 2) backProp Error:0
+Neuron: (2, 3) backProp Error:0
+Neuron: (2, 4) backProp Error:0
+Neuron: (2, 5) backProp Error:0
+Neuron: (2, 6) backProp Error:0
+Neuron: (2, 7) backProp Error:0
+Neuron: (1, 0) backProp Error:0
+Neuron: (1, 1) backProp Error:0
+Neuron: (1, 2) backProp Error:0
+Neuron: (1, 3) backProp Error:0
+Neuron: (1, 4) backProp Error:0
+Neuron: (1, 5) backProp Error:0
+Neuron: (1, 6) backProp Error:0
+Neuron: (1, 7) backProp Error:0
+Neuron: (0, 0) backProp Error:0
+Neuron: (0, 1) backProp Error:0
+Neuron: (0, 2) backProp Error:0
+Neuron: (0, 3) backProp Error:0
+Number of lines: 107
+Random Line75
+
+forwardPass:
+
+Neuron: (0, 0) Activation:4.9
+Neuron: (0, 1) Activation:2.5
+Neuron: (0, 2) Activation:4.5
+Neuron: (0, 3) Activation:1.7
+Neuron: (1, 0) Activation:0
+Neuron: (1, 1) Activation:0
+Neuron: (1, 2) Activation:0
+Neuron: (1, 3) Activation:0
+Neuron: (1, 4) Activation:0
+Neuron: (1, 5) Activation:0
+Neuron: (1, 6) Activation:0
+Neuron: (1, 7) Activation:0
+Neuron: (2, 0) Activation:0
+Neuron: (2, 1) Activation:0
+Neuron: (2, 2) Activation:0
+Neuron: (2, 3) Activation:0
+Neuron: (2, 4) Activation:0
+Neuron: (2, 5) Activation:0
+Neuron: (2, 6) Activation:0
+Neuron: (2, 7) Activation:0
+Neuron: (3, 0) Activation:0
+Neuron: (3, 1) Activation:0
+Neuron: (3, 2) Activation:0
+BackProp:
+Neuron: (3, 0) backProp:0
+Neuron: (3, 1) backProp:0
+Neuron: (3, 2) backProp:-0
+Neuron: (2, 0) backProp Error:0
+Neuron: (2, 1) backProp Error:0
+Neuron: (2, 2) backProp Error:0
+Neuron: (2, 3) backProp Error:0
+Neuron: (2, 4) backProp Error:0
+Neuron: (2, 5) backProp Error:0
+Neuron: (2, 6) backProp Error:0
+Neuron: (2, 7) backProp Error:0
+Neuron: (1, 0) backProp Error:0
+Neuron: (1, 1) backProp Error:0
+Neuron: (1, 2) backProp Error:0
+Neuron: (1, 3) backProp Error:0
+Neuron: (1, 4) backProp Error:0
+Neuron: (1, 5) backProp Error:0
+Neuron: (1, 6) backProp Error:0
+Neuron: (1, 7) backProp Error:0
+Neuron: (0, 0) backProp Error:0
+Neuron: (0, 1) backProp Error:0
+Neuron: (0, 2) backProp Error:0
+Neuron: (0, 3) backProp Error:0
+Number of lines: 106
+Random Line51
+
+forwardPass:
+
+Neuron: (0, 0) Activation:6.3
+Neuron: (0, 1) Activation:2.5
+Neuron: (0, 2) Activation:4.9
+Neuron: (0, 3) Activation:1.5
+Neuron: (1, 0) Activation:0
+Neuron: (1, 1) Activation:0
+Neuron: (1, 2) Activation:0
+Neuron: (1, 3) Activation:0
+Neuron: (1, 4) Activation:0
+Neuron: (1, 5) Activation:0
+Neuron: (1, 6) Activation:0
+Neuron: (1, 7) Activation:0
+Neuron: (2, 0) Activation:0
+Neuron: (2, 1) Activation:0
+Neuron: (2, 2) Activation:0
+Neuron: (2, 3) Activation:0
+Neuron: (2, 4) Activation:0
+Neuron: (2, 5) Activation:0
+Neuron: (2, 6) Activation:0
+Neuron: (2, 7) Activation:0
+Neuron: (3, 0) Activation:0
+Neuron: (3, 1) Activation:0
+Neuron: (3, 2) Activation:0
+BackProp:
+Neuron: (3, 0) backProp:0
+Neuron: (3, 1) backProp:-0
+Neuron: (3, 2) backProp:0
+Neuron: (2, 0) backProp Error:0
+Neuron: (2, 1) backProp Error:0
+Neuron: (2, 2) backProp Error:0
+Neuron: (2, 3) backProp Error:0
+Neuron: (2, 4) backProp Error:0
+Neuron: (2, 5) backProp Error:0
+Neuron: (2, 6) backProp Error:0
+Neuron: (2, 7) backProp Error:0
+Neuron: (1, 0) backProp Error:0
+Neuron: (1, 1) backProp Error:0
+Neuron: (1, 2) backProp Error:0
+Neuron: (1, 3) backProp Error:0
+Neuron: (1, 4) backProp Error:0
+Neuron: (1, 5) backProp Error:0
+Neuron: (1, 6) backProp Error:0
+Neuron: (1, 7) backProp Error:0
+Neuron: (0, 0) backProp Error:0
+Neuron: (0, 1) backProp Error:0
+Neuron: (0, 2) backProp Error:0
+Neuron: (0, 3) backProp Error:0
+Number of lines: 105
+Random Line96
+
+forwardPass:
+
+Neuron: (0, 0) Activation:6.4
+Neuron: (0, 1) Activation:3.1
+Neuron: (0, 2) Activation:5.5
+Neuron: (0, 3) Activation:1.8
+Neuron: (1, 0) Activation:0
+Neuron: (1, 1) Activation:0
+Neuron: (1, 2) Activation:0
+Neuron: (1, 3) Activation:0
+Neuron: (1, 4) Activation:0
+Neuron: (1, 5) Activation:0
+Neuron: (1, 6) Activation:0
+Neuron: (1, 7) Activation:0
+Neuron: (2, 0) Activation:0
+Neuron: (2, 1) Activation:0
+Neuron: (2, 2) Activation:0
+Neuron: (2, 3) Activation:0
+Neuron: (2, 4) Activation:0
+Neuron: (2, 5) Activation:0
+Neuron: (2, 6) Activation:0
+Neuron: (2, 7) Activation:0
+Neuron: (3, 0) Activation:0
+Neuron: (3, 1) Activation:0
+Neuron: (3, 2) Activation:0
+BackProp:
+Neuron: (3, 0) backProp:0
+Neuron: (3, 1) backProp:0
+Neuron: (3, 2) backProp:-0
+Neuron: (2, 0) backProp Error:0
+Neuron: (2, 1) backProp Error:0
+Neuron: (2, 2) backProp Error:0
+Neuron: (2, 3) backProp Error:0
+Neuron: (2, 4) backProp Error:0
+Neuron: (2, 5) backProp Error:0
+Neuron: (2, 6) backProp Error:0
+Neuron: (2, 7) backProp Error:0
+Neuron: (1, 0) backProp Error:0
+Neuron: (1, 1) backProp Error:0
+Neuron: (1, 2) backProp Error:0
+Neuron: (1, 3) backProp Error:0
+Neuron: (1, 4) backProp Error:0
+Neuron: (1, 5) backProp Error:0
+Neuron: (1, 6) backProp Error:0
+Neuron: (1, 7) backProp Error:0
+Neuron: (0, 0) backProp Error:0
+Neuron: (0, 1) backProp Error:0
+Neuron: (0, 2) backProp Error:0
+Neuron: (0, 3) backProp Error:0
+Number of lines: 104
+Random Line62
+
+forwardPass:
+
+Neuron: (0, 0) Activation:6.3
+Neuron: (0, 1) Activation:2.3
+Neuron: (0, 2) Activation:4.4
+Neuron: (0, 3) Activation:1.3
+Neuron: (1, 0) Activation:0
+Neuron: (1, 1) Activation:0
+Neuron: (1, 2) Activation:0
+Neuron: (1, 3) Activation:0
+Neuron: (1, 4) Activation:0
+Neuron: (1, 5) Activation:0
+Neuron: (1, 6) Activation:0
+Neuron: (1, 7) Activation:0
+Neuron: (2, 0) Activation:0
+Neuron: (2, 1) Activation:0
+Neuron: (2, 2) Activation:0
+Neuron: (2, 3) Activation:0
+Neuron: (2, 4) Activation:0
+Neuron: (2, 5) Activation:0
+Neuron: (2, 6) Activation:0
+Neuron: (2, 7) Activation:0
+Neuron: (3, 0) Activation:0
+Neuron: (3, 1) Activation:0
+Neuron: (3, 2) Activation:0
+BackProp:
+Neuron: (3, 0) backProp:0
+Neuron: (3, 1) backProp:-0
+Neuron: (3, 2) backProp:0
+Neuron: (2, 0) backProp Error:0
+Neuron: (2, 1) backProp Error:0
+Neuron: (2, 2) backProp Error:0
+Neuron: (2, 3) backProp Error:0
+Neuron: (2, 4) backProp Error:0
+Neuron: (2, 5) backProp Error:0
+Neuron: (2, 6) backProp Error:0
+Neuron: (2, 7) backProp Error:0
+Neuron: (1, 0) backProp Error:0
+Neuron: (1, 1) backProp Error:0
+Neuron: (1, 2) backProp Error:0
+Neuron: (1, 3) backProp Error:0
+Neuron: (1, 4) backProp Error:0
+Neuron: (1, 5) backProp Error:0
+Neuron: (1, 6) backProp Error:0
+Neuron: (1, 7) backProp Error:0
+Neuron: (0, 0) backProp Error:0
+Neuron: (0, 1) backProp Error:0
+Neuron: (0, 2) backProp Error:0
+Neuron: (0, 3) backProp Error:0
+Number of lines: 103
+Random Line45
+
+forwardPass:
+
+Neuron: (0, 0) Activation:6
+Neuron: (0, 1) Activation:2.2
+Neuron: (0, 2) Activation:4
+Neuron: (0, 3) Activation:1
+Neuron: (1, 0) Activation:0
+Neuron: (1, 1) Activation:0
+Neuron: (1, 2) Activation:0
+Neuron: (1, 3) Activation:0
+Neuron: (1, 4) Activation:0
+Neuron: (1, 5) Activation:0
+Neuron: (1, 6) Activation:0
+Neuron: (1, 7) Activation:0
+Neuron: (2, 0) Activation:0
+Neuron: (2, 1) Activation:0
+Neuron: (2, 2) Activation:0
+Neuron: (2, 3) Activation:0
+Neuron: (2, 4) Activation:0
+Neuron: (2, 5) Activation:0
+Neuron: (2, 6) Activation:0
+Neuron: (2, 7) Activation:0
+Neuron: (3, 0) Activation:0
+Neuron: (3, 1) Activation:0
+Neuron: (3, 2) Activation:0
+BackProp:
+Neuron: (3, 0) backProp:0
+Neuron: (3, 1) backProp:-0
+Neuron: (3, 2) backProp:0
+Neuron: (2, 0) backProp Error:0
+Neuron: (2, 1) backProp Error:0
+Neuron: (2, 2) backProp Error:0
+Neuron: (2, 3) backProp Error:0
+Neuron: (2, 4) backProp Error:0
+Neuron: (2, 5) backProp Error:0
+Neuron: (2, 6) backProp Error:0
+Neuron: (2, 7) backProp Error:0
+Neuron: (1, 0) backProp Error:0
+Neuron: (1, 1) backProp Error:0
+Neuron: (1, 2) backProp Error:0
+Neuron: (1, 3) backProp Error:0
+Neuron: (1, 4) backProp Error:0
+Neuron: (1, 5) backProp Error:0
+Neuron: (1, 6) backProp Error:0
+Neuron: (1, 7) backProp Error:0
+Neuron: (0, 0) backProp Error:0
+Neuron: (0, 1) backProp Error:0
+Neuron: (0, 2) backProp Error:0
+Neuron: (0, 3) backProp Error:0
+Number of lines: 102
+Random Line3
+
+forwardPass:
+
+Neuron: (0, 0) Activation:5.4
+Neuron: (0, 1) Activation:3.9
+Neuron: (0, 2) Activation:1.7
+Neuron: (0, 3) Activation:0.4
+Neuron: (1, 0) Activation:0
+Neuron: (1, 1) Activation:0
+Neuron: (1, 2) Activation:0
+Neuron: (1, 3) Activation:0
+Neuron: (1, 4) Activation:0
+Neuron: (1, 5) Activation:0
+Neuron: (1, 6) Activation:0
+Neuron: (1, 7) Activation:0
+Neuron: (2, 0) Activation:0
+Neuron: (2, 1) Activation:0
+Neuron: (2, 2) Activation:0
+Neuron: (2, 3) Activation:0
+Neuron: (2, 4) Activation:0
+Neuron: (2, 5) Activation:0
+Neuron: (2, 6) Activation:0
+Neuron: (2, 7) Activation:0
+Neuron: (3, 0) Activation:0
+Neuron: (3, 1) Activation:0
+Neuron: (3, 2) Activation:0
+BackProp:
+Neuron: (3, 0) backProp:-0
+Neuron: (3, 1) backProp:0
+Neuron: (3, 2) backProp:0
+Neuron: (2, 0) backProp Error:0
+Neuron: (2, 1) backProp Error:0
+Neuron: (2, 2) backProp Error:0
+Neuron: (2, 3) backProp Error:0
+Neuron: (2, 4) backProp Error:0
+Neuron: (2, 5) backProp Error:0
+Neuron: (2, 6) backProp Error:0
+Neuron: (2, 7) backProp Error:0
+Neuron: (1, 0) backProp Error:0
+Neuron: (1, 1) backProp Error:0
+Neuron: (1, 2) backProp Error:0
+Neuron: (1, 3) backProp Error:0
+Neuron: (1, 4) backProp Error:0
+Neuron: (1, 5) backProp Error:0
+Neuron: (1, 6) backProp Error:0
+Neuron: (1, 7) backProp Error:0
+Neuron: (0, 0) backProp Error:0
+Neuron: (0, 1) backProp Error:0
+Neuron: (0, 2) backProp Error:0
+Neuron: (0, 3) backProp Error:0
+Number of lines: 101
+Random Line78
+
+forwardPass:
+
+Neuron: (0, 0) Activation:7.7
+Neuron: (0, 1) Activation:2.6
+Neuron: (0, 2) Activation:6.9
+Neuron: (0, 3) Activation:2.3
+Neuron: (1, 0) Activation:0
+Neuron: (1, 1) Activation:0
+Neuron: (1, 2) Activation:0
+Neuron: (1, 3) Activation:0
+Neuron: (1, 4) Activation:0
+Neuron: (1, 5) Activation:0
+Neuron: (1, 6) Activation:0
+Neuron: (1, 7) Activation:0
+Neuron: (2, 0) Activation:0
+Neuron: (2, 1) Activation:0
+Neuron: (2, 2) Activation:0
+Neuron: (2, 3) Activation:0
+Neuron: (2, 4) Activation:0
+Neuron: (2, 5) Activation:0
+Neuron: (2, 6) Activation:0
+Neuron: (2, 7) Activation:0
+Neuron: (3, 0) Activation:0
+Neuron: (3, 1) Activation:0
+Neuron: (3, 2) Activation:0
+BackProp:
+Neuron: (3, 0) backProp:0
+Neuron: (3, 1) backProp:0
+Neuron: (3, 2) backProp:-0
+Neuron: (2, 0) backProp Error:0
+Neuron: (2, 1) backProp Error:0
+Neuron: (2, 2) backProp Error:0
+Neuron: (2, 3) backProp Error:0
+Neuron: (2, 4) backProp Error:0
+Neuron: (2, 5) backProp Error:0
+Neuron: (2, 6) backProp Error:0
+Neuron: (2, 7) backProp Error:0
+Neuron: (1, 0) backProp Error:0
+Neuron: (1, 1) backProp Error:0
+Neuron: (1, 2) backProp Error:0
+Neuron: (1, 3) backProp Error:0
+Neuron: (1, 4) backProp Error:0
+Neuron: (1, 5) backProp Error:0
+Neuron: (1, 6) backProp Error:0
+Neuron: (1, 7) backProp Error:0
+Neuron: (0, 0) backProp Error:0
+Neuron: (0, 1) backProp Error:0
+Neuron: (0, 2) backProp Error:0
+Neuron: (0, 3) backProp Error:0
+Number of lines: 100
+Random Line9
+
+forwardPass:
+
+Neuron: (0, 0) Activation:5.4
+Neuron: (0, 1) Activation:3.9
+Neuron: (0, 2) Activation:1.3
+Neuron: (0, 3) Activation:0.4
+Neuron: (1, 0) Activation:0
+Neuron: (1, 1) Activation:0
+Neuron: (1, 2) Activation:0
+Neuron: (1, 3) Activation:0
+Neuron: (1, 4) Activation:0
+Neuron: (1, 5) Activation:0
+Neuron: (1, 6) Activation:0
+Neuron: (1, 7) Activation:0
+Neuron: (2, 0) Activation:0
+Neuron: (2, 1) Activation:0
+Neuron: (2, 2) Activation:0
+Neuron: (2, 3) Activation:0
+Neuron: (2, 4) Activation:0
+Neuron: (2, 5) Activation:0
+Neuron: (2, 6) Activation:0
+Neuron: (2, 7) Activation:0
+Neuron: (3, 0) Activation:0
+Neuron: (3, 1) Activation:0
+Neuron: (3, 2) Activation:0
+BackProp:
+Neuron: (3, 0) backProp:-0
+Neuron: (3, 1) backProp:0
+Neuron: (3, 2) backProp:0
+Neuron: (2, 0) backProp Error:0
+Neuron: (2, 1) backProp Error:0
+Neuron: (2, 2) backProp Error:0
+Neuron: (2, 3) backProp Error:0
+Neuron: (2, 4) backProp Error:0
+Neuron: (2, 5) backProp Error:0
+Neuron: (2, 6) backProp Error:0
+Neuron: (2, 7) backProp Error:0
+Neuron: (1, 0) backProp Error:0
+Neuron: (1, 1) backProp Error:0
+Neuron: (1, 2) backProp Error:0
+Neuron: (1, 3) backProp Error:0
+Neuron: (1, 4) backProp Error:0
+Neuron: (1, 5) backProp Error:0
+Neuron: (1, 6) backProp Error:0
+Neuron: (1, 7) backProp Error:0
+Neuron: (0, 0) backProp Error:0
+Neuron: (0, 1) backProp Error:0
+Neuron: (0, 2) backProp Error:0
+Neuron: (0, 3) backProp Error:0
+Number of lines: 99
+Random Line77
+
+forwardPass:
+
+Neuron: (0, 0) Activation:6.9
+Neuron: (0, 1) Activation:3.2
+Neuron: (0, 2) Activation:5.7
+Neuron: (0, 3) Activation:2.3
+Neuron: (1, 0) Activation:0
+Neuron: (1, 1) Activation:0
+Neuron: (1, 2) Activation:0
+Neuron: (1, 3) Activation:0
+Neuron: (1, 4) Activation:0
+Neuron: (1, 5) Activation:0
+Neuron: (1, 6) Activation:0
+Neuron: (1, 7) Activation:0
+Neuron: (2, 0) Activation:0
+Neuron: (2, 1) Activation:0
+Neuron: (2, 2) Activation:0
+Neuron: (2, 3) Activation:0
+Neuron: (2, 4) Activation:0
+Neuron: (2, 5) Activation:0
+Neuron: (2, 6) Activation:0
+Neuron: (2, 7) Activation:0
+Neuron: (3, 0) Activation:0
+Neuron: (3, 1) Activation:0
+Neuron: (3, 2) Activation:0
+BackProp:
+Neuron: (3, 0) backProp:0
+Neuron: (3, 1) backProp:0
+Neuron: (3, 2) backProp:-0
+Neuron: (2, 0) backProp Error:0
+Neuron: (2, 1) backProp Error:0
+Neuron: (2, 2) backProp Error:0
+Neuron: (2, 3) backProp Error:0
+Neuron: (2, 4) backProp Error:0
+Neuron: (2, 5) backProp Error:0
+Neuron: (2, 6) backProp Error:0
+Neuron: (2, 7) backProp Error:0
+Neuron: (1, 0) backProp Error:0
+Neuron: (1, 1) backProp Error:0
+Neuron: (1, 2) backProp Error:0
+Neuron: (1, 3) backProp Error:0
+Neuron: (1, 4) backProp Error:0
+Neuron: (1, 5) backProp Error:0
+Neuron: (1, 6) backProp Error:0
+Neuron: (1, 7) backProp Error:0
+Neuron: (0, 0) backProp Error:0
+Neuron: (0, 1) backProp Error:0
+Neuron: (0, 2) backProp Error:0
+Neuron: (0, 3) backProp Error:0
+Number of lines: 98
+Random Line58
+
+forwardPass:
+
+Neuron: (0, 0) Activation:6.7
+Neuron: (0, 1) Activation:3.1
+Neuron: (0, 2) Activation:4.7
+Neuron: (0, 3) Activation:1.5
+Neuron: (1, 0) Activation:0
+Neuron: (1, 1) Activation:0
+Neuron: (1, 2) Activation:0
+Neuron: (1, 3) Activation:0
+Neuron: (1, 4) Activation:0
+Neuron: (1, 5) Activation:0
+Neuron: (1, 6) Activation:0
+Neuron: (1, 7) Activation:0
+Neuron: (2, 0) Activation:0
+Neuron: (2, 1) Activation:0
+Neuron: (2, 2) Activation:0
+Neuron: (2, 3) Activation:0
+Neuron: (2, 4) Activation:0
+Neuron: (2, 5) Activation:0
+Neuron: (2, 6) Activation:0
+Neuron: (2, 7) Activation:0
+Neuron: (3, 0) Activation:0
+Neuron: (3, 1) Activation:0
+Neuron: (3, 2) Activation:0
+BackProp:
+Neuron: (3, 0) backProp:0
+Neuron: (3, 1) backProp:-0
+Neuron: (3, 2) backProp:0
+Neuron: (2, 0) backProp Error:0
+Neuron: (2, 1) backProp Error:0
+Neuron: (2, 2) backProp Error:0
+Neuron: (2, 3) backProp Error:0
+Neuron: (2, 4) backProp Error:0
+Neuron: (2, 5) backProp Error:0
+Neuron: (2, 6) backProp Error:0
+Neuron: (2, 7) backProp Error:0
+Neuron: (1, 0) backProp Error:0
+Neuron: (1, 1) backProp Error:0
+Neuron: (1, 2) backProp Error:0
+Neuron: (1, 3) backProp Error:0
+Neuron: (1, 4) backProp Error:0
+Neuron: (1, 5) backProp Error:0
+Neuron: (1, 6) backProp Error:0
+Neuron: (1, 7) backProp Error:0
+Neuron: (0, 0) backProp Error:0
+Neuron: (0, 1) backProp Error:0
+Neuron: (0, 2) backProp Error:0
+Neuron: (0, 3) backProp Error:0
+Number of lines: 97
+Random Line18
+
+forwardPass:
+
+Neuron: (0, 0) Activation:4.7
+Neuron: (0, 1) Activation:3.2
+Neuron: (0, 2) Activation:1.6
+Neuron: (0, 3) Activation:0.2
+Neuron: (1, 0) Activation:0
+Neuron: (1, 1) Activation:0
+Neuron: (1, 2) Activation:0
+Neuron: (1, 3) Activation:0
+Neuron: (1, 4) Activation:0
+Neuron: (1, 5) Activation:0
+Neuron: (1, 6) Activation:0
+Neuron: (1, 7) Activation:0
+Neuron: (2, 0) Activation:0
+Neuron: (2, 1) Activation:0
+Neuron: (2, 2) Activation:0
+Neuron: (2, 3) Activation:0
+Neuron: (2, 4) Activation:0
+Neuron: (2, 5) Activation:0
+Neuron: (2, 6) Activation:0
+Neuron: (2, 7) Activation:0
+Neuron: (3, 0) Activation:0
+Neuron: (3, 1) Activation:0
+Neuron: (3, 2) Activation:0
+BackProp:
+Neuron: (3, 0) backProp:-0
+Neuron: (3, 1) backProp:0
+Neuron: (3, 2) backProp:0
+Neuron: (2, 0) backProp Error:0
+Neuron: (2, 1) backProp Error:0
+Neuron: (2, 2) backProp Error:0
+Neuron: (2, 3) backProp Error:0
+Neuron: (2, 4) backProp Error:0
+Neuron: (2, 5) backProp Error:0
+Neuron: (2, 6) backProp Error:0
+Neuron: (2, 7) backProp Error:0
+Neuron: (1, 0) backProp Error:0
+Neuron: (1, 1) backProp Error:0
+Neuron: (1, 2) backProp Error:0
+Neuron: (1, 3) backProp Error:0
+Neuron: (1, 4) backProp Error:0
+Neuron: (1, 5) backProp Error:0
+Neuron: (1, 6) backProp Error:0
+Neuron: (1, 7) backProp Error:0
+Neuron: (0, 0) backProp Error:0
+Neuron: (0, 1) backProp Error:0
+Neuron: (0, 2) backProp Error:0
+Neuron: (0, 3) backProp Error:0
+Number of lines: 96
+Random Line22
+
+forwardPass:
+
+Neuron: (0, 0) Activation:5.5
+Neuron: (0, 1) Activation:3.5
+Neuron: (0, 2) Activation:1.3
+Neuron: (0, 3) Activation:0.2
+Neuron: (1, 0) Activation:0
+Neuron: (1, 1) Activation:0
+Neuron: (1, 2) Activation:0
+Neuron: (1, 3) Activation:0
+Neuron: (1, 4) Activation:0
+Neuron: (1, 5) Activation:0
+Neuron: (1, 6) Activation:0
+Neuron: (1, 7) Activation:0
+Neuron: (2, 0) Activation:0
+Neuron: (2, 1) Activation:0
+Neuron: (2, 2) Activation:0
+Neuron: (2, 3) Activation:0
+Neuron: (2, 4) Activation:0
+Neuron: (2, 5) Activation:0
+Neuron: (2, 6) Activation:0
+Neuron: (2, 7) Activation:0
+Neuron: (3, 0) Activation:0
+Neuron: (3, 1) Activation:0
+Neuron: (3, 2) Activation:0
+BackProp:
+Neuron: (3, 0) backProp:-0
+Neuron: (3, 1) backProp:0
+Neuron: (3, 2) backProp:0
+Neuron: (2, 0) backProp Error:0
+Neuron: (2, 1) backProp Error:0
+Neuron: (2, 2) backProp Error:0
+Neuron: (2, 3) backProp Error:0
+Neuron: (2, 4) backProp Error:0
+Neuron: (2, 5) backProp Error:0
+Neuron: (2, 6) backProp Error:0
+Neuron: (2, 7) backProp Error:0
+Neuron: (1, 0) backProp Error:0
+Neuron: (1, 1) backProp Error:0
+Neuron: (1, 2) backProp Error:0
+Neuron: (1, 3) backProp Error:0
+Neuron: (1, 4) backProp Error:0
+Neuron: (1, 5) backProp Error:0
+Neuron: (1, 6) backProp Error:0
+Neuron: (1, 7) backProp Error:0
+Neuron: (0, 0) backProp Error:0
+Neuron: (0, 1) backProp Error:0
+Neuron: (0, 2) backProp Error:0
+Neuron: (0, 3) backProp Error:0
+Number of lines: 95
+Random Line1
+
+forwardPass:
+
+Neuron: (0, 0) Activation:4.7
+Neuron: (0, 1) Activation:3.2
+Neuron: (0, 2) Activation:1.3
+Neuron: (0, 3) Activation:0.2
+Neuron: (1, 0) Activation:0
+Neuron: (1, 1) Activation:0
+Neuron: (1, 2) Activation:0
+Neuron: (1, 3) Activation:0
+Neuron: (1, 4) Activation:0
+Neuron: (1, 5) Activation:0
+Neuron: (1, 6) Activation:0
+Neuron: (1, 7) Activation:0
+Neuron: (2, 0) Activation:0
+Neuron: (2, 1) Activation:0
+Neuron: (2, 2) Activation:0
+Neuron: (2, 3) Activation:0
+Neuron: (2, 4) Activation:0
+Neuron: (2, 5) Activation:0
+Neuron: (2, 6) Activation:0
+Neuron: (2, 7) Activation:0
+Neuron: (3, 0) Activation:0
+Neuron: (3, 1) Activation:0
+Neuron: (3, 2) Activation:0
+BackProp:
+Neuron: (3, 0) backProp:-0
+Neuron: (3, 1) backProp:0
+Neuron: (3, 2) backProp:0
+Neuron: (2, 0) backProp Error:0
+Neuron: (2, 1) backProp Error:0
+Neuron: (2, 2) backProp Error:0
+Neuron: (2, 3) backProp Error:0
+Neuron: (2, 4) backProp Error:0
+Neuron: (2, 5) backProp Error:0
+Neuron: (2, 6) backProp Error:0
+Neuron: (2, 7) backProp Error:0
+Neuron: (1, 0) backProp Error:0
+Neuron: (1, 1) backProp Error:0
+Neuron: (1, 2) backProp Error:0
+Neuron: (1, 3) backProp Error:0
+Neuron: (1, 4) backProp Error:0
+Neuron: (1, 5) backProp Error:0
+Neuron: (1, 6) backProp Error:0
+Neuron: (1, 7) backProp Error:0
+Neuron: (0, 0) backProp Error:0
+Neuron: (0, 1) backProp Error:0
+Neuron: (0, 2) backProp Error:0
+Neuron: (0, 3) backProp Error:0
+Number of lines: 94
+Random Line38
+
+forwardPass:
+
+Neuron: (0, 0) Activation:5
+Neuron: (0, 1) Activation:2
+Neuron: (0, 2) Activation:3.5
+Neuron: (0, 3) Activation:1
+Neuron: (1, 0) Activation:0
+Neuron: (1, 1) Activation:0
+Neuron: (1, 2) Activation:0
+Neuron: (1, 3) Activation:0
+Neuron: (1, 4) Activation:0
+Neuron: (1, 5) Activation:0
+Neuron: (1, 6) Activation:0
+Neuron: (1, 7) Activation:0
+Neuron: (2, 0) Activation:0
+Neuron: (2, 1) Activation:0
+Neuron: (2, 2) Activation:0
+Neuron: (2, 3) Activation:0
+Neuron: (2, 4) Activation:0
+Neuron: (2, 5) Activation:0
+Neuron: (2, 6) Activation:0
+Neuron: (2, 7) Activation:0
+Neuron: (3, 0) Activation:0
+Neuron: (3, 1) Activation:0
+Neuron: (3, 2) Activation:0
+BackProp:
+Neuron: (3, 0) backProp:0
+Neuron: (3, 1) backProp:-0
+Neuron: (3, 2) backProp:0
+Neuron: (2, 0) backProp Error:0
+Neuron: (2, 1) backProp Error:0
+Neuron: (2, 2) backProp Error:0
+Neuron: (2, 3) backProp Error:0
+Neuron: (2, 4) backProp Error:0
+Neuron: (2, 5) backProp Error:0
+Neuron: (2, 6) backProp Error:0
+Neuron: (2, 7) backProp Error:0
+Neuron: (1, 0) backProp Error:0
+Neuron: (1, 1) backProp Error:0
+Neuron: (1, 2) backProp Error:0
+Neuron: (1, 3) backProp Error:0
+Neuron: (1, 4) backProp Error:0
+Neuron: (1, 5) backProp Error:0
+Neuron: (1, 6) backProp Error:0
+Neuron: (1, 7) backProp Error:0
+Neuron: (0, 0) backProp Error:0
+Neuron: (0, 1) backProp Error:0
+Neuron: (0, 2) backProp Error:0
+Neuron: (0, 3) backProp Error:0
+Number of lines: 93
+Random Line5
+
+forwardPass:
+
+Neuron: (0, 0) Activation:4.8
+Neuron: (0, 1) Activation:3.4
+Neuron: (0, 2) Activation:1.6
+Neuron: (0, 3) Activation:0.2
+Neuron: (1, 0) Activation:0
+Neuron: (1, 1) Activation:0
+Neuron: (1, 2) Activation:0
+Neuron: (1, 3) Activation:0
+Neuron: (1, 4) Activation:0
+Neuron: (1, 5) Activation:0
+Neuron: (1, 6) Activation:0
+Neuron: (1, 7) Activation:0
+Neuron: (2, 0) Activation:0
+Neuron: (2, 1) Activation:0
+Neuron: (2, 2) Activation:0
+Neuron: (2, 3) Activation:0
+Neuron: (2, 4) Activation:0
+Neuron: (2, 5) Activation:0
+Neuron: (2, 6) Activation:0
+Neuron: (2, 7) Activation:0
+Neuron: (3, 0) Activation:0
+Neuron: (3, 1) Activation:0
+Neuron: (3, 2) Activation:0
+BackProp:
+Neuron: (3, 0) backProp:-0
+Neuron: (3, 1) backProp:0
+Neuron: (3, 2) backProp:0
+Neuron: (2, 0) backProp Error:0
+Neuron: (2, 1) backProp Error:0
+Neuron: (2, 2) backProp Error:0
+Neuron: (2, 3) backProp Error:0
+Neuron: (2, 4) backProp Error:0
+Neuron: (2, 5) backProp Error:0
+Neuron: (2, 6) backProp Error:0
+Neuron: (2, 7) backProp Error:0
+Neuron: (1, 0) backProp Error:0
+Neuron: (1, 1) backProp Error:0
+Neuron: (1, 2) backProp Error:0
+Neuron: (1, 3) backProp Error:0
+Neuron: (1, 4) backProp Error:0
+Neuron: (1, 5) backProp Error:0
+Neuron: (1, 6) backProp Error:0
+Neuron: (1, 7) backProp Error:0
+Neuron: (0, 0) backProp Error:0
+Neuron: (0, 1) backProp Error:0
+Neuron: (0, 2) backProp Error:0
+Neuron: (0, 3) backProp Error:0
+Number of lines: 92
+Random Line12
+
+forwardPass:
+
+Neuron: (0, 0) Activation:4.6
+Neuron: (0, 1) Activation:3.6
+Neuron: (0, 2) Activation:1
+Neuron: (0, 3) Activation:0.2
+Neuron: (1, 0) Activation:0
+Neuron: (1, 1) Activation:0
+Neuron: (1, 2) Activation:0
+Neuron: (1, 3) Activation:0
+Neuron: (1, 4) Activation:0
+Neuron: (1, 5) Activation:0
+Neuron: (1, 6) Activation:0
+Neuron: (1, 7) Activation:0
+Neuron: (2, 0) Activation:0
+Neuron: (2, 1) Activation:0
+Neuron: (2, 2) Activation:0
+Neuron: (2, 3) Activation:0
+Neuron: (2, 4) Activation:0
+Neuron: (2, 5) Activation:0
+Neuron: (2, 6) Activation:0
+Neuron: (2, 7) Activation:0
+Neuron: (3, 0) Activation:0
+Neuron: (3, 1) Activation:0
+Neuron: (3, 2) Activation:0
+BackProp:
+Neuron: (3, 0) backProp:-0
+Neuron: (3, 1) backProp:0
+Neuron: (3, 2) backProp:0
+Neuron: (2, 0) backProp Error:0
+Neuron: (2, 1) backProp Error:0
+Neuron: (2, 2) backProp Error:0
+Neuron: (2, 3) backProp Error:0
+Neuron: (2, 4) backProp Error:0
+Neuron: (2, 5) backProp Error:0
+Neuron: (2, 6) backProp Error:0
+Neuron: (2, 7) backProp Error:0
+Neuron: (1, 0) backProp Error:0
+Neuron: (1, 1) backProp Error:0
+Neuron: (1, 2) backProp Error:0
+Neuron: (1, 3) backProp Error:0
+Neuron: (1, 4) backProp Error:0
+Neuron: (1, 5) backProp Error:0
+Neuron: (1, 6) backProp Error:0
+Neuron: (1, 7) backProp Error:0
+Neuron: (0, 0) backProp Error:0
+Neuron: (0, 1) backProp Error:0
+Neuron: (0, 2) backProp Error:0
+Neuron: (0, 3) backProp Error:0
+Number of lines: 91
+Random Line10
+
+forwardPass:
+
+Neuron: (0, 0) Activation:5.4
+Neuron: (0, 1) Activation:3.4
+Neuron: (0, 2) Activation:1.7
+Neuron: (0, 3) Activation:0.2
+Neuron: (1, 0) Activation:0
+Neuron: (1, 1) Activation:0
+Neuron: (1, 2) Activation:0
+Neuron: (1, 3) Activation:0
+Neuron: (1, 4) Activation:0
+Neuron: (1, 5) Activation:0
+Neuron: (1, 6) Activation:0
+Neuron: (1, 7) Activation:0
+Neuron: (2, 0) Activation:0
+Neuron: (2, 1) Activation:0
+Neuron: (2, 2) Activation:0
+Neuron: (2, 3) Activation:0
+Neuron: (2, 4) Activation:0
+Neuron: (2, 5) Activation:0
+Neuron: (2, 6) Activation:0
+Neuron: (2, 7) Activation:0
+Neuron: (3, 0) Activation:0
+Neuron: (3, 1) Activation:0
+Neuron: (3, 2) Activation:0
+BackProp:
+Neuron: (3, 0) backProp:-0
+Neuron: (3, 1) backProp:0
+Neuron: (3, 2) backProp:0
+Neuron: (2, 0) backProp Error:0
+Neuron: (2, 1) backProp Error:0
+Neuron: (2, 2) backProp Error:0
+Neuron: (2, 3) backProp Error:0
+Neuron: (2, 4) backProp Error:0
+Neuron: (2, 5) backProp Error:0
+Neuron: (2, 6) backProp Error:0
+Neuron: (2, 7) backProp Error:0
+Neuron: (1, 0) backProp Error:0
+Neuron: (1, 1) backProp Error:0
+Neuron: (1, 2) backProp Error:0
+Neuron: (1, 3) backProp Error:0
+Neuron: (1, 4) backProp Error:0
+Neuron: (1, 5) backProp Error:0
+Neuron: (1, 6) backProp Error:0
+Neuron: (1, 7) backProp Error:0
+Neuron: (0, 0) backProp Error:0
+Neuron: (0, 1) backProp Error:0
+Neuron: (0, 2) backProp Error:0
+Neuron: (0, 3) backProp Error:0
+Number of lines: 90
+Random Line8
+
+forwardPass:
+
+Neuron: (0, 0) Activation:5.7
+Neuron: (0, 1) Activation:3.8
+Neuron: (0, 2) Activation:1.7
+Neuron: (0, 3) Activation:0.3
+Neuron: (1, 0) Activation:0
+Neuron: (1, 1) Activation:0
+Neuron: (1, 2) Activation:0
+Neuron: (1, 3) Activation:0
+Neuron: (1, 4) Activation:0
+Neuron: (1, 5) Activation:0
+Neuron: (1, 6) Activation:0
+Neuron: (1, 7) Activation:0
+Neuron: (2, 0) Activation:0
+Neuron: (2, 1) Activation:0
+Neuron: (2, 2) Activation:0
+Neuron: (2, 3) Activation:0
+Neuron: (2, 4) Activation:0
+Neuron: (2, 5) Activation:0
+Neuron: (2, 6) Activation:0
+Neuron: (2, 7) Activation:0
+Neuron: (3, 0) Activation:0
+Neuron: (3, 1) Activation:0
+Neuron: (3, 2) Activation:0
+BackProp:
+Neuron: (3, 0) backProp:-0
+Neuron: (3, 1) backProp:0
+Neuron: (3, 2) backProp:0
+Neuron: (2, 0) backProp Error:0
+Neuron: (2, 1) backProp Error:0
+Neuron: (2, 2) backProp Error:0
+Neuron: (2, 3) backProp Error:0
+Neuron: (2, 4) backProp Error:0
+Neuron: (2, 5) backProp Error:0
+Neuron: (2, 6) backProp Error:0
+Neuron: (2, 7) backProp Error:0
+Neuron: (1, 0) backProp Error:0
+Neuron: (1, 1) backProp Error:0
+Neuron: (1, 2) backProp Error:0
+Neuron: (1, 3) backProp Error:0
+Neuron: (1, 4) backProp Error:0
+Neuron: (1, 5) backProp Error:0
+Neuron: (1, 6) backProp Error:0
+Neuron: (1, 7) backProp Error:0
+Neuron: (0, 0) backProp Error:0
+Neuron: (0, 1) backProp Error:0
+Neuron: (0, 2) backProp Error:0
+Neuron: (0, 3) backProp Error:0
+Number of lines: 89
+Random Line73
+
+forwardPass:
+
+Neuron: (0, 0) Activation:6.1
+Neuron: (0, 1) Activation:3
+Neuron: (0, 2) Activation:4.9
+Neuron: (0, 3) Activation:1.8
+Neuron: (1, 0) Activation:0
+Neuron: (1, 1) Activation:0
+Neuron: (1, 2) Activation:0
+Neuron: (1, 3) Activation:0
+Neuron: (1, 4) Activation:0
+Neuron: (1, 5) Activation:0
+Neuron: (1, 6) Activation:0
+Neuron: (1, 7) Activation:0
+Neuron: (2, 0) Activation:0
+Neuron: (2, 1) Activation:0
+Neuron: (2, 2) Activation:0
+Neuron: (2, 3) Activation:0
+Neuron: (2, 4) Activation:0
+Neuron: (2, 5) Activation:0
+Neuron: (2, 6) Activation:0
+Neuron: (2, 7) Activation:0
+Neuron: (3, 0) Activation:0
+Neuron: (3, 1) Activation:0
+Neuron: (3, 2) Activation:0
+BackProp:
+Neuron: (3, 0) backProp:0
+Neuron: (3, 1) backProp:0
+Neuron: (3, 2) backProp:-0
+Neuron: (2, 0) backProp Error:0
+Neuron: (2, 1) backProp Error:0
+Neuron: (2, 2) backProp Error:0
+Neuron: (2, 3) backProp Error:0
+Neuron: (2, 4) backProp Error:0
+Neuron: (2, 5) backProp Error:0
+Neuron: (2, 6) backProp Error:0
+Neuron: (2, 7) backProp Error:0
+Neuron: (1, 0) backProp Error:0
+Neuron: (1, 1) backProp Error:0
+Neuron: (1, 2) backProp Error:0
+Neuron: (1, 3) backProp Error:0
+Neuron: (1, 4) backProp Error:0
+Neuron: (1, 5) backProp Error:0
+Neuron: (1, 6) backProp Error:0
+Neuron: (1, 7) backProp Error:0
+Neuron: (0, 0) backProp Error:0
+Neuron: (0, 1) backProp Error:0
+Neuron: (0, 2) backProp Error:0
+Neuron: (0, 3) backProp Error:0
+Number of lines: 88
+Random Line28
+
+forwardPass:
+
+Neuron: (0, 0) Activation:7
+Neuron: (0, 1) Activation:3.2
+Neuron: (0, 2) Activation:4.7
+Neuron: (0, 3) Activation:1.4
+Neuron: (1, 0) Activation:0
+Neuron: (1, 1) Activation:0
+Neuron: (1, 2) Activation:0
+Neuron: (1, 3) Activation:0
+Neuron: (1, 4) Activation:0
+Neuron: (1, 5) Activation:0
+Neuron: (1, 6) Activation:0
+Neuron: (1, 7) Activation:0
+Neuron: (2, 0) Activation:0
+Neuron: (2, 1) Activation:0
+Neuron: (2, 2) Activation:0
+Neuron: (2, 3) Activation:0
+Neuron: (2, 4) Activation:0
+Neuron: (2, 5) Activation:0
+Neuron: (2, 6) Activation:0
+Neuron: (2, 7) Activation:0
+Neuron: (3, 0) Activation:0
+Neuron: (3, 1) Activation:0
+Neuron: (3, 2) Activation:0
+BackProp:
+Neuron: (3, 0) backProp:0
+Neuron: (3, 1) backProp:-0
+Neuron: (3, 2) backProp:0
+Neuron: (2, 0) backProp Error:0
+Neuron: (2, 1) backProp Error:0
+Neuron: (2, 2) backProp Error:0
+Neuron: (2, 3) backProp Error:0
+Neuron: (2, 4) backProp Error:0
+Neuron: (2, 5) backProp Error:0
+Neuron: (2, 6) backProp Error:0
+Neuron: (2, 7) backProp Error:0
+Neuron: (1, 0) backProp Error:0
+Neuron: (1, 1) backProp Error:0
+Neuron: (1, 2) backProp Error:0
+Neuron: (1, 3) backProp Error:0
+Neuron: (1, 4) backProp Error:0
+Neuron: (1, 5) backProp Error:0
+Neuron: (1, 6) backProp Error:0
+Neuron: (1, 7) backProp Error:0
+Neuron: (0, 0) backProp Error:0
+Neuron: (0, 1) backProp Error:0
+Neuron: (0, 2) backProp Error:0
+Neuron: (0, 3) backProp Error:0
+Number of lines: 87
+Random Line30
+
+forwardPass:
+
+Neuron: (0, 0) Activation:6.5
+Neuron: (0, 1) Activation:2.8
+Neuron: (0, 2) Activation:4.6
+Neuron: (0, 3) Activation:1.5
+Neuron: (1, 0) Activation:0
+Neuron: (1, 1) Activation:0
+Neuron: (1, 2) Activation:0
+Neuron: (1, 3) Activation:0
+Neuron: (1, 4) Activation:0
+Neuron: (1, 5) Activation:0
+Neuron: (1, 6) Activation:0
+Neuron: (1, 7) Activation:0
+Neuron: (2, 0) Activation:0
+Neuron: (2, 1) Activation:0
+Neuron: (2, 2) Activation:0
+Neuron: (2, 3) Activation:0
+Neuron: (2, 4) Activation:0
+Neuron: (2, 5) Activation:0
+Neuron: (2, 6) Activation:0
+Neuron: (2, 7) Activation:0
+Neuron: (3, 0) Activation:0
+Neuron: (3, 1) Activation:0
+Neuron: (3, 2) Activation:0
+BackProp:
+Neuron: (3, 0) backProp:0
+Neuron: (3, 1) backProp:-0
+Neuron: (3, 2) backProp:0
+Neuron: (2, 0) backProp Error:0
+Neuron: (2, 1) backProp Error:0
+Neuron: (2, 2) backProp Error:0
+Neuron: (2, 3) backProp Error:0
+Neuron: (2, 4) backProp Error:0
+Neuron: (2, 5) backProp Error:0
+Neuron: (2, 6) backProp Error:0
+Neuron: (2, 7) backProp Error:0
+Neuron: (1, 0) backProp Error:0
+Neuron: (1, 1) backProp Error:0
+Neuron: (1, 2) backProp Error:0
+Neuron: (1, 3) backProp Error:0
+Neuron: (1, 4) backProp Error:0
+Neuron: (1, 5) backProp Error:0
+Neuron: (1, 6) backProp Error:0
+Neuron: (1, 7) backProp Error:0
+Neuron: (0, 0) backProp Error:0
+Neuron: (0, 1) backProp Error:0
+Neuron: (0, 2) backProp Error:0
+Neuron: (0, 3) backProp Error:0
+Number of lines: 86
+Random Line36
+
+forwardPass:
+
+Neuron: (0, 0) Activation:5.6
+Neuron: (0, 1) Activation:2.5
+Neuron: (0, 2) Activation:3.9
+Neuron: (0, 3) Activation:1.1
+Neuron: (1, 0) Activation:0
+Neuron: (1, 1) Activation:0
+Neuron: (1, 2) Activation:0
+Neuron: (1, 3) Activation:0
+Neuron: (1, 4) Activation:0
+Neuron: (1, 5) Activation:0
+Neuron: (1, 6) Activation:0
+Neuron: (1, 7) Activation:0
+Neuron: (2, 0) Activation:0
+Neuron: (2, 1) Activation:0
+Neuron: (2, 2) Activation:0
+Neuron: (2, 3) Activation:0
+Neuron: (2, 4) Activation:0
+Neuron: (2, 5) Activation:0
+Neuron: (2, 6) Activation:0
+Neuron: (2, 7) Activation:0
+Neuron: (3, 0) Activation:0
+Neuron: (3, 1) Activation:0
+Neuron: (3, 2) Activation:0
+BackProp:
+Neuron: (3, 0) backProp:0
+Neuron: (3, 1) backProp:-0
+Neuron: (3, 2) backProp:0
+Neuron: (2, 0) backProp Error:0
+Neuron: (2, 1) backProp Error:0
+Neuron: (2, 2) backProp Error:0
+Neuron: (2, 3) backProp Error:0
+Neuron: (2, 4) backProp Error:0
+Neuron: (2, 5) backProp Error:0
+Neuron: (2, 6) backProp Error:0
+Neuron: (2, 7) backProp Error:0
+Neuron: (1, 0) backProp Error:0
+Neuron: (1, 1) backProp Error:0
+Neuron: (1, 2) backProp Error:0
+Neuron: (1, 3) backProp Error:0
+Neuron: (1, 4) backProp Error:0
+Neuron: (1, 5) backProp Error:0
+Neuron: (1, 6) backProp Error:0
+Neuron: (1, 7) backProp Error:0
+Neuron: (0, 0) backProp Error:0
+Neuron: (0, 1) backProp Error:0
+Neuron: (0, 2) backProp Error:0
+Neuron: (0, 3) backProp Error:0
+Number of lines: 85
+Random Line25
+
+forwardPass:
+
+Neuron: (0, 0) Activation:5.1
+Neuron: (0, 1) Activation:3.8
+Neuron: (0, 2) Activation:1.6
+Neuron: (0, 3) Activation:0.2
+Neuron: (1, 0) Activation:0
+Neuron: (1, 1) Activation:0
+Neuron: (1, 2) Activation:0
+Neuron: (1, 3) Activation:0
+Neuron: (1, 4) Activation:0
+Neuron: (1, 5) Activation:0
+Neuron: (1, 6) Activation:0
+Neuron: (1, 7) Activation:0
+Neuron: (2, 0) Activation:0
+Neuron: (2, 1) Activation:0
+Neuron: (2, 2) Activation:0
+Neuron: (2, 3) Activation:0
+Neuron: (2, 4) Activation:0
+Neuron: (2, 5) Activation:0
+Neuron: (2, 6) Activation:0
+Neuron: (2, 7) Activation:0
+Neuron: (3, 0) Activation:0
+Neuron: (3, 1) Activation:0
+Neuron: (3, 2) Activation:0
+BackProp:
+Neuron: (3, 0) backProp:-0
+Neuron: (3, 1) backProp:0
+Neuron: (3, 2) backProp:0
+Neuron: (2, 0) backProp Error:0
+Neuron: (2, 1) backProp Error:0
+Neuron: (2, 2) backProp Error:0
+Neuron: (2, 3) backProp Error:0
+Neuron: (2, 4) backProp Error:0
+Neuron: (2, 5) backProp Error:0
+Neuron: (2, 6) backProp Error:0
+Neuron: (2, 7) backProp Error:0
+Neuron: (1, 0) backProp Error:0
+Neuron: (1, 1) backProp Error:0
+Neuron: (1, 2) backProp Error:0
+Neuron: (1, 3) backProp Error:0
+Neuron: (1, 4) backProp Error:0
+Neuron: (1, 5) backProp Error:0
+Neuron: (1, 6) backProp Error:0
+Neuron: (1, 7) backProp Error:0
+Neuron: (0, 0) backProp Error:0
+Neuron: (0, 1) backProp Error:0
+Neuron: (0, 2) backProp Error:0
+Neuron: (0, 3) backProp Error:0
+Number of lines: 84
+Random Line57
+
+forwardPass:
+
+Neuron: (0, 0) Activation:6.7
+Neuron: (0, 1) Activation:2.5
+Neuron: (0, 2) Activation:5.8
+Neuron: (0, 3) Activation:1.8
+Neuron: (1, 0) Activation:0
+Neuron: (1, 1) Activation:0
+Neuron: (1, 2) Activation:0
+Neuron: (1, 3) Activation:0
+Neuron: (1, 4) Activation:0
+Neuron: (1, 5) Activation:0
+Neuron: (1, 6) Activation:0
+Neuron: (1, 7) Activation:0
+Neuron: (2, 0) Activation:0
+Neuron: (2, 1) Activation:0
+Neuron: (2, 2) Activation:0
+Neuron: (2, 3) Activation:0
+Neuron: (2, 4) Activation:0
+Neuron: (2, 5) Activation:0
+Neuron: (2, 6) Activation:0
+Neuron: (2, 7) Activation:0
+Neuron: (3, 0) Activation:0
+Neuron: (3, 1) Activation:0
+Neuron: (3, 2) Activation:0
+BackProp:
+Neuron: (3, 0) backProp:0
+Neuron: (3, 1) backProp:0
+Neuron: (3, 2) backProp:-0
+Neuron: (2, 0) backProp Error:0
+Neuron: (2, 1) backProp Error:0
+Neuron: (2, 2) backProp Error:0
+Neuron: (2, 3) backProp Error:0
+Neuron: (2, 4) backProp Error:0
+Neuron: (2, 5) backProp Error:0
+Neuron: (2, 6) backProp Error:0
+Neuron: (2, 7) backProp Error:0
+Neuron: (1, 0) backProp Error:0
+Neuron: (1, 1) backProp Error:0
+Neuron: (1, 2) backProp Error:0
+Neuron: (1, 3) backProp Error:0
+Neuron: (1, 4) backProp Error:0
+Neuron: (1, 5) backProp Error:0
+Neuron: (1, 6) backProp Error:0
+Neuron: (1, 7) backProp Error:0
+Neuron: (0, 0) backProp Error:0
+Neuron: (0, 1) backProp Error:0
+Neuron: (0, 2) backProp Error:0
+Neuron: (0, 3) backProp Error:0
+Number of lines: 83
+Random Line15
+
+forwardPass:
+
+Neuron: (0, 0) Activation:5.2
+Neuron: (0, 1) Activation:4.1
+Neuron: (0, 2) Activation:1.5
+Neuron: (0, 3) Activation:0.1
+Neuron: (1, 0) Activation:0
+Neuron: (1, 1) Activation:0
+Neuron: (1, 2) Activation:0
+Neuron: (1, 3) Activation:0
+Neuron: (1, 4) Activation:0
+Neuron: (1, 5) Activation:0
+Neuron: (1, 6) Activation:0
+Neuron: (1, 7) Activation:0
+Neuron: (2, 0) Activation:0
+Neuron: (2, 1) Activation:0
+Neuron: (2, 2) Activation:0
+Neuron: (2, 3) Activation:0
+Neuron: (2, 4) Activation:0
+Neuron: (2, 5) Activation:0
+Neuron: (2, 6) Activation:0
+Neuron: (2, 7) Activation:0
+Neuron: (3, 0) Activation:0
+Neuron: (3, 1) Activation:0
+Neuron: (3, 2) Activation:0
+BackProp:
+Neuron: (3, 0) backProp:-0
+Neuron: (3, 1) backProp:0
+Neuron: (3, 2) backProp:0
+Neuron: (2, 0) backProp Error:0
+Neuron: (2, 1) backProp Error:0
+Neuron: (2, 2) backProp Error:0
+Neuron: (2, 3) backProp Error:0
+Neuron: (2, 4) backProp Error:0
+Neuron: (2, 5) backProp Error:0
+Neuron: (2, 6) backProp Error:0
+Neuron: (2, 7) backProp Error:0
+Neuron: (1, 0) backProp Error:0
+Neuron: (1, 1) backProp Error:0
+Neuron: (1, 2) backProp Error:0
+Neuron: (1, 3) backProp Error:0
+Neuron: (1, 4) backProp Error:0
+Neuron: (1, 5) backProp Error:0
+Neuron: (1, 6) backProp Error:0
+Neuron: (1, 7) backProp Error:0
+Neuron: (0, 0) backProp Error:0
+Neuron: (0, 1) backProp Error:0
+Neuron: (0, 2) backProp Error:0
+Neuron: (0, 3) backProp Error:0
+Number of lines: 82
+Random Line13
+
+forwardPass:
+
+Neuron: (0, 0) Activation:4.8
+Neuron: (0, 1) Activation:3.1
+Neuron: (0, 2) Activation:1.6
+Neuron: (0, 3) Activation:0.2
+Neuron: (1, 0) Activation:0
+Neuron: (1, 1) Activation:0
+Neuron: (1, 2) Activation:0
+Neuron: (1, 3) Activation:0
+Neuron: (1, 4) Activation:0
+Neuron: (1, 5) Activation:0
+Neuron: (1, 6) Activation:0
+Neuron: (1, 7) Activation:0
+Neuron: (2, 0) Activation:0
+Neuron: (2, 1) Activation:0
+Neuron: (2, 2) Activation:0
+Neuron: (2, 3) Activation:0
+Neuron: (2, 4) Activation:0
+Neuron: (2, 5) Activation:0
+Neuron: (2, 6) Activation:0
+Neuron: (2, 7) Activation:0
+Neuron: (3, 0) Activation:0
+Neuron: (3, 1) Activation:0
+Neuron: (3, 2) Activation:0
+BackProp:
+Neuron: (3, 0) backProp:-0
+Neuron: (3, 1) backProp:0
+Neuron: (3, 2) backProp:0
+Neuron: (2, 0) backProp Error:0
+Neuron: (2, 1) backProp Error:0
+Neuron: (2, 2) backProp Error:0
+Neuron: (2, 3) backProp Error:0
+Neuron: (2, 4) backProp Error:0
+Neuron: (2, 5) backProp Error:0
+Neuron: (2, 6) backProp Error:0
+Neuron: (2, 7) backProp Error:0
+Neuron: (1, 0) backProp Error:0
+Neuron: (1, 1) backProp Error:0
+Neuron: (1, 2) backProp Error:0
+Neuron: (1, 3) backProp Error:0
+Neuron: (1, 4) backProp Error:0
+Neuron: (1, 5) backProp Error:0
+Neuron: (1, 6) backProp Error:0
+Neuron: (1, 7) backProp Error:0
+Neuron: (0, 0) backProp Error:0
+Neuron: (0, 1) backProp Error:0
+Neuron: (0, 2) backProp Error:0
+Neuron: (0, 3) backProp Error:0
+Number of lines: 81
+Random Line43
+
+forwardPass:
+
+Neuron: (0, 0) Activation:5.4
+Neuron: (0, 1) Activation:3
+Neuron: (0, 2) Activation:4.5
+Neuron: (0, 3) Activation:1.5
+Neuron: (1, 0) Activation:0
+Neuron: (1, 1) Activation:0
+Neuron: (1, 2) Activation:0
+Neuron: (1, 3) Activation:0
+Neuron: (1, 4) Activation:0
+Neuron: (1, 5) Activation:0
+Neuron: (1, 6) Activation:0
+Neuron: (1, 7) Activation:0
+Neuron: (2, 0) Activation:0
+Neuron: (2, 1) Activation:0
+Neuron: (2, 2) Activation:0
+Neuron: (2, 3) Activation:0
+Neuron: (2, 4) Activation:0
+Neuron: (2, 5) Activation:0
+Neuron: (2, 6) Activation:0
+Neuron: (2, 7) Activation:0
+Neuron: (3, 0) Activation:0
+Neuron: (3, 1) Activation:0
+Neuron: (3, 2) Activation:0
+BackProp:
+Neuron: (3, 0) backProp:0
+Neuron: (3, 1) backProp:-0
+Neuron: (3, 2) backProp:0
+Neuron: (2, 0) backProp Error:0
+Neuron: (2, 1) backProp Error:0
+Neuron: (2, 2) backProp Error:0
+Neuron: (2, 3) backProp Error:0
+Neuron: (2, 4) backProp Error:0
+Neuron: (2, 5) backProp Error:0
+Neuron: (2, 6) backProp Error:0
+Neuron: (2, 7) backProp Error:0
+Neuron: (1, 0) backProp Error:0
+Neuron: (1, 1) backProp Error:0
+Neuron: (1, 2) backProp Error:0
+Neuron: (1, 3) backProp Error:0
+Neuron: (1, 4) backProp Error:0
+Neuron: (1, 5) backProp Error:0
+Neuron: (1, 6) backProp Error:0
+Neuron: (1, 7) backProp Error:0
+Neuron: (0, 0) backProp Error:0
+Neuron: (0, 1) backProp Error:0
+Neuron: (0, 2) backProp Error:0
+Neuron: (0, 3) backProp Error:0
+Number of lines: 80
+Random Line32
+
+forwardPass:
+
+Neuron: (0, 0) Activation:5.8
+Neuron: (0, 1) Activation:2.7
+Neuron: (0, 2) Activation:4.1
+Neuron: (0, 3) Activation:1
+Neuron: (1, 0) Activation:0
+Neuron: (1, 1) Activation:0
+Neuron: (1, 2) Activation:0
+Neuron: (1, 3) Activation:0
+Neuron: (1, 4) Activation:0
+Neuron: (1, 5) Activation:0
+Neuron: (1, 6) Activation:0
+Neuron: (1, 7) Activation:0
+Neuron: (2, 0) Activation:0
+Neuron: (2, 1) Activation:0
+Neuron: (2, 2) Activation:0
+Neuron: (2, 3) Activation:0
+Neuron: (2, 4) Activation:0
+Neuron: (2, 5) Activation:0
+Neuron: (2, 6) Activation:0
+Neuron: (2, 7) Activation:0
+Neuron: (3, 0) Activation:0
+Neuron: (3, 1) Activation:0
+Neuron: (3, 2) Activation:0
+BackProp:
+Neuron: (3, 0) backProp:0
+Neuron: (3, 1) backProp:-0
+Neuron: (3, 2) backProp:0
+Neuron: (2, 0) backProp Error:0
+Neuron: (2, 1) backProp Error:0
+Neuron: (2, 2) backProp Error:0
+Neuron: (2, 3) backProp Error:0
+Neuron: (2, 4) backProp Error:0
+Neuron: (2, 5) backProp Error:0
+Neuron: (2, 6) backProp Error:0
+Neuron: (2, 7) backProp Error:0
+Neuron: (1, 0) backProp Error:0
+Neuron: (1, 1) backProp Error:0
+Neuron: (1, 2) backProp Error:0
+Neuron: (1, 3) backProp Error:0
+Neuron: (1, 4) backProp Error:0
+Neuron: (1, 5) backProp Error:0
+Neuron: (1, 6) backProp Error:0
+Neuron: (1, 7) backProp Error:0
+Neuron: (0, 0) backProp Error:0
+Neuron: (0, 1) backProp Error:0
+Neuron: (0, 2) backProp Error:0
+Neuron: (0, 3) backProp Error:0
+Number of lines: 79
+Random Line35
+
+forwardPass:
+
+Neuron: (0, 0) Activation:6.6
+Neuron: (0, 1) Activation:3
+Neuron: (0, 2) Activation:4.4
+Neuron: (0, 3) Activation:1.4
+Neuron: (1, 0) Activation:0
+Neuron: (1, 1) Activation:0
+Neuron: (1, 2) Activation:0
+Neuron: (1, 3) Activation:0
+Neuron: (1, 4) Activation:0
+Neuron: (1, 5) Activation:0
+Neuron: (1, 6) Activation:0
+Neuron: (1, 7) Activation:0
+Neuron: (2, 0) Activation:0
+Neuron: (2, 1) Activation:0
+Neuron: (2, 2) Activation:0
+Neuron: (2, 3) Activation:0
+Neuron: (2, 4) Activation:0
+Neuron: (2, 5) Activation:0
+Neuron: (2, 6) Activation:0
+Neuron: (2, 7) Activation:0
+Neuron: (3, 0) Activation:0
+Neuron: (3, 1) Activation:0
+Neuron: (3, 2) Activation:0
+BackProp:
+Neuron: (3, 0) backProp:0
+Neuron: (3, 1) backProp:-0
+Neuron: (3, 2) backProp:0
+Neuron: (2, 0) backProp Error:0
+Neuron: (2, 1) backProp Error:0
+Neuron: (2, 2) backProp Error:0
+Neuron: (2, 3) backProp Error:0
+Neuron: (2, 4) backProp Error:0
+Neuron: (2, 5) backProp Error:0
+Neuron: (2, 6) backProp Error:0
+Neuron: (2, 7) backProp Error:0
+Neuron: (1, 0) backProp Error:0
+Neuron: (1, 1) backProp Error:0
+Neuron: (1, 2) backProp Error:0
+Neuron: (1, 3) backProp Error:0
+Neuron: (1, 4) backProp Error:0
+Neuron: (1, 5) backProp Error:0
+Neuron: (1, 6) backProp Error:0
+Neuron: (1, 7) backProp Error:0
+Neuron: (0, 0) backProp Error:0
+Neuron: (0, 1) backProp Error:0
+Neuron: (0, 2) backProp Error:0
+Neuron: (0, 3) backProp Error:0
+Number of lines: 78
+Random Line65
+
+forwardPass:
+
+Neuron: (0, 0) Activation:7.4
+Neuron: (0, 1) Activation:2.8
+Neuron: (0, 2) Activation:6.1
+Neuron: (0, 3) Activation:1.9
+Neuron: (1, 0) Activation:0
+Neuron: (1, 1) Activation:0
+Neuron: (1, 2) Activation:0
+Neuron: (1, 3) Activation:0
+Neuron: (1, 4) Activation:0
+Neuron: (1, 5) Activation:0
+Neuron: (1, 6) Activation:0
+Neuron: (1, 7) Activation:0
+Neuron: (2, 0) Activation:0
+Neuron: (2, 1) Activation:0
+Neuron: (2, 2) Activation:0
+Neuron: (2, 3) Activation:0
+Neuron: (2, 4) Activation:0
+Neuron: (2, 5) Activation:0
+Neuron: (2, 6) Activation:0
+Neuron: (2, 7) Activation:0
+Neuron: (3, 0) Activation:0
+Neuron: (3, 1) Activation:0
+Neuron: (3, 2) Activation:0
+BackProp:
+Neuron: (3, 0) backProp:0
+Neuron: (3, 1) backProp:0
+Neuron: (3, 2) backProp:-0
+Neuron: (2, 0) backProp Error:0
+Neuron: (2, 1) backProp Error:0
+Neuron: (2, 2) backProp Error:0
+Neuron: (2, 3) backProp Error:0
+Neuron: (2, 4) backProp Error:0
+Neuron: (2, 5) backProp Error:0
+Neuron: (2, 6) backProp Error:0
+Neuron: (2, 7) backProp Error:0
+Neuron: (1, 0) backProp Error:0
+Neuron: (1, 1) backProp Error:0
+Neuron: (1, 2) backProp Error:0
+Neuron: (1, 3) backProp Error:0
+Neuron: (1, 4) backProp Error:0
+Neuron: (1, 5) backProp Error:0
+Neuron: (1, 6) backProp Error:0
+Neuron: (1, 7) backProp Error:0
+Neuron: (0, 0) backProp Error:0
+Neuron: (0, 1) backProp Error:0
+Neuron: (0, 2) backProp Error:0
+Neuron: (0, 3) backProp Error:0
+Number of lines: 77
+Random Line75
+
+forwardPass:
+
+Neuron: (0, 0) Activation:6.5
+Neuron: (0, 1) Activation:3
+Neuron: (0, 2) Activation:5.2
+Neuron: (0, 3) Activation:2
+Neuron: (1, 0) Activation:0
+Neuron: (1, 1) Activation:0
+Neuron: (1, 2) Activation:0
+Neuron: (1, 3) Activation:0
+Neuron: (1, 4) Activation:0
+Neuron: (1, 5) Activation:0
+Neuron: (1, 6) Activation:0
+Neuron: (1, 7) Activation:0
+Neuron: (2, 0) Activation:0
+Neuron: (2, 1) Activation:0
+Neuron: (2, 2) Activation:0
+Neuron: (2, 3) Activation:0
+Neuron: (2, 4) Activation:0
+Neuron: (2, 5) Activation:0
+Neuron: (2, 6) Activation:0
+Neuron: (2, 7) Activation:0
+Neuron: (3, 0) Activation:0
+Neuron: (3, 1) Activation:0
+Neuron: (3, 2) Activation:0
+BackProp:
+Neuron: (3, 0) backProp:0
+Neuron: (3, 1) backProp:0
+Neuron: (3, 2) backProp:-0
+Neuron: (2, 0) backProp Error:0
+Neuron: (2, 1) backProp Error:0
+Neuron: (2, 2) backProp Error:0
+Neuron: (2, 3) backProp Error:0
+Neuron: (2, 4) backProp Error:0
+Neuron: (2, 5) backProp Error:0
+Neuron: (2, 6) backProp Error:0
+Neuron: (2, 7) backProp Error:0
+Neuron: (1, 0) backProp Error:0
+Neuron: (1, 1) backProp Error:0
+Neuron: (1, 2) backProp Error:0
+Neuron: (1, 3) backProp Error:0
+Neuron: (1, 4) backProp Error:0
+Neuron: (1, 5) backProp Error:0
+Neuron: (1, 6) backProp Error:0
+Neuron: (1, 7) backProp Error:0
+Neuron: (0, 0) backProp Error:0
+Neuron: (0, 1) backProp Error:0
+Neuron: (0, 2) backProp Error:0
+Neuron: (0, 3) backProp Error:0
+Number of lines: 76
+Random Line64
+
+forwardPass:
+
+Neuron: (0, 0) Activation:7.2
+Neuron: (0, 1) Activation:3
+Neuron: (0, 2) Activation:5.8
+Neuron: (0, 3) Activation:1.6
+Neuron: (1, 0) Activation:0
+Neuron: (1, 1) Activation:0
+Neuron: (1, 2) Activation:0
+Neuron: (1, 3) Activation:0
+Neuron: (1, 4) Activation:0
+Neuron: (1, 5) Activation:0
+Neuron: (1, 6) Activation:0
+Neuron: (1, 7) Activation:0
+Neuron: (2, 0) Activation:0
+Neuron: (2, 1) Activation:0
+Neuron: (2, 2) Activation:0
+Neuron: (2, 3) Activation:0
+Neuron: (2, 4) Activation:0
+Neuron: (2, 5) Activation:0
+Neuron: (2, 6) Activation:0
+Neuron: (2, 7) Activation:0
+Neuron: (3, 0) Activation:0
+Neuron: (3, 1) Activation:0
+Neuron: (3, 2) Activation:0
+BackProp:
+Neuron: (3, 0) backProp:0
+Neuron: (3, 1) backProp:0
+Neuron: (3, 2) backProp:-0
+Neuron: (2, 0) backProp Error:0
+Neuron: (2, 1) backProp Error:0
+Neuron: (2, 2) backProp Error:0
+Neuron: (2, 3) backProp Error:0
+Neuron: (2, 4) backProp Error:0
+Neuron: (2, 5) backProp Error:0
+Neuron: (2, 6) backProp Error:0
+Neuron: (2, 7) backProp Error:0
+Neuron: (1, 0) backProp Error:0
+Neuron: (1, 1) backProp Error:0
+Neuron: (1, 2) backProp Error:0
+Neuron: (1, 3) backProp Error:0
+Neuron: (1, 4) backProp Error:0
+Neuron: (1, 5) backProp Error:0
+Neuron: (1, 6) backProp Error:0
+Neuron: (1, 7) backProp Error:0
+Neuron: (0, 0) backProp Error:0
+Neuron: (0, 1) backProp Error:0
+Neuron: (0, 2) backProp Error:0
+Neuron: (0, 3) backProp Error:0
+Number of lines: 75
+Random Line2
+
+forwardPass:
+
+Neuron: (0, 0) Activation:4.6
+Neuron: (0, 1) Activation:3.4
+Neuron: (0, 2) Activation:1.4
+Neuron: (0, 3) Activation:0.3
+Neuron: (1, 0) Activation:0
+Neuron: (1, 1) Activation:0
+Neuron: (1, 2) Activation:0
+Neuron: (1, 3) Activation:0
+Neuron: (1, 4) Activation:0
+Neuron: (1, 5) Activation:0
+Neuron: (1, 6) Activation:0
+Neuron: (1, 7) Activation:0
+Neuron: (2, 0) Activation:0
+Neuron: (2, 1) Activation:0
+Neuron: (2, 2) Activation:0
+Neuron: (2, 3) Activation:0
+Neuron: (2, 4) Activation:0
+Neuron: (2, 5) Activation:0
+Neuron: (2, 6) Activation:0
+Neuron: (2, 7) Activation:0
+Neuron: (3, 0) Activation:0
+Neuron: (3, 1) Activation:0
+Neuron: (3, 2) Activation:0
+BackProp:
+Neuron: (3, 0) backProp:-0
+Neuron: (3, 1) backProp:0
+Neuron: (3, 2) backProp:0
+Neuron: (2, 0) backProp Error:0
+Neuron: (2, 1) backProp Error:0
+Neuron: (2, 2) backProp Error:0
+Neuron: (2, 3) backProp Error:0
+Neuron: (2, 4) backProp Error:0
+Neuron: (2, 5) backProp Error:0
+Neuron: (2, 6) backProp Error:0
+Neuron: (2, 7) backProp Error:0
+Neuron: (1, 0) backProp Error:0
+Neuron: (1, 1) backProp Error:0
+Neuron: (1, 2) backProp Error:0
+Neuron: (1, 3) backProp Error:0
+Neuron: (1, 4) backProp Error:0
+Neuron: (1, 5) backProp Error:0
+Neuron: (1, 6) backProp Error:0
+Neuron: (1, 7) backProp Error:0
+Neuron: (0, 0) backProp Error:0
+Neuron: (0, 1) backProp Error:0
+Neuron: (0, 2) backProp Error:0
+Neuron: (0, 3) backProp Error:0
+Number of lines: 74
+Random Line56
+
+forwardPass:
+
+Neuron: (0, 0) Activation:7.7
+Neuron: (0, 1) Activation:3.8
+Neuron: (0, 2) Activation:6.7
+Neuron: (0, 3) Activation:2.2
+Neuron: (1, 0) Activation:0
+Neuron: (1, 1) Activation:0
+Neuron: (1, 2) Activation:0
+Neuron: (1, 3) Activation:0
+Neuron: (1, 4) Activation:0
+Neuron: (1, 5) Activation:0
+Neuron: (1, 6) Activation:0
+Neuron: (1, 7) Activation:0
+Neuron: (2, 0) Activation:0
+Neuron: (2, 1) Activation:0
+Neuron: (2, 2) Activation:0
+Neuron: (2, 3) Activation:0
+Neuron: (2, 4) Activation:0
+Neuron: (2, 5) Activation:0
+Neuron: (2, 6) Activation:0
+Neuron: (2, 7) Activation:0
+Neuron: (3, 0) Activation:0
+Neuron: (3, 1) Activation:0
+Neuron: (3, 2) Activation:0
+BackProp:
+Neuron: (3, 0) backProp:0
+Neuron: (3, 1) backProp:0
+Neuron: (3, 2) backProp:-0
+Neuron: (2, 0) backProp Error:0
+Neuron: (2, 1) backProp Error:0
+Neuron: (2, 2) backProp Error:0
+Neuron: (2, 3) backProp Error:0
+Neuron: (2, 4) backProp Error:0
+Neuron: (2, 5) backProp Error:0
+Neuron: (2, 6) backProp Error:0
+Neuron: (2, 7) backProp Error:0
+Neuron: (1, 0) backProp Error:0
+Neuron: (1, 1) backProp Error:0
+Neuron: (1, 2) backProp Error:0
+Neuron: (1, 3) backProp Error:0
+Neuron: (1, 4) backProp Error:0
+Neuron: (1, 5) backProp Error:0
+Neuron: (1, 6) backProp Error:0
+Neuron: (1, 7) backProp Error:0
+Neuron: (0, 0) backProp Error:0
+Neuron: (0, 1) backProp Error:0
+Neuron: (0, 2) backProp Error:0
+Neuron: (0, 3) backProp Error:0
+Number of lines: 73
+Random Line61
+
+forwardPass:
+
+Neuron: (0, 0) Activation:6.4
+Neuron: (0, 1) Activation:2.8
+Neuron: (0, 2) Activation:5.6
+Neuron: (0, 3) Activation:2.1
+Neuron: (1, 0) Activation:0
+Neuron: (1, 1) Activation:0
+Neuron: (1, 2) Activation:0
+Neuron: (1, 3) Activation:0
+Neuron: (1, 4) Activation:0
+Neuron: (1, 5) Activation:0
+Neuron: (1, 6) Activation:0
+Neuron: (1, 7) Activation:0
+Neuron: (2, 0) Activation:0
+Neuron: (2, 1) Activation:0
+Neuron: (2, 2) Activation:0
+Neuron: (2, 3) Activation:0
+Neuron: (2, 4) Activation:0
+Neuron: (2, 5) Activation:0
+Neuron: (2, 6) Activation:0
+Neuron: (2, 7) Activation:0
+Neuron: (3, 0) Activation:0
+Neuron: (3, 1) Activation:0
+Neuron: (3, 2) Activation:0
+BackProp:
+Neuron: (3, 0) backProp:0
+Neuron: (3, 1) backProp:0
+Neuron: (3, 2) backProp:-0
+Neuron: (2, 0) backProp Error:0
+Neuron: (2, 1) backProp Error:0
+Neuron: (2, 2) backProp Error:0
+Neuron: (2, 3) backProp Error:0
+Neuron: (2, 4) backProp Error:0
+Neuron: (2, 5) backProp Error:0
+Neuron: (2, 6) backProp Error:0
+Neuron: (2, 7) backProp Error:0
+Neuron: (1, 0) backProp Error:0
+Neuron: (1, 1) backProp Error:0
+Neuron: (1, 2) backProp Error:0
+Neuron: (1, 3) backProp Error:0
+Neuron: (1, 4) backProp Error:0
+Neuron: (1, 5) backProp Error:0
+Neuron: (1, 6) backProp Error:0
+Neuron: (1, 7) backProp Error:0
+Neuron: (0, 0) backProp Error:0
+Neuron: (0, 1) backProp Error:0
+Neuron: (0, 2) backProp Error:0
+Neuron: (0, 3) backProp Error:0
+Number of lines: 72
+Random Line30
+
+forwardPass:
+
+Neuron: (0, 0) Activation:5.6
+Neuron: (0, 1) Activation:3
+Neuron: (0, 2) Activation:4.5
+Neuron: (0, 3) Activation:1.5
+Neuron: (1, 0) Activation:0
+Neuron: (1, 1) Activation:0
+Neuron: (1, 2) Activation:0
+Neuron: (1, 3) Activation:0
+Neuron: (1, 4) Activation:0
+Neuron: (1, 5) Activation:0
+Neuron: (1, 6) Activation:0
+Neuron: (1, 7) Activation:0
+Neuron: (2, 0) Activation:0
+Neuron: (2, 1) Activation:0
+Neuron: (2, 2) Activation:0
+Neuron: (2, 3) Activation:0
+Neuron: (2, 4) Activation:0
+Neuron: (2, 5) Activation:0
+Neuron: (2, 6) Activation:0
+Neuron: (2, 7) Activation:0
+Neuron: (3, 0) Activation:0
+Neuron: (3, 1) Activation:0
+Neuron: (3, 2) Activation:0
+BackProp:
+Neuron: (3, 0) backProp:0
+Neuron: (3, 1) backProp:-0
+Neuron: (3, 2) backProp:0
+Neuron: (2, 0) backProp Error:0
+Neuron: (2, 1) backProp Error:0
+Neuron: (2, 2) backProp Error:0
+Neuron: (2, 3) backProp Error:0
+Neuron: (2, 4) backProp Error:0
+Neuron: (2, 5) backProp Error:0
+Neuron: (2, 6) backProp Error:0
+Neuron: (2, 7) backProp Error:0
+Neuron: (1, 0) backProp Error:0
+Neuron: (1, 1) backProp Error:0
+Neuron: (1, 2) backProp Error:0
+Neuron: (1, 3) backProp Error:0
+Neuron: (1, 4) backProp Error:0
+Neuron: (1, 5) backProp Error:0
+Neuron: (1, 6) backProp Error:0
+Neuron: (1, 7) backProp Error:0
+Neuron: (0, 0) backProp Error:0
+Neuron: (0, 1) backProp Error:0
+Neuron: (0, 2) backProp Error:0
+Neuron: (0, 3) backProp Error:0
+Number of lines: 71
+Random Line15
+
+forwardPass:
+
+Neuron: (0, 0) Activation:4.4
+Neuron: (0, 1) Activation:3
+Neuron: (0, 2) Activation:1.3
+Neuron: (0, 3) Activation:0.2
+Neuron: (1, 0) Activation:0
+Neuron: (1, 1) Activation:0
+Neuron: (1, 2) Activation:0
+Neuron: (1, 3) Activation:0
+Neuron: (1, 4) Activation:0
+Neuron: (1, 5) Activation:0
+Neuron: (1, 6) Activation:0
+Neuron: (1, 7) Activation:0
+Neuron: (2, 0) Activation:0
+Neuron: (2, 1) Activation:0
+Neuron: (2, 2) Activation:0
+Neuron: (2, 3) Activation:0
+Neuron: (2, 4) Activation:0
+Neuron: (2, 5) Activation:0
+Neuron: (2, 6) Activation:0
+Neuron: (2, 7) Activation:0
+Neuron: (3, 0) Activation:0
+Neuron: (3, 1) Activation:0
+Neuron: (3, 2) Activation:0
+BackProp:
+Neuron: (3, 0) backProp:-0
+Neuron: (3, 1) backProp:0
+Neuron: (3, 2) backProp:0
+Neuron: (2, 0) backProp Error:0
+Neuron: (2, 1) backProp Error:0
+Neuron: (2, 2) backProp Error:0
+Neuron: (2, 3) backProp Error:0
+Neuron: (2, 4) backProp Error:0
+Neuron: (2, 5) backProp Error:0
+Neuron: (2, 6) backProp Error:0
+Neuron: (2, 7) backProp Error:0
+Neuron: (1, 0) backProp Error:0
+Neuron: (1, 1) backProp Error:0
+Neuron: (1, 2) backProp Error:0
+Neuron: (1, 3) backProp Error:0
+Neuron: (1, 4) backProp Error:0
+Neuron: (1, 5) backProp Error:0
+Neuron: (1, 6) backProp Error:0
+Neuron: (1, 7) backProp Error:0
+Neuron: (0, 0) backProp Error:0
+Neuron: (0, 1) backProp Error:0
+Neuron: (0, 2) backProp Error:0
+Neuron: (0, 3) backProp Error:0
+Number of lines: 70
+Random Line61
+
+forwardPass:
+
+Neuron: (0, 0) Activation:6.1
+Neuron: (0, 1) Activation:2.6
+Neuron: (0, 2) Activation:5.6
+Neuron: (0, 3) Activation:1.4
+Neuron: (1, 0) Activation:0
+Neuron: (1, 1) Activation:0
+Neuron: (1, 2) Activation:0
+Neuron: (1, 3) Activation:0
+Neuron: (1, 4) Activation:0
+Neuron: (1, 5) Activation:0
+Neuron: (1, 6) Activation:0
+Neuron: (1, 7) Activation:0
+Neuron: (2, 0) Activation:0
+Neuron: (2, 1) Activation:0
+Neuron: (2, 2) Activation:0
+Neuron: (2, 3) Activation:0
+Neuron: (2, 4) Activation:0
+Neuron: (2, 5) Activation:0
+Neuron: (2, 6) Activation:0
+Neuron: (2, 7) Activation:0
+Neuron: (3, 0) Activation:0
+Neuron: (3, 1) Activation:0
+Neuron: (3, 2) Activation:0
+BackProp:
+Neuron: (3, 0) backProp:0
+Neuron: (3, 1) backProp:0
+Neuron: (3, 2) backProp:-0
+Neuron: (2, 0) backProp Error:0
+Neuron: (2, 1) backProp Error:0
+Neuron: (2, 2) backProp Error:0
+Neuron: (2, 3) backProp Error:0
+Neuron: (2, 4) backProp Error:0
+Neuron: (2, 5) backProp Error:0
+Neuron: (2, 6) backProp Error:0
+Neuron: (2, 7) backProp Error:0
+Neuron: (1, 0) backProp Error:0
+Neuron: (1, 1) backProp Error:0
+Neuron: (1, 2) backProp Error:0
+Neuron: (1, 3) backProp Error:0
+Neuron: (1, 4) backProp Error:0
+Neuron: (1, 5) backProp Error:0
+Neuron: (1, 6) backProp Error:0
+Neuron: (1, 7) backProp Error:0
+Neuron: (0, 0) backProp Error:0
+Neuron: (0, 1) backProp Error:0
+Neuron: (0, 2) backProp Error:0
+Neuron: (0, 3) backProp Error:0
+Number of lines: 69
+Random Line47
+
+forwardPass:
+
+Neuron: (0, 0) Activation:6.5
+Neuron: (0, 1) Activation:3
+Neuron: (0, 2) Activation:5.8
+Neuron: (0, 3) Activation:2.2
+Neuron: (1, 0) Activation:0
+Neuron: (1, 1) Activation:0
+Neuron: (1, 2) Activation:0
+Neuron: (1, 3) Activation:0
+Neuron: (1, 4) Activation:0
+Neuron: (1, 5) Activation:0
+Neuron: (1, 6) Activation:0
+Neuron: (1, 7) Activation:0
+Neuron: (2, 0) Activation:0
+Neuron: (2, 1) Activation:0
+Neuron: (2, 2) Activation:0
+Neuron: (2, 3) Activation:0
+Neuron: (2, 4) Activation:0
+Neuron: (2, 5) Activation:0
+Neuron: (2, 6) Activation:0
+Neuron: (2, 7) Activation:0
+Neuron: (3, 0) Activation:0
+Neuron: (3, 1) Activation:0
+Neuron: (3, 2) Activation:0
+BackProp:
+Neuron: (3, 0) backProp:0
+Neuron: (3, 1) backProp:0
+Neuron: (3, 2) backProp:-0
+Neuron: (2, 0) backProp Error:0
+Neuron: (2, 1) backProp Error:0
+Neuron: (2, 2) backProp Error:0
+Neuron: (2, 3) backProp Error:0
+Neuron: (2, 4) backProp Error:0
+Neuron: (2, 5) backProp Error:0
+Neuron: (2, 6) backProp Error:0
+Neuron: (2, 7) backProp Error:0
+Neuron: (1, 0) backProp Error:0
+Neuron: (1, 1) backProp Error:0
+Neuron: (1, 2) backProp Error:0
+Neuron: (1, 3) backProp Error:0
+Neuron: (1, 4) backProp Error:0
+Neuron: (1, 5) backProp Error:0
+Neuron: (1, 6) backProp Error:0
+Neuron: (1, 7) backProp Error:0
+Neuron: (0, 0) backProp Error:0
+Neuron: (0, 1) backProp Error:0
+Neuron: (0, 2) backProp Error:0
+Neuron: (0, 3) backProp Error:0
+Number of lines: 68
+Random Line3
+
+forwardPass:
+
+Neuron: (0, 0) Activation:4.9
+Neuron: (0, 1) Activation:3.1
+Neuron: (0, 2) Activation:1.5
+Neuron: (0, 3) Activation:0.1
+Neuron: (1, 0) Activation:0
+Neuron: (1, 1) Activation:0
+Neuron: (1, 2) Activation:0
+Neuron: (1, 3) Activation:0
+Neuron: (1, 4) Activation:0
+Neuron: (1, 5) Activation:0
+Neuron: (1, 6) Activation:0
+Neuron: (1, 7) Activation:0
+Neuron: (2, 0) Activation:0
+Neuron: (2, 1) Activation:0
+Neuron: (2, 2) Activation:0
+Neuron: (2, 3) Activation:0
+Neuron: (2, 4) Activation:0
+Neuron: (2, 5) Activation:0
+Neuron: (2, 6) Activation:0
+Neuron: (2, 7) Activation:0
+Neuron: (3, 0) Activation:0
+Neuron: (3, 1) Activation:0
+Neuron: (3, 2) Activation:0
+BackProp:
+Neuron: (3, 0) backProp:-0
+Neuron: (3, 1) backProp:0
+Neuron: (3, 2) backProp:0
+Neuron: (2, 0) backProp Error:0
+Neuron: (2, 1) backProp Error:0
+Neuron: (2, 2) backProp Error:0
+Neuron: (2, 3) backProp Error:0
+Neuron: (2, 4) backProp Error:0
+Neuron: (2, 5) backProp Error:0
+Neuron: (2, 6) backProp Error:0
+Neuron: (2, 7) backProp Error:0
+Neuron: (1, 0) backProp Error:0
+Neuron: (1, 1) backProp Error:0
+Neuron: (1, 2) backProp Error:0
+Neuron: (1, 3) backProp Error:0
+Neuron: (1, 4) backProp Error:0
+Neuron: (1, 5) backProp Error:0
+Neuron: (1, 6) backProp Error:0
+Neuron: (1, 7) backProp Error:0
+Neuron: (0, 0) backProp Error:0
+Neuron: (0, 1) backProp Error:0
+Neuron: (0, 2) backProp Error:0
+Neuron: (0, 3) backProp Error:0
+Number of lines: 67
+Random Line26
+
+forwardPass:
+
+Neuron: (0, 0) Activation:5.9
+Neuron: (0, 1) Activation:3
+Neuron: (0, 2) Activation:4.2
+Neuron: (0, 3) Activation:1.5
+Neuron: (1, 0) Activation:0
+Neuron: (1, 1) Activation:0
+Neuron: (1, 2) Activation:0
+Neuron: (1, 3) Activation:0
+Neuron: (1, 4) Activation:0
+Neuron: (1, 5) Activation:0
+Neuron: (1, 6) Activation:0
+Neuron: (1, 7) Activation:0
+Neuron: (2, 0) Activation:0
+Neuron: (2, 1) Activation:0
+Neuron: (2, 2) Activation:0
+Neuron: (2, 3) Activation:0
+Neuron: (2, 4) Activation:0
+Neuron: (2, 5) Activation:0
+Neuron: (2, 6) Activation:0
+Neuron: (2, 7) Activation:0
+Neuron: (3, 0) Activation:0
+Neuron: (3, 1) Activation:0
+Neuron: (3, 2) Activation:0
+BackProp:
+Neuron: (3, 0) backProp:0
+Neuron: (3, 1) backProp:-0
+Neuron: (3, 2) backProp:0
+Neuron: (2, 0) backProp Error:0
+Neuron: (2, 1) backProp Error:0
+Neuron: (2, 2) backProp Error:0
+Neuron: (2, 3) backProp Error:0
+Neuron: (2, 4) backProp Error:0
+Neuron: (2, 5) backProp Error:0
+Neuron: (2, 6) backProp Error:0
+Neuron: (2, 7) backProp Error:0
+Neuron: (1, 0) backProp Error:0
+Neuron: (1, 1) backProp Error:0
+Neuron: (1, 2) backProp Error:0
+Neuron: (1, 3) backProp Error:0
+Neuron: (1, 4) backProp Error:0
+Neuron: (1, 5) backProp Error:0
+Neuron: (1, 6) backProp Error:0
+Neuron: (1, 7) backProp Error:0
+Neuron: (0, 0) backProp Error:0
+Neuron: (0, 1) backProp Error:0
+Neuron: (0, 2) backProp Error:0
+Neuron: (0, 3) backProp Error:0
+Number of lines: 66
+Random Line28
+
+forwardPass:
+
+Neuron: (0, 0) Activation:6.1
+Neuron: (0, 1) Activation:2.8
+Neuron: (0, 2) Activation:4.7
+Neuron: (0, 3) Activation:1.2
+Neuron: (1, 0) Activation:0
+Neuron: (1, 1) Activation:0
+Neuron: (1, 2) Activation:0
+Neuron: (1, 3) Activation:0
+Neuron: (1, 4) Activation:0
+Neuron: (1, 5) Activation:0
+Neuron: (1, 6) Activation:0
+Neuron: (1, 7) Activation:0
+Neuron: (2, 0) Activation:0
+Neuron: (2, 1) Activation:0
+Neuron: (2, 2) Activation:0
+Neuron: (2, 3) Activation:0
+Neuron: (2, 4) Activation:0
+Neuron: (2, 5) Activation:0
+Neuron: (2, 6) Activation:0
+Neuron: (2, 7) Activation:0
+Neuron: (3, 0) Activation:0
+Neuron: (3, 1) Activation:0
+Neuron: (3, 2) Activation:0
+BackProp:
+Neuron: (3, 0) backProp:0
+Neuron: (3, 1) backProp:-0
+Neuron: (3, 2) backProp:0
+Neuron: (2, 0) backProp Error:0
+Neuron: (2, 1) backProp Error:0
+Neuron: (2, 2) backProp Error:0
+Neuron: (2, 3) backProp Error:0
+Neuron: (2, 4) backProp Error:0
+Neuron: (2, 5) backProp Error:0
+Neuron: (2, 6) backProp Error:0
+Neuron: (2, 7) backProp Error:0
+Neuron: (1, 0) backProp Error:0
+Neuron: (1, 1) backProp Error:0
+Neuron: (1, 2) backProp Error:0
+Neuron: (1, 3) backProp Error:0
+Neuron: (1, 4) backProp Error:0
+Neuron: (1, 5) backProp Error:0
+Neuron: (1, 6) backProp Error:0
+Neuron: (1, 7) backProp Error:0
+Neuron: (0, 0) backProp Error:0
+Neuron: (0, 1) backProp Error:0
+Neuron: (0, 2) backProp Error:0
+Neuron: (0, 3) backProp Error:0
+Number of lines: 65
+Random Line50
+
+forwardPass:
+
+Neuron: (0, 0) Activation:5.6
+Neuron: (0, 1) Activation:2.8
+Neuron: (0, 2) Activation:4.9
+Neuron: (0, 3) Activation:2
+Neuron: (1, 0) Activation:0
+Neuron: (1, 1) Activation:0
+Neuron: (1, 2) Activation:0
+Neuron: (1, 3) Activation:0
+Neuron: (1, 4) Activation:0
+Neuron: (1, 5) Activation:0
+Neuron: (1, 6) Activation:0
+Neuron: (1, 7) Activation:0
+Neuron: (2, 0) Activation:0
+Neuron: (2, 1) Activation:0
+Neuron: (2, 2) Activation:0
+Neuron: (2, 3) Activation:0
+Neuron: (2, 4) Activation:0
+Neuron: (2, 5) Activation:0
+Neuron: (2, 6) Activation:0
+Neuron: (2, 7) Activation:0
+Neuron: (3, 0) Activation:0
+Neuron: (3, 1) Activation:0
+Neuron: (3, 2) Activation:0
+BackProp:
+Neuron: (3, 0) backProp:0
+Neuron: (3, 1) backProp:0
+Neuron: (3, 2) backProp:-0
+Neuron: (2, 0) backProp Error:0
+Neuron: (2, 1) backProp Error:0
+Neuron: (2, 2) backProp Error:0
+Neuron: (2, 3) backProp Error:0
+Neuron: (2, 4) backProp Error:0
+Neuron: (2, 5) backProp Error:0
+Neuron: (2, 6) backProp Error:0
+Neuron: (2, 7) backProp Error:0
+Neuron: (1, 0) backProp Error:0
+Neuron: (1, 1) backProp Error:0
+Neuron: (1, 2) backProp Error:0
+Neuron: (1, 3) backProp Error:0
+Neuron: (1, 4) backProp Error:0
+Neuron: (1, 5) backProp Error:0
+Neuron: (1, 6) backProp Error:0
+Neuron: (1, 7) backProp Error:0
+Neuron: (0, 0) backProp Error:0
+Neuron: (0, 1) backProp Error:0
+Neuron: (0, 2) backProp Error:0
+Neuron: (0, 3) backProp Error:0
+Number of lines: 64
+Random Line4
+
+forwardPass:
+
+Neuron: (0, 0) Activation:5.8
+Neuron: (0, 1) Activation:4
+Neuron: (0, 2) Activation:1.2
+Neuron: (0, 3) Activation:0.2
+Neuron: (1, 0) Activation:0
+Neuron: (1, 1) Activation:0
+Neuron: (1, 2) Activation:0
+Neuron: (1, 3) Activation:0
+Neuron: (1, 4) Activation:0
+Neuron: (1, 5) Activation:0
+Neuron: (1, 6) Activation:0
+Neuron: (1, 7) Activation:0
+Neuron: (2, 0) Activation:0
+Neuron: (2, 1) Activation:0
+Neuron: (2, 2) Activation:0
+Neuron: (2, 3) Activation:0
+Neuron: (2, 4) Activation:0
+Neuron: (2, 5) Activation:0
+Neuron: (2, 6) Activation:0
+Neuron: (2, 7) Activation:0
+Neuron: (3, 0) Activation:0
+Neuron: (3, 1) Activation:0
+Neuron: (3, 2) Activation:0
+BackProp:
+Neuron: (3, 0) backProp:-0
+Neuron: (3, 1) backProp:0
+Neuron: (3, 2) backProp:0
+Neuron: (2, 0) backProp Error:0
+Neuron: (2, 1) backProp Error:0
+Neuron: (2, 2) backProp Error:0
+Neuron: (2, 3) backProp Error:0
+Neuron: (2, 4) backProp Error:0
+Neuron: (2, 5) backProp Error:0
+Neuron: (2, 6) backProp Error:0
+Neuron: (2, 7) backProp Error:0
+Neuron: (1, 0) backProp Error:0
+Neuron: (1, 1) backProp Error:0
+Neuron: (1, 2) backProp Error:0
+Neuron: (1, 3) backProp Error:0
+Neuron: (1, 4) backProp Error:0
+Neuron: (1, 5) backProp Error:0
+Neuron: (1, 6) backProp Error:0
+Neuron: (1, 7) backProp Error:0
+Neuron: (0, 0) backProp Error:0
+Neuron: (0, 1) backProp Error:0
+Neuron: (0, 2) backProp Error:0
+Neuron: (0, 3) backProp Error:0
+Number of lines: 63
+Random Line61
+
+forwardPass:
+
+Neuron: (0, 0) Activation:6.3
+Neuron: (0, 1) Activation:2.5
+Neuron: (0, 2) Activation:5
+Neuron: (0, 3) Activation:1.9
+Neuron: (1, 0) Activation:0
+Neuron: (1, 1) Activation:0
+Neuron: (1, 2) Activation:0
+Neuron: (1, 3) Activation:0
+Neuron: (1, 4) Activation:0
+Neuron: (1, 5) Activation:0
+Neuron: (1, 6) Activation:0
+Neuron: (1, 7) Activation:0
+Neuron: (2, 0) Activation:0
+Neuron: (2, 1) Activation:0
+Neuron: (2, 2) Activation:0
+Neuron: (2, 3) Activation:0
+Neuron: (2, 4) Activation:0
+Neuron: (2, 5) Activation:0
+Neuron: (2, 6) Activation:0
+Neuron: (2, 7) Activation:0
+Neuron: (3, 0) Activation:0
+Neuron: (3, 1) Activation:0
+Neuron: (3, 2) Activation:0
+BackProp:
+Neuron: (3, 0) backProp:0
+Neuron: (3, 1) backProp:0
+Neuron: (3, 2) backProp:-0
+Neuron: (2, 0) backProp Error:0
+Neuron: (2, 1) backProp Error:0
+Neuron: (2, 2) backProp Error:0
+Neuron: (2, 3) backProp Error:0
+Neuron: (2, 4) backProp Error:0
+Neuron: (2, 5) backProp Error:0
+Neuron: (2, 6) backProp Error:0
+Neuron: (2, 7) backProp Error:0
+Neuron: (1, 0) backProp Error:0
+Neuron: (1, 1) backProp Error:0
+Neuron: (1, 2) backProp Error:0
+Neuron: (1, 3) backProp Error:0
+Neuron: (1, 4) backProp Error:0
+Neuron: (1, 5) backProp Error:0
+Neuron: (1, 6) backProp Error:0
+Neuron: (1, 7) backProp Error:0
+Neuron: (0, 0) backProp Error:0
+Neuron: (0, 1) backProp Error:0
+Neuron: (0, 2) backProp Error:0
+Neuron: (0, 3) backProp Error:0
+Number of lines: 62
+Random Line7
+
+forwardPass:
+
+Neuron: (0, 0) Activation:5.1
+Neuron: (0, 1) Activation:3.3
+Neuron: (0, 2) Activation:1.7
+Neuron: (0, 3) Activation:0.5
+Neuron: (1, 0) Activation:0
+Neuron: (1, 1) Activation:0
+Neuron: (1, 2) Activation:0
+Neuron: (1, 3) Activation:0
+Neuron: (1, 4) Activation:0
+Neuron: (1, 5) Activation:0
+Neuron: (1, 6) Activation:0
+Neuron: (1, 7) Activation:0
+Neuron: (2, 0) Activation:0
+Neuron: (2, 1) Activation:0
+Neuron: (2, 2) Activation:0
+Neuron: (2, 3) Activation:0
+Neuron: (2, 4) Activation:0
+Neuron: (2, 5) Activation:0
+Neuron: (2, 6) Activation:0
+Neuron: (2, 7) Activation:0
+Neuron: (3, 0) Activation:0
+Neuron: (3, 1) Activation:0
+Neuron: (3, 2) Activation:0
+BackProp:
+Neuron: (3, 0) backProp:-0
+Neuron: (3, 1) backProp:0
+Neuron: (3, 2) backProp:0
+Neuron: (2, 0) backProp Error:0
+Neuron: (2, 1) backProp Error:0
+Neuron: (2, 2) backProp Error:0
+Neuron: (2, 3) backProp Error:0
+Neuron: (2, 4) backProp Error:0
+Neuron: (2, 5) backProp Error:0
+Neuron: (2, 6) backProp Error:0
+Neuron: (2, 7) backProp Error:0
+Neuron: (1, 0) backProp Error:0
+Neuron: (1, 1) backProp Error:0
+Neuron: (1, 2) backProp Error:0
+Neuron: (1, 3) backProp Error:0
+Neuron: (1, 4) backProp Error:0
+Neuron: (1, 5) backProp Error:0
+Neuron: (1, 6) backProp Error:0
+Neuron: (1, 7) backProp Error:0
+Neuron: (0, 0) backProp Error:0
+Neuron: (0, 1) backProp Error:0
+Neuron: (0, 2) backProp Error:0
+Neuron: (0, 3) backProp Error:0
+Number of lines: 61
+Random Line34
+
+forwardPass:
+
+Neuron: (0, 0) Activation:5.5
+Neuron: (0, 1) Activation:2.5
+Neuron: (0, 2) Activation:4
+Neuron: (0, 3) Activation:1.3
+Neuron: (1, 0) Activation:0
+Neuron: (1, 1) Activation:0
+Neuron: (1, 2) Activation:0
+Neuron: (1, 3) Activation:0
+Neuron: (1, 4) Activation:0
+Neuron: (1, 5) Activation:0
+Neuron: (1, 6) Activation:0
+Neuron: (1, 7) Activation:0
+Neuron: (2, 0) Activation:0
+Neuron: (2, 1) Activation:0
+Neuron: (2, 2) Activation:0
+Neuron: (2, 3) Activation:0
+Neuron: (2, 4) Activation:0
+Neuron: (2, 5) Activation:0
+Neuron: (2, 6) Activation:0
+Neuron: (2, 7) Activation:0
+Neuron: (3, 0) Activation:0
+Neuron: (3, 1) Activation:0
+Neuron: (3, 2) Activation:0
+BackProp:
+Neuron: (3, 0) backProp:0
+Neuron: (3, 1) backProp:-0
+Neuron: (3, 2) backProp:0
+Neuron: (2, 0) backProp Error:0
+Neuron: (2, 1) backProp Error:0
+Neuron: (2, 2) backProp Error:0
+Neuron: (2, 3) backProp Error:0
+Neuron: (2, 4) backProp Error:0
+Neuron: (2, 5) backProp Error:0
+Neuron: (2, 6) backProp Error:0
+Neuron: (2, 7) backProp Error:0
+Neuron: (1, 0) backProp Error:0
+Neuron: (1, 1) backProp Error:0
+Neuron: (1, 2) backProp Error:0
+Neuron: (1, 3) backProp Error:0
+Neuron: (1, 4) backProp Error:0
+Neuron: (1, 5) backProp Error:0
+Neuron: (1, 6) backProp Error:0
+Neuron: (1, 7) backProp Error:0
+Neuron: (0, 0) backProp Error:0
+Neuron: (0, 1) backProp Error:0
+Neuron: (0, 2) backProp Error:0
+Neuron: (0, 3) backProp Error:0
+Number of lines: 60
+Random Line58
+
+forwardPass:
+
+Neuron: (0, 0) Activation:6.8
+Neuron: (0, 1) Activation:3.2
+Neuron: (0, 2) Activation:5.9
+Neuron: (0, 3) Activation:2.3
+Neuron: (1, 0) Activation:0
+Neuron: (1, 1) Activation:0
+Neuron: (1, 2) Activation:0
+Neuron: (1, 3) Activation:0
+Neuron: (1, 4) Activation:0
+Neuron: (1, 5) Activation:0
+Neuron: (1, 6) Activation:0
+Neuron: (1, 7) Activation:0
+Neuron: (2, 0) Activation:0
+Neuron: (2, 1) Activation:0
+Neuron: (2, 2) Activation:0
+Neuron: (2, 3) Activation:0
+Neuron: (2, 4) Activation:0
+Neuron: (2, 5) Activation:0
+Neuron: (2, 6) Activation:0
+Neuron: (2, 7) Activation:0
+Neuron: (3, 0) Activation:0
+Neuron: (3, 1) Activation:0
+Neuron: (3, 2) Activation:0
+BackProp:
+Neuron: (3, 0) backProp:0
+Neuron: (3, 1) backProp:0
+Neuron: (3, 2) backProp:-0
+Neuron: (2, 0) backProp Error:0
+Neuron: (2, 1) backProp Error:0
+Neuron: (2, 2) backProp Error:0
+Neuron: (2, 3) backProp Error:0
+Neuron: (2, 4) backProp Error:0
+Neuron: (2, 5) backProp Error:0
+Neuron: (2, 6) backProp Error:0
+Neuron: (2, 7) backProp Error:0
+Neuron: (1, 0) backProp Error:0
+Neuron: (1, 1) backProp Error:0
+Neuron: (1, 2) backProp Error:0
+Neuron: (1, 3) backProp Error:0
+Neuron: (1, 4) backProp Error:0
+Neuron: (1, 5) backProp Error:0
+Neuron: (1, 6) backProp Error:0
+Neuron: (1, 7) backProp Error:0
+Neuron: (0, 0) backProp Error:0
+Neuron: (0, 1) backProp Error:0
+Neuron: (0, 2) backProp Error:0
+Neuron: (0, 3) backProp Error:0
+Number of lines: 59
+Random Line2
+
+forwardPass:
+
+Neuron: (0, 0) Activation:4.4
+Neuron: (0, 1) Activation:2.9
+Neuron: (0, 2) Activation:1.4
+Neuron: (0, 3) Activation:0.2
+Neuron: (1, 0) Activation:0
+Neuron: (1, 1) Activation:0
+Neuron: (1, 2) Activation:0
+Neuron: (1, 3) Activation:0
+Neuron: (1, 4) Activation:0
+Neuron: (1, 5) Activation:0
+Neuron: (1, 6) Activation:0
+Neuron: (1, 7) Activation:0
+Neuron: (2, 0) Activation:0
+Neuron: (2, 1) Activation:0
+Neuron: (2, 2) Activation:0
+Neuron: (2, 3) Activation:0
+Neuron: (2, 4) Activation:0
+Neuron: (2, 5) Activation:0
+Neuron: (2, 6) Activation:0
+Neuron: (2, 7) Activation:0
+Neuron: (3, 0) Activation:0
+Neuron: (3, 1) Activation:0
+Neuron: (3, 2) Activation:0
+BackProp:
+Neuron: (3, 0) backProp:-0
+Neuron: (3, 1) backProp:0
+Neuron: (3, 2) backProp:0
+Neuron: (2, 0) backProp Error:0
+Neuron: (2, 1) backProp Error:0
+Neuron: (2, 2) backProp Error:0
+Neuron: (2, 3) backProp Error:0
+Neuron: (2, 4) backProp Error:0
+Neuron: (2, 5) backProp Error:0
+Neuron: (2, 6) backProp Error:0
+Neuron: (2, 7) backProp Error:0
+Neuron: (1, 0) backProp Error:0
+Neuron: (1, 1) backProp Error:0
+Neuron: (1, 2) backProp Error:0
+Neuron: (1, 3) backProp Error:0
+Neuron: (1, 4) backProp Error:0
+Neuron: (1, 5) backProp Error:0
+Neuron: (1, 6) backProp Error:0
+Neuron: (1, 7) backProp Error:0
+Neuron: (0, 0) backProp Error:0
+Neuron: (0, 1) backProp Error:0
+Neuron: (0, 2) backProp Error:0
+Neuron: (0, 3) backProp Error:0
+Number of lines: 58
+Random Line11
+
+forwardPass:
+
+Neuron: (0, 0) Activation:5.1
+Neuron: (0, 1) Activation:3.4
+Neuron: (0, 2) Activation:1.5
+Neuron: (0, 3) Activation:0.2
+Neuron: (1, 0) Activation:0
+Neuron: (1, 1) Activation:0
+Neuron: (1, 2) Activation:0
+Neuron: (1, 3) Activation:0
+Neuron: (1, 4) Activation:0
+Neuron: (1, 5) Activation:0
+Neuron: (1, 6) Activation:0
+Neuron: (1, 7) Activation:0
+Neuron: (2, 0) Activation:0
+Neuron: (2, 1) Activation:0
+Neuron: (2, 2) Activation:0
+Neuron: (2, 3) Activation:0
+Neuron: (2, 4) Activation:0
+Neuron: (2, 5) Activation:0
+Neuron: (2, 6) Activation:0
+Neuron: (2, 7) Activation:0
+Neuron: (3, 0) Activation:0
+Neuron: (3, 1) Activation:0
+Neuron: (3, 2) Activation:0
+BackProp:
+Neuron: (3, 0) backProp:-0
+Neuron: (3, 1) backProp:0
+Neuron: (3, 2) backProp:0
+Neuron: (2, 0) backProp Error:0
+Neuron: (2, 1) backProp Error:0
+Neuron: (2, 2) backProp Error:0
+Neuron: (2, 3) backProp Error:0
+Neuron: (2, 4) backProp Error:0
+Neuron: (2, 5) backProp Error:0
+Neuron: (2, 6) backProp Error:0
+Neuron: (2, 7) backProp Error:0
+Neuron: (1, 0) backProp Error:0
+Neuron: (1, 1) backProp Error:0
+Neuron: (1, 2) backProp Error:0
+Neuron: (1, 3) backProp Error:0
+Neuron: (1, 4) backProp Error:0
+Neuron: (1, 5) backProp Error:0
+Neuron: (1, 6) backProp Error:0
+Neuron: (1, 7) backProp Error:0
+Neuron: (0, 0) backProp Error:0
+Neuron: (0, 1) backProp Error:0
+Neuron: (0, 2) backProp Error:0
+Neuron: (0, 3) backProp Error:0
+Number of lines: 57
+Random Line24
+
+forwardPass:
+
+Neuron: (0, 0) Activation:6.4
+Neuron: (0, 1) Activation:2.9
+Neuron: (0, 2) Activation:4.3
+Neuron: (0, 3) Activation:1.3
+Neuron: (1, 0) Activation:0
+Neuron: (1, 1) Activation:0
+Neuron: (1, 2) Activation:0
+Neuron: (1, 3) Activation:0
+Neuron: (1, 4) Activation:0
+Neuron: (1, 5) Activation:0
+Neuron: (1, 6) Activation:0
+Neuron: (1, 7) Activation:0
+Neuron: (2, 0) Activation:0
+Neuron: (2, 1) Activation:0
+Neuron: (2, 2) Activation:0
+Neuron: (2, 3) Activation:0
+Neuron: (2, 4) Activation:0
+Neuron: (2, 5) Activation:0
+Neuron: (2, 6) Activation:0
+Neuron: (2, 7) Activation:0
+Neuron: (3, 0) Activation:0
+Neuron: (3, 1) Activation:0
+Neuron: (3, 2) Activation:0
+BackProp:
+Neuron: (3, 0) backProp:0
+Neuron: (3, 1) backProp:-0
+Neuron: (3, 2) backProp:0
+Neuron: (2, 0) backProp Error:0
+Neuron: (2, 1) backProp Error:0
+Neuron: (2, 2) backProp Error:0
+Neuron: (2, 3) backProp Error:0
+Neuron: (2, 4) backProp Error:0
+Neuron: (2, 5) backProp Error:0
+Neuron: (2, 6) backProp Error:0
+Neuron: (2, 7) backProp Error:0
+Neuron: (1, 0) backProp Error:0
+Neuron: (1, 1) backProp Error:0
+Neuron: (1, 2) backProp Error:0
+Neuron: (1, 3) backProp Error:0
+Neuron: (1, 4) backProp Error:0
+Neuron: (1, 5) backProp Error:0
+Neuron: (1, 6) backProp Error:0
+Neuron: (1, 7) backProp Error:0
+Neuron: (0, 0) backProp Error:0
+Neuron: (0, 1) backProp Error:0
+Neuron: (0, 2) backProp Error:0
+Neuron: (0, 3) backProp Error:0
+Number of lines: 56
+Random Line39
+
+forwardPass:
+
+Neuron: (0, 0) Activation:7.2
+Neuron: (0, 1) Activation:3.6
+Neuron: (0, 2) Activation:6.1
+Neuron: (0, 3) Activation:2.5
+Neuron: (1, 0) Activation:0
+Neuron: (1, 1) Activation:0
+Neuron: (1, 2) Activation:0
+Neuron: (1, 3) Activation:0
+Neuron: (1, 4) Activation:0
+Neuron: (1, 5) Activation:0
+Neuron: (1, 6) Activation:0
+Neuron: (1, 7) Activation:0
+Neuron: (2, 0) Activation:0
+Neuron: (2, 1) Activation:0
+Neuron: (2, 2) Activation:0
+Neuron: (2, 3) Activation:0
+Neuron: (2, 4) Activation:0
+Neuron: (2, 5) Activation:0
+Neuron: (2, 6) Activation:0
+Neuron: (2, 7) Activation:0
+Neuron: (3, 0) Activation:0
+Neuron: (3, 1) Activation:0
+Neuron: (3, 2) Activation:0
+BackProp:
+Neuron: (3, 0) backProp:0
+Neuron: (3, 1) backProp:0
+Neuron: (3, 2) backProp:-0
+Neuron: (2, 0) backProp Error:0
+Neuron: (2, 1) backProp Error:0
+Neuron: (2, 2) backProp Error:0
+Neuron: (2, 3) backProp Error:0
+Neuron: (2, 4) backProp Error:0
+Neuron: (2, 5) backProp Error:0
+Neuron: (2, 6) backProp Error:0
+Neuron: (2, 7) backProp Error:0
+Neuron: (1, 0) backProp Error:0
+Neuron: (1, 1) backProp Error:0
+Neuron: (1, 2) backProp Error:0
+Neuron: (1, 3) backProp Error:0
+Neuron: (1, 4) backProp Error:0
+Neuron: (1, 5) backProp Error:0
+Neuron: (1, 6) backProp Error:0
+Neuron: (1, 7) backProp Error:0
+Neuron: (0, 0) backProp Error:0
+Neuron: (0, 1) backProp Error:0
+Neuron: (0, 2) backProp Error:0
+Neuron: (0, 3) backProp Error:0
+Number of lines: 55
+Random Line31
+
+forwardPass:
+
+Neuron: (0, 0) Activation:5.5
+Neuron: (0, 1) Activation:2.6
+Neuron: (0, 2) Activation:4.4
+Neuron: (0, 3) Activation:1.2
+Neuron: (1, 0) Activation:0
+Neuron: (1, 1) Activation:0
+Neuron: (1, 2) Activation:0
+Neuron: (1, 3) Activation:0
+Neuron: (1, 4) Activation:0
+Neuron: (1, 5) Activation:0
+Neuron: (1, 6) Activation:0
+Neuron: (1, 7) Activation:0
+Neuron: (2, 0) Activation:0
+Neuron: (2, 1) Activation:0
+Neuron: (2, 2) Activation:0
+Neuron: (2, 3) Activation:0
+Neuron: (2, 4) Activation:0
+Neuron: (2, 5) Activation:0
+Neuron: (2, 6) Activation:0
+Neuron: (2, 7) Activation:0
+Neuron: (3, 0) Activation:0
+Neuron: (3, 1) Activation:0
+Neuron: (3, 2) Activation:0
+BackProp:
+Neuron: (3, 0) backProp:0
+Neuron: (3, 1) backProp:-0
+Neuron: (3, 2) backProp:0
+Neuron: (2, 0) backProp Error:0
+Neuron: (2, 1) backProp Error:0
+Neuron: (2, 2) backProp Error:0
+Neuron: (2, 3) backProp Error:0
+Neuron: (2, 4) backProp Error:0
+Neuron: (2, 5) backProp Error:0
+Neuron: (2, 6) backProp Error:0
+Neuron: (2, 7) backProp Error:0
+Neuron: (1, 0) backProp Error:0
+Neuron: (1, 1) backProp Error:0
+Neuron: (1, 2) backProp Error:0
+Neuron: (1, 3) backProp Error:0
+Neuron: (1, 4) backProp Error:0
+Neuron: (1, 5) backProp Error:0
+Neuron: (1, 6) backProp Error:0
+Neuron: (1, 7) backProp Error:0
+Neuron: (0, 0) backProp Error:0
+Neuron: (0, 1) backProp Error:0
+Neuron: (0, 2) backProp Error:0
+Neuron: (0, 3) backProp Error:0
+Number of lines: 54
+Random Line15
+
+forwardPass:
+
+Neuron: (0, 0) Activation:4.8
+Neuron: (0, 1) Activation:3
+Neuron: (0, 2) Activation:1.4
+Neuron: (0, 3) Activation:0.3
+Neuron: (1, 0) Activation:0
+Neuron: (1, 1) Activation:0
+Neuron: (1, 2) Activation:0
+Neuron: (1, 3) Activation:0
+Neuron: (1, 4) Activation:0
+Neuron: (1, 5) Activation:0
+Neuron: (1, 6) Activation:0
+Neuron: (1, 7) Activation:0
+Neuron: (2, 0) Activation:0
+Neuron: (2, 1) Activation:0
+Neuron: (2, 2) Activation:0
+Neuron: (2, 3) Activation:0
+Neuron: (2, 4) Activation:0
+Neuron: (2, 5) Activation:0
+Neuron: (2, 6) Activation:0
+Neuron: (2, 7) Activation:0
+Neuron: (3, 0) Activation:0
+Neuron: (3, 1) Activation:0
+Neuron: (3, 2) Activation:0
+BackProp:
+Neuron: (3, 0) backProp:-0
+Neuron: (3, 1) backProp:0
+Neuron: (3, 2) backProp:0
+Neuron: (2, 0) backProp Error:0
+Neuron: (2, 1) backProp Error:0
+Neuron: (2, 2) backProp Error:0
+Neuron: (2, 3) backProp Error:0
+Neuron: (2, 4) backProp Error:0
+Neuron: (2, 5) backProp Error:0
+Neuron: (2, 6) backProp Error:0
+Neuron: (2, 7) backProp Error:0
+Neuron: (1, 0) backProp Error:0
+Neuron: (1, 1) backProp Error:0
+Neuron: (1, 2) backProp Error:0
+Neuron: (1, 3) backProp Error:0
+Neuron: (1, 4) backProp Error:0
+Neuron: (1, 5) backProp Error:0
+Neuron: (1, 6) backProp Error:0
+Neuron: (1, 7) backProp Error:0
+Neuron: (0, 0) backProp Error:0
+Neuron: (0, 1) backProp Error:0
+Neuron: (0, 2) backProp Error:0
+Neuron: (0, 3) backProp Error:0
+Number of lines: 53
+Random Line8
+
+forwardPass:
+
+Neuron: (0, 0) Activation:5.4
+Neuron: (0, 1) Activation:3.4
+Neuron: (0, 2) Activation:1.5
+Neuron: (0, 3) Activation:0.4
+Neuron: (1, 0) Activation:0
+Neuron: (1, 1) Activation:0
+Neuron: (1, 2) Activation:0
+Neuron: (1, 3) Activation:0
+Neuron: (1, 4) Activation:0
+Neuron: (1, 5) Activation:0
+Neuron: (1, 6) Activation:0
+Neuron: (1, 7) Activation:0
+Neuron: (2, 0) Activation:0
+Neuron: (2, 1) Activation:0
+Neuron: (2, 2) Activation:0
+Neuron: (2, 3) Activation:0
+Neuron: (2, 4) Activation:0
+Neuron: (2, 5) Activation:0
+Neuron: (2, 6) Activation:0
+Neuron: (2, 7) Activation:0
+Neuron: (3, 0) Activation:0
+Neuron: (3, 1) Activation:0
+Neuron: (3, 2) Activation:0
+BackProp:
+Neuron: (3, 0) backProp:-0
+Neuron: (3, 1) backProp:0
+Neuron: (3, 2) backProp:0
+Neuron: (2, 0) backProp Error:0
+Neuron: (2, 1) backProp Error:0
+Neuron: (2, 2) backProp Error:0
+Neuron: (2, 3) backProp Error:0
+Neuron: (2, 4) backProp Error:0
+Neuron: (2, 5) backProp Error:0
+Neuron: (2, 6) backProp Error:0
+Neuron: (2, 7) backProp Error:0
+Neuron: (1, 0) backProp Error:0
+Neuron: (1, 1) backProp Error:0
+Neuron: (1, 2) backProp Error:0
+Neuron: (1, 3) backProp Error:0
+Neuron: (1, 4) backProp Error:0
+Neuron: (1, 5) backProp Error:0
+Neuron: (1, 6) backProp Error:0
+Neuron: (1, 7) backProp Error:0
+Neuron: (0, 0) backProp Error:0
+Neuron: (0, 1) backProp Error:0
+Neuron: (0, 2) backProp Error:0
+Neuron: (0, 3) backProp Error:0
+Number of lines: 52
+Random Line50
+
+forwardPass:
+
+Neuron: (0, 0) Activation:5.8
+Neuron: (0, 1) Activation:2.7
+Neuron: (0, 2) Activation:5.1
+Neuron: (0, 3) Activation:1.9
+Neuron: (1, 0) Activation:0
+Neuron: (1, 1) Activation:0
+Neuron: (1, 2) Activation:0
+Neuron: (1, 3) Activation:0
+Neuron: (1, 4) Activation:0
+Neuron: (1, 5) Activation:0
+Neuron: (1, 6) Activation:0
+Neuron: (1, 7) Activation:0
+Neuron: (2, 0) Activation:0
+Neuron: (2, 1) Activation:0
+Neuron: (2, 2) Activation:0
+Neuron: (2, 3) Activation:0
+Neuron: (2, 4) Activation:0
+Neuron: (2, 5) Activation:0
+Neuron: (2, 6) Activation:0
+Neuron: (2, 7) Activation:0
+Neuron: (3, 0) Activation:0
+Neuron: (3, 1) Activation:0
+Neuron: (3, 2) Activation:0
+BackProp:
+Neuron: (3, 0) backProp:0
+Neuron: (3, 1) backProp:0
+Neuron: (3, 2) backProp:-0
+Neuron: (2, 0) backProp Error:0
+Neuron: (2, 1) backProp Error:0
+Neuron: (2, 2) backProp Error:0
+Neuron: (2, 3) backProp Error:0
+Neuron: (2, 4) backProp Error:0
+Neuron: (2, 5) backProp Error:0
+Neuron: (2, 6) backProp Error:0
+Neuron: (2, 7) backProp Error:0
+Neuron: (1, 0) backProp Error:0
+Neuron: (1, 1) backProp Error:0
+Neuron: (1, 2) backProp Error:0
+Neuron: (1, 3) backProp Error:0
+Neuron: (1, 4) backProp Error:0
+Neuron: (1, 5) backProp Error:0
+Neuron: (1, 6) backProp Error:0
+Neuron: (1, 7) backProp Error:0
+Neuron: (0, 0) backProp Error:0
+Neuron: (0, 1) backProp Error:0
+Neuron: (0, 2) backProp Error:0
+Neuron: (0, 3) backProp Error:0
+Number of lines: 51
+Random Line37
+
+forwardPass:
+
+Neuron: (0, 0) Activation:6.4
+Neuron: (0, 1) Activation:2.7
+Neuron: (0, 2) Activation:5.3
+Neuron: (0, 3) Activation:1.9
+Neuron: (1, 0) Activation:0
+Neuron: (1, 1) Activation:0
+Neuron: (1, 2) Activation:0
+Neuron: (1, 3) Activation:0
+Neuron: (1, 4) Activation:0
+Neuron: (1, 5) Activation:0
+Neuron: (1, 6) Activation:0
+Neuron: (1, 7) Activation:0
+Neuron: (2, 0) Activation:0
+Neuron: (2, 1) Activation:0
+Neuron: (2, 2) Activation:0
+Neuron: (2, 3) Activation:0
+Neuron: (2, 4) Activation:0
+Neuron: (2, 5) Activation:0
+Neuron: (2, 6) Activation:0
+Neuron: (2, 7) Activation:0
+Neuron: (3, 0) Activation:0
+Neuron: (3, 1) Activation:0
+Neuron: (3, 2) Activation:0
+BackProp:
+Neuron: (3, 0) backProp:0
+Neuron: (3, 1) backProp:0
+Neuron: (3, 2) backProp:-0
+Neuron: (2, 0) backProp Error:0
+Neuron: (2, 1) backProp Error:0
+Neuron: (2, 2) backProp Error:0
+Neuron: (2, 3) backProp Error:0
+Neuron: (2, 4) backProp Error:0
+Neuron: (2, 5) backProp Error:0
+Neuron: (2, 6) backProp Error:0
+Neuron: (2, 7) backProp Error:0
+Neuron: (1, 0) backProp Error:0
+Neuron: (1, 1) backProp Error:0
+Neuron: (1, 2) backProp Error:0
+Neuron: (1, 3) backProp Error:0
+Neuron: (1, 4) backProp Error:0
+Neuron: (1, 5) backProp Error:0
+Neuron: (1, 6) backProp Error:0
+Neuron: (1, 7) backProp Error:0
+Neuron: (0, 0) backProp Error:0
+Neuron: (0, 1) backProp Error:0
+Neuron: (0, 2) backProp Error:0
+Neuron: (0, 3) backProp Error:0
+Number of lines: 50
+Random Line11
+
+forwardPass:
+
+Neuron: (0, 0) Activation:4.4
+Neuron: (0, 1) Activation:3.2
+Neuron: (0, 2) Activation:1.3
+Neuron: (0, 3) Activation:0.2
+Neuron: (1, 0) Activation:0
+Neuron: (1, 1) Activation:0
+Neuron: (1, 2) Activation:0
+Neuron: (1, 3) Activation:0
+Neuron: (1, 4) Activation:0
+Neuron: (1, 5) Activation:0
+Neuron: (1, 6) Activation:0
+Neuron: (1, 7) Activation:0
+Neuron: (2, 0) Activation:0
+Neuron: (2, 1) Activation:0
+Neuron: (2, 2) Activation:0
+Neuron: (2, 3) Activation:0
+Neuron: (2, 4) Activation:0
+Neuron: (2, 5) Activation:0
+Neuron: (2, 6) Activation:0
+Neuron: (2, 7) Activation:0
+Neuron: (3, 0) Activation:0
+Neuron: (3, 1) Activation:0
+Neuron: (3, 2) Activation:0
+BackProp:
+Neuron: (3, 0) backProp:-0
+Neuron: (3, 1) backProp:0
+Neuron: (3, 2) backProp:0
+Neuron: (2, 0) backProp Error:0
+Neuron: (2, 1) backProp Error:0
+Neuron: (2, 2) backProp Error:0
+Neuron: (2, 3) backProp Error:0
+Neuron: (2, 4) backProp Error:0
+Neuron: (2, 5) backProp Error:0
+Neuron: (2, 6) backProp Error:0
+Neuron: (2, 7) backProp Error:0
+Neuron: (1, 0) backProp Error:0
+Neuron: (1, 1) backProp Error:0
+Neuron: (1, 2) backProp Error:0
+Neuron: (1, 3) backProp Error:0
+Neuron: (1, 4) backProp Error:0
+Neuron: (1, 5) backProp Error:0
+Neuron: (1, 6) backProp Error:0
+Neuron: (1, 7) backProp Error:0
+Neuron: (0, 0) backProp Error:0
+Neuron: (0, 1) backProp Error:0
+Neuron: (0, 2) backProp Error:0
+Neuron: (0, 3) backProp Error:0
+Number of lines: 49
+Random Line0
+
+forwardPass:
+
+Neuron: (0, 0) Activation:5.1
+Neuron: (0, 1) Activation:3.5
+Neuron: (0, 2) Activation:1.4
+Neuron: (0, 3) Activation:0.2
+Neuron: (1, 0) Activation:0
+Neuron: (1, 1) Activation:0
+Neuron: (1, 2) Activation:0
+Neuron: (1, 3) Activation:0
+Neuron: (1, 4) Activation:0
+Neuron: (1, 5) Activation:0
+Neuron: (1, 6) Activation:0
+Neuron: (1, 7) Activation:0
+Neuron: (2, 0) Activation:0
+Neuron: (2, 1) Activation:0
+Neuron: (2, 2) Activation:0
+Neuron: (2, 3) Activation:0
+Neuron: (2, 4) Activation:0
+Neuron: (2, 5) Activation:0
+Neuron: (2, 6) Activation:0
+Neuron: (2, 7) Activation:0
+Neuron: (3, 0) Activation:0
+Neuron: (3, 1) Activation:0
+Neuron: (3, 2) Activation:0
+BackProp:
+Neuron: (3, 0) backProp:-0
+Neuron: (3, 1) backProp:0
+Neuron: (3, 2) backProp:0
+Neuron: (2, 0) backProp Error:0
+Neuron: (2, 1) backProp Error:0
+Neuron: (2, 2) backProp Error:0
+Neuron: (2, 3) backProp Error:0
+Neuron: (2, 4) backProp Error:0
+Neuron: (2, 5) backProp Error:0
+Neuron: (2, 6) backProp Error:0
+Neuron: (2, 7) backProp Error:0
+Neuron: (1, 0) backProp Error:0
+Neuron: (1, 1) backProp Error:0
+Neuron: (1, 2) backProp Error:0
+Neuron: (1, 3) backProp Error:0
+Neuron: (1, 4) backProp Error:0
+Neuron: (1, 5) backProp Error:0
+Neuron: (1, 6) backProp Error:0
+Neuron: (1, 7) backProp Error:0
+Neuron: (0, 0) backProp Error:0
+Neuron: (0, 1) backProp Error:0
+Neuron: (0, 2) backProp Error:0
+Neuron: (0, 3) backProp Error:0
+Number of lines: 48
+Random Line37
+
+forwardPass:
+
+Neuron: (0, 0) Activation:7.7
+Neuron: (0, 1) Activation:2.8
+Neuron: (0, 2) Activation:6.7
+Neuron: (0, 3) Activation:2
+Neuron: (1, 0) Activation:0
+Neuron: (1, 1) Activation:0
+Neuron: (1, 2) Activation:0
+Neuron: (1, 3) Activation:0
+Neuron: (1, 4) Activation:0
+Neuron: (1, 5) Activation:0
+Neuron: (1, 6) Activation:0
+Neuron: (1, 7) Activation:0
+Neuron: (2, 0) Activation:0
+Neuron: (2, 1) Activation:0
+Neuron: (2, 2) Activation:0
+Neuron: (2, 3) Activation:0
+Neuron: (2, 4) Activation:0
+Neuron: (2, 5) Activation:0
+Neuron: (2, 6) Activation:0
+Neuron: (2, 7) Activation:0
+Neuron: (3, 0) Activation:0
+Neuron: (3, 1) Activation:0
+Neuron: (3, 2) Activation:0
+BackProp:
+Neuron: (3, 0) backProp:0
+Neuron: (3, 1) backProp:0
+Neuron: (3, 2) backProp:-0
+Neuron: (2, 0) backProp Error:0
+Neuron: (2, 1) backProp Error:0
+Neuron: (2, 2) backProp Error:0
+Neuron: (2, 3) backProp Error:0
+Neuron: (2, 4) backProp Error:0
+Neuron: (2, 5) backProp Error:0
+Neuron: (2, 6) backProp Error:0
+Neuron: (2, 7) backProp Error:0
+Neuron: (1, 0) backProp Error:0
+Neuron: (1, 1) backProp Error:0
+Neuron: (1, 2) backProp Error:0
+Neuron: (1, 3) backProp Error:0
+Neuron: (1, 4) backProp Error:0
+Neuron: (1, 5) backProp Error:0
+Neuron: (1, 6) backProp Error:0
+Neuron: (1, 7) backProp Error:0
+Neuron: (0, 0) backProp Error:0
+Neuron: (0, 1) backProp Error:0
+Neuron: (0, 2) backProp Error:0
+Neuron: (0, 3) backProp Error:0
+Number of lines: 47
+Random Line19
+
+forwardPass:
+
+Neuron: (0, 0) Activation:5.9
+Neuron: (0, 1) Activation:3.2
+Neuron: (0, 2) Activation:4.8
+Neuron: (0, 3) Activation:1.8
+Neuron: (1, 0) Activation:0
+Neuron: (1, 1) Activation:0
+Neuron: (1, 2) Activation:0
+Neuron: (1, 3) Activation:0
+Neuron: (1, 4) Activation:0
+Neuron: (1, 5) Activation:0
+Neuron: (1, 6) Activation:0
+Neuron: (1, 7) Activation:0
+Neuron: (2, 0) Activation:0
+Neuron: (2, 1) Activation:0
+Neuron: (2, 2) Activation:0
+Neuron: (2, 3) Activation:0
+Neuron: (2, 4) Activation:0
+Neuron: (2, 5) Activation:0
+Neuron: (2, 6) Activation:0
+Neuron: (2, 7) Activation:0
+Neuron: (3, 0) Activation:0
+Neuron: (3, 1) Activation:0
+Neuron: (3, 2) Activation:0
+BackProp:
+Neuron: (3, 0) backProp:0
+Neuron: (3, 1) backProp:-0
+Neuron: (3, 2) backProp:0
+Neuron: (2, 0) backProp Error:0
+Neuron: (2, 1) backProp Error:0
+Neuron: (2, 2) backProp Error:0
+Neuron: (2, 3) backProp Error:0
+Neuron: (2, 4) backProp Error:0
+Neuron: (2, 5) backProp Error:0
+Neuron: (2, 6) backProp Error:0
+Neuron: (2, 7) backProp Error:0
+Neuron: (1, 0) backProp Error:0
+Neuron: (1, 1) backProp Error:0
+Neuron: (1, 2) backProp Error:0
+Neuron: (1, 3) backProp Error:0
+Neuron: (1, 4) backProp Error:0
+Neuron: (1, 5) backProp Error:0
+Neuron: (1, 6) backProp Error:0
+Neuron: (1, 7) backProp Error:0
+Neuron: (0, 0) backProp Error:0
+Neuron: (0, 1) backProp Error:0
+Neuron: (0, 2) backProp Error:0
+Neuron: (0, 3) backProp Error:0
+Number of lines: 46
+Random Line17
+
+forwardPass:
+
+Neuron: (0, 0) Activation:6.6
+Neuron: (0, 1) Activation:2.9
+Neuron: (0, 2) Activation:4.6
+Neuron: (0, 3) Activation:1.3
+Neuron: (1, 0) Activation:0
+Neuron: (1, 1) Activation:0
+Neuron: (1, 2) Activation:0
+Neuron: (1, 3) Activation:0
+Neuron: (1, 4) Activation:0
+Neuron: (1, 5) Activation:0
+Neuron: (1, 6) Activation:0
+Neuron: (1, 7) Activation:0
+Neuron: (2, 0) Activation:0
+Neuron: (2, 1) Activation:0
+Neuron: (2, 2) Activation:0
+Neuron: (2, 3) Activation:0
+Neuron: (2, 4) Activation:0
+Neuron: (2, 5) Activation:0
+Neuron: (2, 6) Activation:0
+Neuron: (2, 7) Activation:0
+Neuron: (3, 0) Activation:0
+Neuron: (3, 1) Activation:0
+Neuron: (3, 2) Activation:0
+BackProp:
+Neuron: (3, 0) backProp:0
+Neuron: (3, 1) backProp:-0
+Neuron: (3, 2) backProp:0
+Neuron: (2, 0) backProp Error:0
+Neuron: (2, 1) backProp Error:0
+Neuron: (2, 2) backProp Error:0
+Neuron: (2, 3) backProp Error:0
+Neuron: (2, 4) backProp Error:0
+Neuron: (2, 5) backProp Error:0
+Neuron: (2, 6) backProp Error:0
+Neuron: (2, 7) backProp Error:0
+Neuron: (1, 0) backProp Error:0
+Neuron: (1, 1) backProp Error:0
+Neuron: (1, 2) backProp Error:0
+Neuron: (1, 3) backProp Error:0
+Neuron: (1, 4) backProp Error:0
+Neuron: (1, 5) backProp Error:0
+Neuron: (1, 6) backProp Error:0
+Neuron: (1, 7) backProp Error:0
+Neuron: (0, 0) backProp Error:0
+Neuron: (0, 1) backProp Error:0
+Neuron: (0, 2) backProp Error:0
+Neuron: (0, 3) backProp Error:0
+Number of lines: 45
+Random Line32
+
+forwardPass:
+
+Neuron: (0, 0) Activation:6.5
+Neuron: (0, 1) Activation:3.2
+Neuron: (0, 2) Activation:5.1
+Neuron: (0, 3) Activation:2
+Neuron: (1, 0) Activation:0
+Neuron: (1, 1) Activation:0
+Neuron: (1, 2) Activation:0
+Neuron: (1, 3) Activation:0
+Neuron: (1, 4) Activation:0
+Neuron: (1, 5) Activation:0
+Neuron: (1, 6) Activation:0
+Neuron: (1, 7) Activation:0
+Neuron: (2, 0) Activation:0
+Neuron: (2, 1) Activation:0
+Neuron: (2, 2) Activation:0
+Neuron: (2, 3) Activation:0
+Neuron: (2, 4) Activation:0
+Neuron: (2, 5) Activation:0
+Neuron: (2, 6) Activation:0
+Neuron: (2, 7) Activation:0
+Neuron: (3, 0) Activation:0
+Neuron: (3, 1) Activation:0
+Neuron: (3, 2) Activation:0
+BackProp:
+Neuron: (3, 0) backProp:0
+Neuron: (3, 1) backProp:0
+Neuron: (3, 2) backProp:-0
+Neuron: (2, 0) backProp Error:0
+Neuron: (2, 1) backProp Error:0
+Neuron: (2, 2) backProp Error:0
+Neuron: (2, 3) backProp Error:0
+Neuron: (2, 4) backProp Error:0
+Neuron: (2, 5) backProp Error:0
+Neuron: (2, 6) backProp Error:0
+Neuron: (2, 7) backProp Error:0
+Neuron: (1, 0) backProp Error:0
+Neuron: (1, 1) backProp Error:0
+Neuron: (1, 2) backProp Error:0
+Neuron: (1, 3) backProp Error:0
+Neuron: (1, 4) backProp Error:0
+Neuron: (1, 5) backProp Error:0
+Neuron: (1, 6) backProp Error:0
+Neuron: (1, 7) backProp Error:0
+Neuron: (0, 0) backProp Error:0
+Neuron: (0, 1) backProp Error:0
+Neuron: (0, 2) backProp Error:0
+Neuron: (0, 3) backProp Error:0
+Number of lines: 44
+Random Line11
+
+forwardPass:
+
+Neuron: (0, 0) Activation:5.1
+Neuron: (0, 1) Activation:3.8
+Neuron: (0, 2) Activation:1.9
+Neuron: (0, 3) Activation:0.4
+Neuron: (1, 0) Activation:0
+Neuron: (1, 1) Activation:0
+Neuron: (1, 2) Activation:0
+Neuron: (1, 3) Activation:0
+Neuron: (1, 4) Activation:0
+Neuron: (1, 5) Activation:0
+Neuron: (1, 6) Activation:0
+Neuron: (1, 7) Activation:0
+Neuron: (2, 0) Activation:0
+Neuron: (2, 1) Activation:0
+Neuron: (2, 2) Activation:0
+Neuron: (2, 3) Activation:0
+Neuron: (2, 4) Activation:0
+Neuron: (2, 5) Activation:0
+Neuron: (2, 6) Activation:0
+Neuron: (2, 7) Activation:0
+Neuron: (3, 0) Activation:0
+Neuron: (3, 1) Activation:0
+Neuron: (3, 2) Activation:0
+BackProp:
+Neuron: (3, 0) backProp:-0
+Neuron: (3, 1) backProp:0
+Neuron: (3, 2) backProp:0
+Neuron: (2, 0) backProp Error:0
+Neuron: (2, 1) backProp Error:0
+Neuron: (2, 2) backProp Error:0
+Neuron: (2, 3) backProp Error:0
+Neuron: (2, 4) backProp Error:0
+Neuron: (2, 5) backProp Error:0
+Neuron: (2, 6) backProp Error:0
+Neuron: (2, 7) backProp Error:0
+Neuron: (1, 0) backProp Error:0
+Neuron: (1, 1) backProp Error:0
+Neuron: (1, 2) backProp Error:0
+Neuron: (1, 3) backProp Error:0
+Neuron: (1, 4) backProp Error:0
+Neuron: (1, 5) backProp Error:0
+Neuron: (1, 6) backProp Error:0
+Neuron: (1, 7) backProp Error:0
+Neuron: (0, 0) backProp Error:0
+Neuron: (0, 1) backProp Error:0
+Neuron: (0, 2) backProp Error:0
+Neuron: (0, 3) backProp Error:0
+Number of lines: 43
+Random Line4
+
+forwardPass:
+
+Neuron: (0, 0) Activation:5.1
+Neuron: (0, 1) Activation:3.7
+Neuron: (0, 2) Activation:1.5
+Neuron: (0, 3) Activation:0.4
+Neuron: (1, 0) Activation:0
+Neuron: (1, 1) Activation:0
+Neuron: (1, 2) Activation:0
+Neuron: (1, 3) Activation:0
+Neuron: (1, 4) Activation:0
+Neuron: (1, 5) Activation:0
+Neuron: (1, 6) Activation:0
+Neuron: (1, 7) Activation:0
+Neuron: (2, 0) Activation:0
+Neuron: (2, 1) Activation:0
+Neuron: (2, 2) Activation:0
+Neuron: (2, 3) Activation:0
+Neuron: (2, 4) Activation:0
+Neuron: (2, 5) Activation:0
+Neuron: (2, 6) Activation:0
+Neuron: (2, 7) Activation:0
+Neuron: (3, 0) Activation:0
+Neuron: (3, 1) Activation:0
+Neuron: (3, 2) Activation:0
+BackProp:
+Neuron: (3, 0) backProp:-0
+Neuron: (3, 1) backProp:0
+Neuron: (3, 2) backProp:0
+Neuron: (2, 0) backProp Error:0
+Neuron: (2, 1) backProp Error:0
+Neuron: (2, 2) backProp Error:0
+Neuron: (2, 3) backProp Error:0
+Neuron: (2, 4) backProp Error:0
+Neuron: (2, 5) backProp Error:0
+Neuron: (2, 6) backProp Error:0
+Neuron: (2, 7) backProp Error:0
+Neuron: (1, 0) backProp Error:0
+Neuron: (1, 1) backProp Error:0
+Neuron: (1, 2) backProp Error:0
+Neuron: (1, 3) backProp Error:0
+Neuron: (1, 4) backProp Error:0
+Neuron: (1, 5) backProp Error:0
+Neuron: (1, 6) backProp Error:0
+Neuron: (1, 7) backProp Error:0
+Neuron: (0, 0) backProp Error:0
+Neuron: (0, 1) backProp Error:0
+Neuron: (0, 2) backProp Error:0
+Neuron: (0, 3) backProp Error:0
+Number of lines: 42
+Random Line31
+
+forwardPass:
+
+Neuron: (0, 0) Activation:6.5
+Neuron: (0, 1) Activation:3
+Neuron: (0, 2) Activation:5.5
+Neuron: (0, 3) Activation:1.8
+Neuron: (1, 0) Activation:0
+Neuron: (1, 1) Activation:0
+Neuron: (1, 2) Activation:0
+Neuron: (1, 3) Activation:0
+Neuron: (1, 4) Activation:0
+Neuron: (1, 5) Activation:0
+Neuron: (1, 6) Activation:0
+Neuron: (1, 7) Activation:0
+Neuron: (2, 0) Activation:0
+Neuron: (2, 1) Activation:0
+Neuron: (2, 2) Activation:0
+Neuron: (2, 3) Activation:0
+Neuron: (2, 4) Activation:0
+Neuron: (2, 5) Activation:0
+Neuron: (2, 6) Activation:0
+Neuron: (2, 7) Activation:0
+Neuron: (3, 0) Activation:0
+Neuron: (3, 1) Activation:0
+Neuron: (3, 2) Activation:0
+BackProp:
+Neuron: (3, 0) backProp:0
+Neuron: (3, 1) backProp:0
+Neuron: (3, 2) backProp:-0
+Neuron: (2, 0) backProp Error:0
+Neuron: (2, 1) backProp Error:0
+Neuron: (2, 2) backProp Error:0
+Neuron: (2, 3) backProp Error:0
+Neuron: (2, 4) backProp Error:0
+Neuron: (2, 5) backProp Error:0
+Neuron: (2, 6) backProp Error:0
+Neuron: (2, 7) backProp Error:0
+Neuron: (1, 0) backProp Error:0
+Neuron: (1, 1) backProp Error:0
+Neuron: (1, 2) backProp Error:0
+Neuron: (1, 3) backProp Error:0
+Neuron: (1, 4) backProp Error:0
+Neuron: (1, 5) backProp Error:0
+Neuron: (1, 6) backProp Error:0
+Neuron: (1, 7) backProp Error:0
+Neuron: (0, 0) backProp Error:0
+Neuron: (0, 1) backProp Error:0
+Neuron: (0, 2) backProp Error:0
+Neuron: (0, 3) backProp Error:0
+Number of lines: 41
+Random Line32
+
+forwardPass:
+
+Neuron: (0, 0) Activation:7.2
+Neuron: (0, 1) Activation:3.2
+Neuron: (0, 2) Activation:6
+Neuron: (0, 3) Activation:1.8
+Neuron: (1, 0) Activation:0
+Neuron: (1, 1) Activation:0
+Neuron: (1, 2) Activation:0
+Neuron: (1, 3) Activation:0
+Neuron: (1, 4) Activation:0
+Neuron: (1, 5) Activation:0
+Neuron: (1, 6) Activation:0
+Neuron: (1, 7) Activation:0
+Neuron: (2, 0) Activation:0
+Neuron: (2, 1) Activation:0
+Neuron: (2, 2) Activation:0
+Neuron: (2, 3) Activation:0
+Neuron: (2, 4) Activation:0
+Neuron: (2, 5) Activation:0
+Neuron: (2, 6) Activation:0
+Neuron: (2, 7) Activation:0
+Neuron: (3, 0) Activation:0
+Neuron: (3, 1) Activation:0
+Neuron: (3, 2) Activation:0
+BackProp:
+Neuron: (3, 0) backProp:0
+Neuron: (3, 1) backProp:0
+Neuron: (3, 2) backProp:-0
+Neuron: (2, 0) backProp Error:0
+Neuron: (2, 1) backProp Error:0
+Neuron: (2, 2) backProp Error:0
+Neuron: (2, 3) backProp Error:0
+Neuron: (2, 4) backProp Error:0
+Neuron: (2, 5) backProp Error:0
+Neuron: (2, 6) backProp Error:0
+Neuron: (2, 7) backProp Error:0
+Neuron: (1, 0) backProp Error:0
+Neuron: (1, 1) backProp Error:0
+Neuron: (1, 2) backProp Error:0
+Neuron: (1, 3) backProp Error:0
+Neuron: (1, 4) backProp Error:0
+Neuron: (1, 5) backProp Error:0
+Neuron: (1, 6) backProp Error:0
+Neuron: (1, 7) backProp Error:0
+Neuron: (0, 0) backProp Error:0
+Neuron: (0, 1) backProp Error:0
+Neuron: (0, 2) backProp Error:0
+Neuron: (0, 3) backProp Error:0
+Number of lines: 40
+Random Line19
+
+forwardPass:
+
+Neuron: (0, 0) Activation:5.5
+Neuron: (0, 1) Activation:2.4
+Neuron: (0, 2) Activation:3.8
+Neuron: (0, 3) Activation:1.1
+Neuron: (1, 0) Activation:0
+Neuron: (1, 1) Activation:0
+Neuron: (1, 2) Activation:0
+Neuron: (1, 3) Activation:0
+Neuron: (1, 4) Activation:0
+Neuron: (1, 5) Activation:0
+Neuron: (1, 6) Activation:0
+Neuron: (1, 7) Activation:0
+Neuron: (2, 0) Activation:0
+Neuron: (2, 1) Activation:0
+Neuron: (2, 2) Activation:0
+Neuron: (2, 3) Activation:0
+Neuron: (2, 4) Activation:0
+Neuron: (2, 5) Activation:0
+Neuron: (2, 6) Activation:0
+Neuron: (2, 7) Activation:0
+Neuron: (3, 0) Activation:0
+Neuron: (3, 1) Activation:0
+Neuron: (3, 2) Activation:0
+BackProp:
+Neuron: (3, 0) backProp:0
+Neuron: (3, 1) backProp:-0
+Neuron: (3, 2) backProp:0
+Neuron: (2, 0) backProp Error:0
+Neuron: (2, 1) backProp Error:0
+Neuron: (2, 2) backProp Error:0
+Neuron: (2, 3) backProp Error:0
+Neuron: (2, 4) backProp Error:0
+Neuron: (2, 5) backProp Error:0
+Neuron: (2, 6) backProp Error:0
+Neuron: (2, 7) backProp Error:0
+Neuron: (1, 0) backProp Error:0
+Neuron: (1, 1) backProp Error:0
+Neuron: (1, 2) backProp Error:0
+Neuron: (1, 3) backProp Error:0
+Neuron: (1, 4) backProp Error:0
+Neuron: (1, 5) backProp Error:0
+Neuron: (1, 6) backProp Error:0
+Neuron: (1, 7) backProp Error:0
+Neuron: (0, 0) backProp Error:0
+Neuron: (0, 1) backProp Error:0
+Neuron: (0, 2) backProp Error:0
+Neuron: (0, 3) backProp Error:0
+Number of lines: 39
+Random Line32
+
+forwardPass:
+
+Neuron: (0, 0) Activation:7.9
+Neuron: (0, 1) Activation:3.8
+Neuron: (0, 2) Activation:6.4
+Neuron: (0, 3) Activation:2
+Neuron: (1, 0) Activation:0
+Neuron: (1, 1) Activation:0
+Neuron: (1, 2) Activation:0
+Neuron: (1, 3) Activation:0
+Neuron: (1, 4) Activation:0
+Neuron: (1, 5) Activation:0
+Neuron: (1, 6) Activation:0
+Neuron: (1, 7) Activation:0
+Neuron: (2, 0) Activation:0
+Neuron: (2, 1) Activation:0
+Neuron: (2, 2) Activation:0
+Neuron: (2, 3) Activation:0
+Neuron: (2, 4) Activation:0
+Neuron: (2, 5) Activation:0
+Neuron: (2, 6) Activation:0
+Neuron: (2, 7) Activation:0
+Neuron: (3, 0) Activation:0
+Neuron: (3, 1) Activation:0
+Neuron: (3, 2) Activation:0
+BackProp:
+Neuron: (3, 0) backProp:0
+Neuron: (3, 1) backProp:0
+Neuron: (3, 2) backProp:-0
+Neuron: (2, 0) backProp Error:0
+Neuron: (2, 1) backProp Error:0
+Neuron: (2, 2) backProp Error:0
+Neuron: (2, 3) backProp Error:0
+Neuron: (2, 4) backProp Error:0
+Neuron: (2, 5) backProp Error:0
+Neuron: (2, 6) backProp Error:0
+Neuron: (2, 7) backProp Error:0
+Neuron: (1, 0) backProp Error:0
+Neuron: (1, 1) backProp Error:0
+Neuron: (1, 2) backProp Error:0
+Neuron: (1, 3) backProp Error:0
+Neuron: (1, 4) backProp Error:0
+Neuron: (1, 5) backProp Error:0
+Neuron: (1, 6) backProp Error:0
+Neuron: (1, 7) backProp Error:0
+Neuron: (0, 0) backProp Error:0
+Neuron: (0, 1) backProp Error:0
+Neuron: (0, 2) backProp Error:0
+Neuron: (0, 3) backProp Error:0
+Number of lines: 38
+Random Line32
+
+forwardPass:
+
+Neuron: (0, 0) Activation:6.4
+Neuron: (0, 1) Activation:2.8
+Neuron: (0, 2) Activation:5.6
+Neuron: (0, 3) Activation:2.2
+Neuron: (1, 0) Activation:0
+Neuron: (1, 1) Activation:0
+Neuron: (1, 2) Activation:0
+Neuron: (1, 3) Activation:0
+Neuron: (1, 4) Activation:0
+Neuron: (1, 5) Activation:0
+Neuron: (1, 6) Activation:0
+Neuron: (1, 7) Activation:0
+Neuron: (2, 0) Activation:0
+Neuron: (2, 1) Activation:0
+Neuron: (2, 2) Activation:0
+Neuron: (2, 3) Activation:0
+Neuron: (2, 4) Activation:0
+Neuron: (2, 5) Activation:0
+Neuron: (2, 6) Activation:0
+Neuron: (2, 7) Activation:0
+Neuron: (3, 0) Activation:0
+Neuron: (3, 1) Activation:0
+Neuron: (3, 2) Activation:0
+BackProp:
+Neuron: (3, 0) backProp:0
+Neuron: (3, 1) backProp:0
+Neuron: (3, 2) backProp:-0
+Neuron: (2, 0) backProp Error:0
+Neuron: (2, 1) backProp Error:0
+Neuron: (2, 2) backProp Error:0
+Neuron: (2, 3) backProp Error:0
+Neuron: (2, 4) backProp Error:0
+Neuron: (2, 5) backProp Error:0
+Neuron: (2, 6) backProp Error:0
+Neuron: (2, 7) backProp Error:0
+Neuron: (1, 0) backProp Error:0
+Neuron: (1, 1) backProp Error:0
+Neuron: (1, 2) backProp Error:0
+Neuron: (1, 3) backProp Error:0
+Neuron: (1, 4) backProp Error:0
+Neuron: (1, 5) backProp Error:0
+Neuron: (1, 6) backProp Error:0
+Neuron: (1, 7) backProp Error:0
+Neuron: (0, 0) backProp Error:0
+Neuron: (0, 1) backProp Error:0
+Neuron: (0, 2) backProp Error:0
+Neuron: (0, 3) backProp Error:0

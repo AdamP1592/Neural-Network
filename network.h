@@ -8,9 +8,14 @@
 #include <string>
 #include <sstream>
 #include <cctype>
+#include <cmath>
+#include <limits>
+#include <unordered_map>
+
 #include "neuron.h"
 #include "layer.h"
 #include "logger.h"
+
 
 
 #endif

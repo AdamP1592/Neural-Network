@@ -1,7 +1,8 @@
 #include "network.h"
 struct network{
     std::vector<Layer> layers;
-    double learningRate = 0.75;
+    double learningRate = 1;
+    int step = 0;
     void setupNetwork(std::vector<int> structure){
         
         Layer inputLayer = Layer(structure[0]);
@@ -9,7 +10,6 @@ struct network{
         
         for(int i = 1; i < structure.size(); i++){
             std::vector<std::reference_wrapper<Neuron>> prevLayerNeuronReferences;
-            std::vector<double> weights;
 
             Layer thisLayer = Layer(structure[i]);
             //building the references for the next layer
@@ -24,6 +24,9 @@ struct network{
             
         }
 
+    }
+    void updateLearningRate(){
+        learningRate = 1/std::exp(0.1 * step);
     }
 
     //set activationValue for the input layer. Iterate all subsequent layers as a standard pass
@@ -99,11 +102,12 @@ struct network{
                 Neuron &n = layers[i].layer[j];
                 double err = n.backPropagate(learningRate);
                 std::ostringstream oss;
-                oss << "Neuron: (" << i  << ", " << j << ") backProp:" << err;
+                oss << "Neuron: (" << i  << ", " << j << ") backProp Error:" << err;
                 Logger::log(oss.str());
             }
 
         }
+        step++;
 
     }
 
@@ -146,21 +150,11 @@ std::vector<int> stringToStructure(std::string layerStructure){
     return structure;
 }
 
-
-int main(){
-    
+void simpleTest(){
     std::vector<double> inputs = {1.0, 3.0, 1.5};
     std::vector<double> weights = {0.5, -0.5, 1.0};
-
     std::vector<double> expected = {0.5, 0};
-    
     std::vector<int> structure;
-
-    double bias = 0.1;
-
-    Neuron n(bias);
-    
-    double output = n.activate();
 
     std::cout << "Enter layer structure\n" 
     << "Ex: 1, 2, 1, Yields:\n"
@@ -171,25 +165,171 @@ int main(){
     system("clear");
 
     structure = stringToStructure(layerStructure);
-
-    structure = {3, 2, 2};
-
     network neuralNetwork;
     neuralNetwork.setupNetwork(structure);
 
     neuralNetwork.printNetwork();
 
     neuralNetwork.forwardPass(inputs);
-
     neuralNetwork.printNetwork();
 
     neuralNetwork.backPropagate(expected);
 
     neuralNetwork.forwardPass(inputs);
-
     neuralNetwork.printNetwork();
 
-    std::getline(std::cin, layerStructure);
+}
+
+std::vector<double> getLine(std::vector<std::vector<double>> &lines){
+    std::vector<double> randomLine;
+    if(!lines.empty()){
+        std::random_device rd;
+        std::mt19937 gen(rd());
+        std::uniform_int_distribution<> dist(0, lines.size() - 1);
+
+        
+        // Get a random index.
+        int randomIndex = dist(gen);
+        std::string randomLineString = "Random Line" + std::to_string(randomIndex) + "\n";
+        Logger::log(randomLineString);
+        
+        
+        // Get the random line.
+        randomLine = lines[randomIndex];
+        
+        // Remove the random line from the vector.
+        lines.erase(lines.begin() + randomIndex);
+
+        
+    }
+    return randomLine;
+}
+double converToDouble(const std::string& s) {
+    try {
+        double value = std::stod(s);
+        return value;
+    } catch (const std::invalid_argument& e) {
+        std::cerr << "Invalid argument: " << e.what() << std::endl;
+    } catch (const std::out_of_range& e) {
+        std::cerr << "Out of range: " << e.what() << std::endl;
+    }
+    return std::numeric_limits<double>::lowest();
+}
+std::vector<std::string> splitStringByComma(const std::string& input) {
+    std::vector<std::string> tokens;
+    std::istringstream stream(input);
+    std::string token;
+    
+    while (std::getline(stream, token, ',')) {
+        tokens.push_back(token);
+    }
+    
+    return tokens;
+}
+
+std::vector<double> processDataPoint(const std::string& input){
+
+    std::unordered_map<std::string, int> dict ={
+        {"Iris-setosa", 0.0},
+        {"Iris-versicolor", 1.0},
+        {"Iris-virginica", 2.0}
+    };
+
+
+    std::vector<double> tokens;
+    std::istringstream stream(input);
+    std::string token;
+    
+    while (std::getline(stream, token, ',')) {
+        double tokenDouble = converToDouble(token);
+
+        if(tokenDouble == std::numeric_limits<double>::lowest()){
+            tokenDouble = dict[token];
+        }
+        tokens.push_back(tokenDouble);
+    }
+    
+    return tokens;
+}
+
+void hardTest(){
+    std::string dataPath = "./data/iris.data";
+    int startSize = 0;
+
+    std::ifstream inFile(dataPath);  // Adjust the file name as needed
+    if (!inFile) {
+        std::cerr << "Error: Could not open file.\n";
+        return;
+    }
+    std::vector<std::string> lines;
+    std::vector<std::vector<std::string>> separatedLines;
+
+    std::vector<std::vector<double>> processedLines;
+    std::vector<double> processedLine;
+
+    std::string line;
+
+    while(std::getline(inFile, line)){
+        lines.push_back(line);
+        processedLine = processDataPoint(line);
+        for(int i = 0; i < processedLine.size();i++){
+            std::cout << processedLine[i] << std::endl;
+        }
+        processedLines.push_back(processedLine);
+        separatedLines.push_back(splitStringByComma(line));
+    }
+    inFile.close();
+    startSize = lines.size();
+    
+    network neuralNet;
+    //data points are 5 points, 4 of them are inputs 1 is expected
+    //there are 3 types of expected values
+    std::vector<int> structure = {4, 8, 8, 3};
+
+    neuralNet.setupNetwork(structure);
+
+    //training
+    std::cout << "Training: \n";
+    while(processedLines.size() > startSize/4){
+
+        std::string numLines = "Number of lines: "  + std::to_string(processedLines.size());
+        Logger::log(numLines);
+
+        std::vector<double> randomLine = getLine(processedLines);
+        std::vector<double> expectedOutput = {0, 0, 0};
+
+        std::vector<double> trainingData;
+        //add all values except the last one to training data
+        for(int i = 0; i < randomLine.size() - 1; i++){
+            trainingData.push_back(randomLine[i]);
+        }
+        
+        //last value is the ideal output neuron(will get set to an expected value of 1)
+        int outputNeuronIndex = randomLine[randomLine.size() - 1];
+        expectedOutput[outputNeuronIndex] = 1.0;
+
+        neuralNet.forwardPass(trainingData);
+
+        neuralNet.backPropagate(expectedOutput);
+
+        //hold for text input every 20 steps
+        if(neuralNet.step % 5 == 0){
+            std::string tmp;
+
+            std::cout << processedLines.size();
+            std:: cin >> tmp;
+        }
+    }
+
+
+    
+}
+int main(){
+    std::string empty;
+
+    hardTest();
+
+    std::getline(std::cin, empty);
     ///std::cout << "Feed-forward output: " << output << std::endl;
     return 0;
 }
