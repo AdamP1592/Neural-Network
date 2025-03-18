@@ -11,6 +11,8 @@ public:
     double bias;
     double activationValue = 0.0;
     double derivative = 0.0;
+    double delta = 0.0;
+
     std::vector<double> weights;
     std::vector<std::reference_wrapper<Neuron>> input_neurons;
 
@@ -59,6 +61,46 @@ public:
 
         return activationValue;
     }
+    double backPropagateOutput(double targetValue, double learningRate){
+        double deltaOutput = (activationValue - targetValue) * derivative;
+
+        delta = deltaOutput;
+
+        //pass the current neuron delta to all the connected neurons
+        for(int i = 0; i < weights.size(); i++){
+            input_neurons[i].get().delta += weights[i] * deltaOutput;
+        }
+        //update weights
+        for(int i = 0; i < weights.size(); i++){
+
+            double inputActivation = input_neurons[i].get().activationValue;
+
+            weights[i] -= learningRate * delta * inputActivation;
+
+        }
+        bias -= delta * learningRate;
+
+        return deltaOutput;
+    }
+    double backPropagate(double learningRate){
+        delta *= derivative;
+
+        for(int i = 0; i < weights.size(); i++){
+            input_neurons[i].get().delta += weights[i] * delta;
+        }
+
+        for(int i = 0; i < weights.size(); i++){
+
+            double inputActivation = input_neurons[i].get().activationValue;
+
+            weights[i] -= learningRate * delta * inputActivation;
+
+        }
+        bias -= delta * learningRate;
+        
+        return delta;
+    }
+    
 
 private:
     void setWeights(const std::vector<double>& defaultWeights) {

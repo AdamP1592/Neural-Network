@@ -2,6 +2,7 @@
 #include <vector>
 #include <functional>
 #include <random>
+
 struct Layer{
     std::vector<Neuron> layer;
     int size;
@@ -32,7 +33,6 @@ struct Layer{
         }
 
     }
-
     Neuron& getConnection(int neuronIndex){
         return layer[neuronIndex];
     }

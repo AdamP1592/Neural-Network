@@ -1,15 +1,7 @@
-
-#include <vector>
-#include <functional>
-#include <sstream>
-#include <random>
-#include <string>
-#include <cctype>
-#include "neuron.h"
-#include "layer.h"
+#include "network.h"
 struct network{
     std::vector<Layer> layers;
-
+    double learningRate = 0.75;
     void setupNetwork(std::vector<int> structure){
         
         Layer inputLayer = Layer(structure[0]);
@@ -36,6 +28,7 @@ struct network{
 
     //set activationValue for the input layer. Iterate all subsequent layers as a standard pass
     void forwardPass(std::vector<double>& inputValues){
+        Logger::log("forwardPass:\n");
         //catch cases for errors
         if(layers.empty()){
             std::cerr << "Error: No layers in the network.\n";
@@ -49,6 +42,11 @@ struct network{
         //set all the input layer activation values to the inputs
         for (int i = 0; i < layers[0].size; i++){
             layers[0].layer[i].activationValue = inputValues[i];
+            
+            //logging activation
+            std::ostringstream oss;
+            oss << "Neuron: (0, " << i << ") Activation:" << inputValues[i];
+            Logger::log(oss.str());
         }
         //iterate each non input layer, activate all neurons in the layers
         int size = layers.size();
@@ -61,8 +59,52 @@ struct network{
                 //get current neuron reference
                 Neuron& n = thisLayer.layer[j];
                 n.activate();
+                
+                //logging activation
+                std::ostringstream oss;
+                oss << "Neuron: (" << i << ", " << j << ") Activation:" << n.activationValue;
+                Logger::log(oss.str());
             }
         }
+    }
+    void backPropagate(std::vector<double> expectedValues){
+        //catch case for empty network
+        Logger::log("BackProp:");
+        if(layers.empty()){
+            std::cerr << "Error: No layers in the network.\n";
+            return;
+        }
+        Layer &outputLayer = layers[layers.size() - 1];
+        //catch case for size mismatch
+        if(expectedValues.size() != outputLayer.size){
+            std::cerr << "Error: expectedValues size (" << outputLayer.size
+            << ") does not match network output size (" << expectedValues.size() << ").\n";
+            return;
+        }
+
+        //back prop call for output layer
+        for(int i = 0; i < outputLayer.size; i++){
+            Neuron &n = outputLayer.layer[i];
+            double err = n.backPropagateOutput(expectedValues[i], learningRate);
+
+            //logging backprop
+            std::ostringstream oss;
+            oss << "Neuron: (" << layers.size() - 1  << ", " << i << ") backProp:" << err;
+            Logger::log(oss.str());
+        }
+        //skip output layer
+        for(int i = layers.size() - 2; i >= 0; i--){
+            Layer &curLayer = layers[i];
+            for(int j = 0; j < curLayer.size; j++){
+                Neuron &n = layers[i].layer[j];
+                double err = n.backPropagate(learningRate);
+                std::ostringstream oss;
+                oss << "Neuron: (" << i  << ", " << j << ") backProp:" << err;
+                Logger::log(oss.str());
+            }
+
+        }
+
     }
 
     void printNetwork(){
@@ -77,6 +119,7 @@ struct network{
             }
             std::cout << std::endl;
         }
+        std::cout << std::endl;
     }
 
 };
@@ -108,6 +151,9 @@ int main(){
     
     std::vector<double> inputs = {1.0, 3.0, 1.5};
     std::vector<double> weights = {0.5, -0.5, 1.0};
+
+    std::vector<double> expected = {0.5, 0};
+    
     std::vector<int> structure;
 
     double bias = 0.1;
@@ -125,11 +171,19 @@ int main(){
     system("clear");
 
     structure = stringToStructure(layerStructure);
-    
+
+    structure = {3, 2, 2};
+
     network neuralNetwork;
     neuralNetwork.setupNetwork(structure);
 
     neuralNetwork.printNetwork();
+
+    neuralNetwork.forwardPass(inputs);
+
+    neuralNetwork.printNetwork();
+
+    neuralNetwork.backPropagate(expected);
 
     neuralNetwork.forwardPass(inputs);
 

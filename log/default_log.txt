@@ -1,0 +1,26 @@
+forwardPass:
+
+Neuron: (0, 0) Activation:1
+Neuron: (0, 1) Activation:3
+Neuron: (0, 2) Activation:1.5
+Neuron: (1, 0) Activation:1.95916
+Neuron: (1, 1) Activation:0.859916
+Neuron: (2, 0) Activation:0
+Neuron: (2, 1) Activation:0.593554
+BackProp:
+Neuron: (2, 0) backProp:-0
+Neuron: (2, 1) backProp:0.593554
+Neuron: (1, 0) backProp:0.232624
+Neuron: (1, 1) backProp:-0.120291
+Neuron: (0, 0) backProp:0
+Neuron: (0, 1) backProp:0
+Neuron: (0, 2) backProp:-0
+forwardPass:
+
+Neuron: (0, 0) Activation:1
+Neuron: (0, 1) Activation:3
+Neuron: (0, 2) Activation:1.5
+Neuron: (1, 0) Activation:0
+Neuron: (1, 1) Activation:2.05531
+Neuron: (2, 0) Activation:0.946828
+Neuron: (2, 1) Activation:0
