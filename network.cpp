@@ -32,7 +32,6 @@ struct network{
     //set activationValue for the input layer. Iterate all subsequent layers as a standard pass
     void forwardPass(std::vector<double>& inputValues){
         Logger::log("forwardPass:\n");
-
         Logger::log("Learning Rate: ");
         Logger::log(std::to_string(learningRate));
         //catch cases for errors
@@ -126,9 +125,11 @@ struct network{
 
     void printNetworkDetailed() {
         std::cout << "Neural Network Visualization:\n";
+        std::cout << "Learning Rate: " << learningRate << "\n";
         int numLayers = layers.size();
         for (int l = 0; l < numLayers; l++){
             std::cout << "Layer " << l << " (" << layers[l].size << " neurons):\n";
+
             for (int n = 0; n < layers[l].size; n++){
                 Neuron& neuron = layers[l].layer[n];
                 // Format the numbers with fixed precision
@@ -160,16 +161,24 @@ std::vector<int> stringToStructure(std::string layerStructure){
     std::vector<int> structure;
     std::string thisInt;
     for(int i = 0; i < layerStructure.length(); i++){
-       
-        if(isdigit(layerStructure[i])){
+        //check if the current index is a digit or a decimal point
+        //if it is add it to thisInt(the current int builder)
+        if(isdigit(layerStructure[i] || layerStructure[i] == '.')){
             thisInt.push_back(layerStructure[i]);
-        }else if(layerStructure[i] == ',' || i == layerStructure.length() - 1){
+        }
+        
+        //if it is a comma or the last index, push the built into to
+        //the int vector that takes a structure
+        else if(layerStructure[i] == ',' || i == layerStructure.length() - 1){
             if(!thisInt.empty()){
                 structure.push_back(std::stoi(thisInt));
                 thisInt.clear();
             }
         }
     }
+
+    //just in case there is some case i havent accounted for and there is still an in
+    //in the int builder thisInt,
     if(!thisInt.empty()){
         structure.push_back(std::stoi(thisInt));
         thisInt.clear();
@@ -253,7 +262,7 @@ std::vector<std::string> splitStringByComma(const std::string& input) {
 }
 
 std::vector<double> processDataPoint(const std::string& input){
-
+    //for converting the string data to ints
     std::unordered_map<std::string, int> dict ={
         {"Iris-setosa", 0.0},
         {"Iris-versicolor", 1.0},
@@ -266,8 +275,13 @@ std::vector<double> processDataPoint(const std::string& input){
     std::string token;
     
     while (std::getline(stream, token, ',')) {
+        //converts the current token to double, if it cant be converted there is either
+        //an overflow error or a conversion error
         double tokenDouble = converToDouble(token);
-
+        
+        //if it doesnt convert, the function returns the lowest value for a double
+        //and if it doesnt convert it is a string. Only strings in the data are in the
+        //unordered map.
         if(tokenDouble == std::numeric_limits<double>::lowest()){
             tokenDouble = dict[token];
         }
@@ -291,24 +305,27 @@ double min(double val1, double val2){
 std::vector<std::vector<double>> processData(std::string filepath){
     //declared prior to catch case so there can still be a return value
     std::vector<std::vector<double>> processedLines;
+    std::vector<double> processedLine;
 
     std::ifstream inFile(filepath);  // Adjust the file name as needed
     if (!inFile) {
         std::cerr << "Error: Could not open file.\n";
         return processedLines;
     }
-    std::vector<std::string> lines;
-    std::vector<double> processedLine;
 
+    //final output storage
     std::vector<std::vector<double>> normalizedData;
-
-    std::string line;
     std::vector<double> maxes;
     std::vector<double> mins;
+
+    //storage for iterating through file
+    std::string line;
+
+    //stores all data as doubles
     while(std::getline(inFile, line)){
-        lines.push_back(line);
         processedLine = processDataPoint(line);
         
+        //for normalization
         for(int i = 0; i < processedLine.size();i++){
 
             if(i >= maxes.size()){
@@ -322,6 +339,7 @@ std::vector<std::vector<double>> processData(std::string filepath){
         }
         processedLines.push_back(processedLine);
     }
+    //normalizes stored data
     for(int i = 0; i < processedLines.size(); i++){
         //each line is [bunch of values, expectedOutputIndex]
         std::vector<double> normalizedLine;
@@ -329,6 +347,9 @@ std::vector<std::vector<double>> processData(std::string filepath){
             //each value in line
             double denom = (maxes[j] - mins[j]);
             double normalizedValue;
+
+            //normalized = (value - minimum)/maximum - minimum
+            //if denominator is 0, there is no variance in the datapoints so the value is constantly 0
             if(denom != 0.0){
                 normalizedValue = (processedLines[i][j] - mins[j]) / (maxes[j] - mins[j]);
             }else{
@@ -362,20 +383,13 @@ void hardTest(){
     //training
     Logger::log("Training");
     while(normalizedData.size() > startSize/4){
-
-        //std::string numLines = "Number of lines: "  + std::to_string(normalizedData.size());
-        //Logger::log(numLines); **DEBUGGING TOOL**
-
         std::vector<double> randomLine = getLine(normalizedData);
 
         std::vector<double> expectedOutput;
         std::vector<double> trainingData;
-        //for logging std::string lineData;
-
 
         for(int i = 0; i < randomLine.size() - 1; i++){
             trainingData.push_back(randomLine[i]);
-            //for logging lineData+= std::to_string(randomLine[i]);
         }
         expectedOutput.push_back(randomLine[randomLine.size() - 1]);
         neuralNet.forwardPass(trainingData);
@@ -391,9 +405,7 @@ void hardTest(){
         }*/
     }
 
-    //testing
-
-    
+    //Visualization after training(since we want to display error the training continues)
     for(int i = 0; i < normalizedData.size()/2; i++){
         system("clear");
         std::vector<double> randomLine = getLine(normalizedData);
@@ -402,18 +414,21 @@ void hardTest(){
         std::vector<double> trainingData;
         //for logging std::string lineData;
 
-
+        //splits expected from training data
         for(int i = 0; i < randomLine.size() - 1; i++){
             trainingData.push_back(randomLine[i]);
             //for logging lineData+= std::to_string(randomLine[i]);
         }
         expectedOutput.push_back(randomLine[randomLine.size() - 1]);
+
+        //updates net with data
         neuralNet.forwardPass(trainingData);
         neuralNet.backPropagate(expectedOutput);
 
+        //prints information
         neuralNet.printNetworkDetailed();
         neuralNet.printExpectedOutputs(expectedOutput);
-
+        //waits for user interaction
         hold();
     }
     Logger::log(std::to_string(normalizedData.size()));
@@ -425,6 +440,5 @@ int main(){
     hardTest(); //for testing more complicated functionality with variable data
 
     //hold();
-    ///std::cout << "Feed-forward output: " << output << std::endl;
     return 0;
 }

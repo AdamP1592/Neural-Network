@@ -4,6 +4,8 @@
 #include <random>
 
 struct Layer{
+    //simple layer storage for separation of logic
+    // since some activation functions work at the layer scope
     std::vector<Neuron> layer;
     int size;
 
