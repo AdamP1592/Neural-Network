@@ -15,8 +15,6 @@ cd Neural-Network
 ./Nerual-Network.exe
 ```
 
-## Neural Network Equations:
-# Neural Network Equations (Leaky ReLU)
 # Neural Network Equations (Leaky ReLU)
 
 ## Equations
@@ -42,6 +40,7 @@ f'(z) =
 1, & \text{if } z \ge 0
 \end{cases}
 $$
+
 **Where:**
 
 - **z**: Net input to a neuron.
