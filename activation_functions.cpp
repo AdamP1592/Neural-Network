@@ -11,3 +11,18 @@ ActivationResult relu(double value) {
     }
     return result;
 }
+ActivationResult leakyRelu(double value){
+    ActivationResult result;
+    if (value < 0) {
+        
+        result.activatedValue = 0.01 * value;
+        result.derivative = 0.01;
+    } else {
+        result.activatedValue = value;
+        result.derivative = 1;
+    }
+    return result;
+}
+
+
+

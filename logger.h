@@ -13,7 +13,7 @@ public:
         std::lock_guard<std::mutex> lock(mtx);
         // Open the file if it isn't already open.
         if (!logFile.is_open()) {
-            logFile.open(filePath, std::ios::out | std::ios::app);
+            logFile.open(filePath, std::ios::out | std::ios::trunc);
             if (!logFile) {
                 throw std::runtime_error("Failed to open log file: " + filePath);
             }

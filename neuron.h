@@ -55,7 +55,7 @@ public:
             // Access the neuron via .get() from the reference wrapper.
             sum += weights[i] * input_neurons[i].get().activationValue;
         }
-        ActivationResult reluValues = relu(sum);
+        ActivationResult reluValues = leakyRelu(sum);
         activationValue = reluValues.activatedValue;
         derivative = reluValues.derivative;
 

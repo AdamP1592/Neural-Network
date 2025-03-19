@@ -10,7 +10,7 @@ struct Layer{
     Layer(int numNeurons){
         size = numNeurons;
         for(int i = 0; i < numNeurons; i++){
-            Neuron n(0.0);
+            Neuron n(0.1);
             layer.push_back(n);
         }
     }

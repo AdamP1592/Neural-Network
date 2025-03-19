@@ -7,5 +7,7 @@ struct ActivationResult {
 };
 ActivationResult relu(double value);
 
+ActivationResult leakyRelu(double value);
+
 
 #endif
