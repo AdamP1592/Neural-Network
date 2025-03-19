@@ -26,7 +26,7 @@ struct network{
 
     }
     void updateLearningRate(){
-        learningRate = 1/std::exp(0.05 * step);
+        learningRate = 1/std::exp(0.01 * step);
     }
 
     //set activationValue for the input layer. Iterate all subsequent layers as a standard pass
@@ -111,6 +111,8 @@ struct network{
             for(int j = 0; j < curLayer.size; j++){
                 Neuron &n = layers[i].layer[j];
                 double err = n.backPropagate(learningRate);
+
+                //logging with string builder
                 std::ostringstream oss;
                 oss << "Neuron: (" << i  << ", " << j << ") backProp Error:" << err;
                 Logger::log(oss.str());
@@ -122,19 +124,34 @@ struct network{
 
     }
 
-    void printNetwork(){
-        int size = layers.size();
-        for(int i = 0; i < size; i++){
-            int layerSize = layers[i].size;
-            Layer& thisLayer = layers[i];
-            for(int j = 0; j < layerSize; j++){
-                Neuron& n = thisLayer.layer[j];
-
-                std::cout << n.activationValue << " ";
+    void printNetworkDetailed() {
+        std::cout << "Neural Network Visualization:\n";
+        int numLayers = layers.size();
+        for (int l = 0; l < numLayers; l++){
+            std::cout << "Layer " << l << " (" << layers[l].size << " neurons):\n";
+            for (int n = 0; n < layers[l].size; n++){
+                Neuron& neuron = layers[l].layer[n];
+                // Format the numbers with fixed precision
+                std::cout << "  Neuron " << std::setw(2) << n 
+                        << " | Activation: " << std::fixed << std::setprecision(4) << neuron.activationValue 
+                        << " | Error: " << std::fixed << std::setprecision(4) << neuron.delta
+                        << "\n";
             }
             std::cout << std::endl;
         }
+    }
+
+    void printExpectedOutputs(const std::vector<double>& expected) {
+        std::cout << "Expected Outputs:\n";
+        for (size_t i = 0; i < expected.size(); i++){
+            std::cout << "  Output " << std::setw(2) << i 
+                      << " | Value: " << std::fixed << std::setprecision(4) << expected[i] 
+                      << "\n";
+        }
         std::cout << std::endl;
+    }
+    void printNetwork(){
+        printNetworkDetailed();
     }
 
 };
@@ -217,7 +234,7 @@ double converToDouble(const std::string& s) {
         double value = std::stod(s);
         return value;
     } catch (const std::invalid_argument& e) {
-        std::cerr << "Invalid argument: " << e.what() << std::endl;
+       
     } catch (const std::out_of_range& e) {
         std::cerr << "Out of range: " << e.what() << std::endl;
     }
@@ -271,23 +288,16 @@ double min(double val1, double val2){
     }
     return val2;
 }
-void hold(){
-    std::string tmp;
-    std:: cin >> tmp;
-}
-void hardTest(){
-    std::string dataPath = "./data/iris.data";
-    int startSize = 0;
+std::vector<std::vector<double>> processData(std::string filepath){
+    //declared prior to catch case so there can still be a return value
+    std::vector<std::vector<double>> processedLines;
 
-    std::ifstream inFile(dataPath);  // Adjust the file name as needed
+    std::ifstream inFile(filepath);  // Adjust the file name as needed
     if (!inFile) {
         std::cerr << "Error: Could not open file.\n";
-        return;
+        return processedLines;
     }
     std::vector<std::string> lines;
-    std::vector<std::vector<std::string>> separatedLines;
-
-    std::vector<std::vector<double>> processedLines;
     std::vector<double> processedLine;
 
     std::vector<std::vector<double>> normalizedData;
@@ -298,7 +308,6 @@ void hardTest(){
     while(std::getline(inFile, line)){
         lines.push_back(line);
         processedLine = processDataPoint(line);
-
         
         for(int i = 0; i < processedLine.size();i++){
 
@@ -312,9 +321,7 @@ void hardTest(){
             std::cout << processedLine[i] << std::endl;
         }
         processedLines.push_back(processedLine);
-        separatedLines.push_back(splitStringByComma(line));
     }
-    Logger::log("Normalizing data");
     for(int i = 0; i < processedLines.size(); i++){
         //each line is [bunch of values, expectedOutputIndex]
         std::vector<double> normalizedLine;
@@ -328,15 +335,23 @@ void hardTest(){
                 normalizedValue = 0;
             }
             normalizedLine.push_back(normalizedValue);
-
         }
-        
         normalizedData.push_back(normalizedLine);
     }
     
     inFile.close();
-    startSize = lines.size();
-    
+    return normalizedData;
+}
+
+void hold() {
+    std::cout << "Press Enter to continue...";
+    std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+}
+void hardTest(){
+    std::string dataPath = "./data/iris.data";
+    std::vector<std::vector<double>> normalizedData = processData(dataPath);
+
+    int startSize = normalizedData.size();
     network neuralNet;
     //data points are 5 points, 4 of them are inputs 1 is expected
     //there are 3 types of expected values
@@ -345,34 +360,29 @@ void hardTest(){
     neuralNet.setupNetwork(structure);
 
     //training
-    std::cout << "Training: \n";
+    Logger::log("Training");
     while(normalizedData.size() > startSize/4){
 
-        std::string numLines = "Number of lines: "  + std::to_string(normalizedData.size());
-        Logger::log(numLines);
+        //std::string numLines = "Number of lines: "  + std::to_string(normalizedData.size());
+        //Logger::log(numLines); **DEBUGGING TOOL**
 
         std::vector<double> randomLine = getLine(normalizedData);
 
         std::vector<double> expectedOutput;
-
         std::vector<double> trainingData;
-        //add all values except the last one to training data
+        //for logging std::string lineData;
 
-        std::string lineData;
 
-        
         for(int i = 0; i < randomLine.size() - 1; i++){
             trainingData.push_back(randomLine[i]);
-            lineData+= std::to_string(randomLine[i]);
+            //for logging lineData+= std::to_string(randomLine[i]);
         }
         expectedOutput.push_back(randomLine[randomLine.size() - 1]);
-        std::cout << lineData << std::endl;
-
         neuralNet.forwardPass(trainingData);
 
         neuralNet.backPropagate(expectedOutput);
 
-        //hold for text input every 20 steps DEBUGGING TOOL
+        //hold for text input every 20 steps **DEBUGGING TOOL**
         /*if(neuralNet.step % 20 == 0){
             std::string tmp;
 
@@ -380,14 +390,41 @@ void hardTest(){
             std:: cin >> tmp;
         }*/
     }
+
+    //testing
+
+    
+    for(int i = 0; i < normalizedData.size()/2; i++){
+        system("clear");
+        std::vector<double> randomLine = getLine(normalizedData);
+
+        std::vector<double> expectedOutput;
+        std::vector<double> trainingData;
+        //for logging std::string lineData;
+
+
+        for(int i = 0; i < randomLine.size() - 1; i++){
+            trainingData.push_back(randomLine[i]);
+            //for logging lineData+= std::to_string(randomLine[i]);
+        }
+        expectedOutput.push_back(randomLine[randomLine.size() - 1]);
+        neuralNet.forwardPass(trainingData);
+        neuralNet.backPropagate(expectedOutput);
+
+        neuralNet.printNetworkDetailed();
+        neuralNet.printExpectedOutputs(expectedOutput);
+
+        hold();
+    }
+    Logger::log(std::to_string(normalizedData.size()));
+
     hold();
 }
 int main(){
-    std::string empty;
+    //simpleTest(); //for testing basic functionality with fixed data
+    hardTest(); //for testing more complicated functionality with variable data
 
-    hardTest();
-
-    std::getline(std::cin, empty);
+    //hold();
     ///std::cout << "Feed-forward output: " << output << std::endl;
     return 0;
 }
