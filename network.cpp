@@ -1,32 +1,30 @@
 #include "network.h"
 struct network{
     std::vector<Layer> layers;
-    double learningRate = 1;
+    double learningRate = 1.0;
     int step = 0;
     void setupNetwork(std::vector<int> structure){
-        
+        //creates input layer
         Layer inputLayer = Layer(structure[0]);
         layers.push_back(inputLayer);
-        
-        for(int i = 1; i < structure.size(); i++){
+        //creates all hidden layers
+        for(int i = 1; i < structure.size() ; i++){
             std::vector<std::reference_wrapper<Neuron>> prevLayerNeuronReferences;
-
-            Layer thisLayer = Layer(structure[i]);
+            //creates fist layer
+            Layer thisLayer = Layer(structure[i], i == structure.size() - 1 ? true: false);
             //building the references for the next layer
             for(int j = 0; j < structure[i-1]; j++){
                 Neuron& refNeuron = layers[i-1].getConnection(j);
                 prevLayerNeuronReferences.push_back(refNeuron);
             }
             thisLayer.setupReferences(prevLayerNeuronReferences);
-            
 
             layers.push_back(thisLayer);
-            
         }
-
     }
+    
     void updateLearningRate(){
-        learningRate = 1/std::exp(0.01 * step);
+        //learningRate = 1/std::exp(0.01 * step);
     }
 
     //set activationValue for the input layer. Iterate all subsequent layers as a standard pass
@@ -46,11 +44,12 @@ struct network{
         }
         //set all the input layer activation values to the inputs
         for (int i = 0; i < layers[0].size; i++){
-            layers[0].layer[i].activationValue = inputValues[i];
+            Neuron& n = layers[0].layer[i];
+            n.activationValue = inputValues[i];
             
             //logging activation
             std::ostringstream oss;
-            oss << "Neuron: (0, " << i << ") Activation:" << inputValues[i];
+            oss << "Neuron: (0, " << i << ") Effective learning rate: " << n.adjustedLearningRate << "Activation:" << inputValues[i];
             Logger::log(oss.str());
         }
         //iterate each non input layer, activate all neurons in the layers
@@ -101,7 +100,7 @@ struct network{
 
             //logging backprop
             std::ostringstream oss;
-            oss << "Neuron: (" << layers.size() - 1  << ", " << i << ") backProp:" << err;
+            oss << "Neuron: (" << layers.size() - 1  << ", " << i << "), NeuronType: " << n.neuronType << " Error: " << err;
             Logger::log(oss.str());
         }
         //skip output layer
@@ -122,10 +121,38 @@ struct network{
         updateLearningRate();
 
     }
+    void backPropagateRMS(std::vector<double> expectedValues){
+        //catch case for empty network
+        Logger::log("BackProp:");
+        std::string expectedValuesString;
+        Logger::log("Expected");
+        for(int i = 0; i < expectedValues.size(); i++){
+            expectedValuesString += " " + std::to_string(expectedValues[i]);
+        }
+        Logger::log(expectedValuesString + "\n");
+
+        if(layers.empty()){
+            std::cerr << "Error: No layers in the network.\n";
+            return;
+        }
+        Layer &outputLayer = layers[layers.size() - 1];
+        //catch case for size mismatch
+        if(expectedValues.size() != outputLayer.size){
+            std::cerr << "Error: expectedValues size (" << outputLayer.size
+            << ") does not match network output size (" << expectedValues.size() << ").\n";
+            return;
+        }
+        
+        for(int i = 0; i < layers.size(); i++){
+            for(int j = 0; j < layers[i].size; i++){
+                layers[i].layer[j].backPropagateRMS(learningRate, 0.9, expectedValues[j]);
+            }
+        }
+    }
 
     void printNetworkDetailed() {
         std::cout << "Neural Network Visualization:\n";
-        std::cout << "Learning Rate: " << learningRate << "\n";
+        std::cout << "Base Learning Rate: " << learningRate << "\n";
         int numLayers = layers.size();
         for (int l = 0; l < numLayers; l++){
             std::cout << "Layer " << l << " (" << layers[l].size << " neurons):\n";
@@ -133,7 +160,8 @@ struct network{
             for (int n = 0; n < layers[l].size; n++){
                 Neuron& neuron = layers[l].layer[n];
                 // Format the numbers with fixed precision
-                std::cout << "  Neuron " << std::setw(2) << n 
+                std::cout << "  Neuron " << std::setw(2) << n << " Neuron type: " << neuron.neuronType 
+                        << " | Effective learning rate: " << std::fixed << std::setprecision(4) << neuron.adjustedLearningRate 
                         << " | Activation: " << std::fixed << std::setprecision(4) << neuron.activationValue 
                         << " | Error: " << std::fixed << std::setprecision(4) << neuron.delta
                         << "\n";
@@ -185,33 +213,6 @@ std::vector<int> stringToStructure(std::string layerStructure){
     }
     //catch case for any unknown structure; 
     return structure;
-}
-
-void simpleTest(){
-    std::vector<double> inputs = {1.0, 3.0, 1.5};
-    std::vector<double> expected = {0.5, 0};
-    std::vector<int> structure;
-
-    std::cout << "Enter layer structure\n" 
-    << "Ex: 1, 2, 1, Yields:\n"
-    << "\t0\n0\t\t0\n\t0\n";
-    
-    std::string layerStructure;
-    std::getline(std::cin, layerStructure);
-    system("clear");
-
-    structure = stringToStructure(layerStructure);
-    network neuralNetwork;
-    neuralNetwork.setupNetwork(structure);
-
-    for(int i = 0; i < 10; i++){
-        neuralNetwork.printNetwork();
-
-        neuralNetwork.forwardPass(inputs);
-
-        neuralNetwork.backPropagate(expected);
-    }
-
 }
 
 std::vector<double> getLine(std::vector<std::vector<double>> &lines){
@@ -435,9 +436,54 @@ void hardTest(){
 
     hold();
 }
+
+void simpleTest(){
+    std::vector<double> inputs = {1.0, 3.0, 1.5};
+    std::vector<double> expected = {0.5, 0};
+    std::vector<int> structure;
+
+    std::cout << "Enter layer structure\n" 
+    << "Ex: 1, 2, 1, Yields:\n"
+    << "\t0\n0\t\t0\n\t0\n";
+    
+    std::string layerStructure;
+    std::getline(std::cin, layerStructure);
+    system("clear");
+    structure = stringToStructure(layerStructure);
+    structure = {3, 5, 2};
+    network neuralNetwork;
+    neuralNetwork.setupNetwork(structure);
+    
+    for(int i = 0; i < 10; i++){
+
+        neuralNetwork.forwardPass(inputs);
+
+        neuralNetwork.backPropagateRMS(expected);
+
+        neuralNetwork.printNetworkDetailed();
+
+        for(int l = 0; l < neuralNetwork.layers.size(); l++){
+            Layer& layer = neuralNetwork.layers[l];
+            std::cout << "Layer" << l << std::endl;
+            for(int n = 0; n < layer.size; n++){
+                std::cout << "Neuron" << n << " ";
+                layer.layer[n].printWeights();
+            }
+            std::cout << std::endl;
+            
+
+        }
+
+        hold();
+    }
+    hold();
+    hold();
+
+}
+
 int main(){
-    //simpleTest(); //for testing basic functionality with fixed data
-    hardTest(); //for testing more complicated functionality with variable data
+    simpleTest(); //for testing basic functionality with fixed data
+    //hardTest(); //for testing more complicated functionality with variable data
 
     //hold();
     return 0;

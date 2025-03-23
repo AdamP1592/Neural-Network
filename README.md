@@ -1,5 +1,5 @@
 # Neural-Network
-This is a neural network simulation written from scratch in c++.
+This is a neural network simulation written from scratch in c++. There are no external libraries.
 
 ## Installation
 

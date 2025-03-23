@@ -10,15 +10,20 @@ class Neuron {
 public:
     double bias;
     double activationValue = 0.0;
+    double adjustedLearningRate = 0.0;
     double derivative = 0.0;
     double delta = 0.0;
+    int neuronType = 0;
 
     std::vector<double> weights;
+
+    std::vector<double> historicGradients;
     std::vector<std::reference_wrapper<Neuron>> input_neurons;
 
     // Constructor
-    Neuron(double bias) {
+    Neuron(double bias, int nType = 0) {
         setBias(bias);
+        neuronType = nType;
     }
 
     // Set the input neurons and corresponding weights
@@ -82,7 +87,12 @@ public:
 
         return deltaOutput;
     }
-    double backPropagate(double learningRate){
+    double backPropagate(double learningRate, double targetValue = 0.0){
+
+        if (neuronType == 1){
+            double deltaOutput = (activationValue - targetValue) * derivative;
+            delta = deltaOutput;
+        }
         delta *= derivative;
 
         for(int i = 0; i < weights.size(); i++){
@@ -92,19 +102,56 @@ public:
         for(int i = 0; i < weights.size(); i++){
 
             double inputActivation = input_neurons[i].get().activationValue;
+            double currentGradient =  delta * inputActivation;
 
-            weights[i] -= learningRate * delta * inputActivation;
+            weights[i] -= currentGradient * learningRate;
 
         }
         bias -= delta * learningRate;
         
         return delta;
     }
-    
+    double backPropagateRMS(double learningRate, double rmsDecay = 0.4, double targetValue = 0.0){
+        //if neuron is an output neuron start the backprop
+        if (neuronType == 1){
+            delta = activationValue - targetValue;
+        }
+        delta *= derivative;
+
+        for(int i = 0; i < weights.size(); i++){
+            input_neurons[i].get().delta += weights[i] * delta;
+        }
+
+        for(int i = 0; i < weights.size(); i++){
+            double epsilon = 1e-8;
+
+            double inputActivation = input_neurons[i].get().activationValue;
+            double currentGradient =  delta * inputActivation;
+
+            adjustedLearningRate = learningRate / (std::sqrt(historicGradients[i]) + epsilon);
+
+            //clip learning rate at 5
+
+            adjustedLearningRate = std::min(adjustedLearningRate, 5.0);
+
+            std::cout << adjustedLearningRate << std::endl;
+            
+            weights[i] -= (adjustedLearningRate * currentGradient);
+
+            historicGradients[i] = rmsDecay * historicGradients[i] + (1 - rmsDecay) * (currentGradient * currentGradient);
+
+        }
+        bias -= delta * learningRate;
+        
+        return delta;
+    }
 
 private:
     void setWeights(const std::vector<double>& defaultWeights) {
         weights = defaultWeights;
+        for(int i = 0; i < defaultWeights.size(); i++){
+            historicGradients.push_back(0.0);
+        }
     }
     void setBias(double defaultBias) {
         bias = defaultBias;

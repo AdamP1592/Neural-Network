@@ -9,10 +9,10 @@ struct Layer{
     std::vector<Neuron> layer;
     int size;
 
-    Layer(int numNeurons){
+    Layer(int numNeurons, bool isOutput = false){
         size = numNeurons;
         for(int i = 0; i < numNeurons; i++){
-            Neuron n(0.1);
+            Neuron n(0.1, int(isOutput));
             layer.push_back(n);
         }
     }
@@ -26,8 +26,10 @@ struct Layer{
         std::mt19937 gen(rd());
 
         // Create a uniform real distribution between -0.5 and 0.5.
-        std::uniform_real_distribution<double> dis(-0.5, 0.5);
+        double standardDev = std::sqrt(2.0/prevLayerNeuronReferences.size());
+        std::normal_distribution<double> dis(-standardDev, standardDev);
         for(int i = 0; i < size; i++){
+            layer[i].historicGradients.push_back(1e-2);
             for(size_t j = 0; j < prevLayerNeuronReferences.size(); j++){
                 layer[i].weights.push_back(dis(gen));
             }
