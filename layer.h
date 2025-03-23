@@ -19,19 +19,21 @@ struct Layer{
     void activate(){
         for(int i = 0; i < size; i++){
             layer[i].activate();
+            layer[i].delta = 0;
         }
     }
     void setupReferences(std::vector<std::reference_wrapper<Neuron>> prevLayerNeuronReferences){
         std::random_device rd;
         std::mt19937 gen(rd());
 
-        // Create a uniform real distribution between -0.5 and 0.5.
+        // Create a uniform real distribution between with a standard deviation
         double standardDev = std::sqrt(2.0/prevLayerNeuronReferences.size());
         std::normal_distribution<double> dis(-standardDev, standardDev);
         for(int i = 0; i < size; i++){
-            layer[i].historicGradients.push_back(1e-2);
-            for(size_t j = 0; j < prevLayerNeuronReferences.size(); j++){
+            
+            for(int j = 0; j < prevLayerNeuronReferences.size(); j++){
                 layer[i].weights.push_back(dis(gen));
+                layer[i].historicGradients.push_back(1.0);
             }
             layer[i].input_neurons = prevLayerNeuronReferences;
         }

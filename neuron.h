@@ -79,7 +79,6 @@ public:
         for(int i = 0; i < weights.size(); i++){
 
             double inputActivation = input_neurons[i].get().activationValue;
-
             weights[i] -= learningRate * delta * inputActivation;
 
         }
@@ -111,8 +110,10 @@ public:
         
         return delta;
     }
-    double backPropagateRMS(double learningRate, double rmsDecay = 0.4, double targetValue = 0.0){
+    double backPropagateRMS(double learningRate, double rmsDecay = 0.9, double targetValue = 0.0){
+        double epsilon = 1e-8;
         //if neuron is an output neuron start the backprop
+        
         if (neuronType == 1){
             delta = activationValue - targetValue;
         }
@@ -121,21 +122,17 @@ public:
         for(int i = 0; i < weights.size(); i++){
             input_neurons[i].get().delta += weights[i] * delta;
         }
-
         for(int i = 0; i < weights.size(); i++){
-            double epsilon = 1e-8;
 
             double inputActivation = input_neurons[i].get().activationValue;
             double currentGradient =  delta * inputActivation;
 
             adjustedLearningRate = learningRate / (std::sqrt(historicGradients[i]) + epsilon);
 
-            //clip learning rate at 5
-
+            //clip learning rate at 5 to prevent network explosion as a result of an unused neuron
+            //getting activated as a result of new data
             adjustedLearningRate = std::min(adjustedLearningRate, 5.0);
 
-            std::cout << adjustedLearningRate << std::endl;
-            
             weights[i] -= (adjustedLearningRate * currentGradient);
 
             historicGradients[i] = rmsDecay * historicGradients[i] + (1 - rmsDecay) * (currentGradient * currentGradient);

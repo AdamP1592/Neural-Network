@@ -121,6 +121,12 @@ struct network{
         updateLearningRate();
 
     }
+
+    //for debugging
+    void hold() {
+        std::cout << "Press Enter to continue...";
+        std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+    }
     void backPropagateRMS(std::vector<double> expectedValues){
         //catch case for empty network
         Logger::log("BackProp:");
@@ -142,12 +148,14 @@ struct network{
             << ") does not match network output size (" << expectedValues.size() << ").\n";
             return;
         }
-        
-        for(int i = 0; i < layers.size(); i++){
-            for(int j = 0; j < layers[i].size; i++){
+        //iterate backwards from the last layer to the first hidden layer
+        hold();
+        for(int i = layers.size() - 1; i > 0; i--){
+            for(int j = 0; j < layers[i].layer.size(); j++){
                 layers[i].layer[j].backPropagateRMS(learningRate, 0.9, expectedValues[j]);
             }
         }
+        step++;
     }
 
     void printNetworkDetailed() {
@@ -377,7 +385,7 @@ void hardTest(){
     network neuralNet;
     //data points are 5 points, 4 of them are inputs 1 is expected
     //there are 3 types of expected values
-    std::vector<int> structure = {4, 5, 1};
+    std::vector<int> structure = {4, 5, 5, 3, 1};
 
     neuralNet.setupNetwork(structure);
 
@@ -454,14 +462,8 @@ void simpleTest(){
     network neuralNetwork;
     neuralNetwork.setupNetwork(structure);
     
-    for(int i = 0; i < 10; i++){
-
-        neuralNetwork.forwardPass(inputs);
-
-        neuralNetwork.backPropagateRMS(expected);
-
-        neuralNetwork.printNetworkDetailed();
-
+    for(int i = 0; i < 20; i++){
+        
         for(int l = 0; l < neuralNetwork.layers.size(); l++){
             Layer& layer = neuralNetwork.layers[l];
             std::cout << "Layer" << l << std::endl;
@@ -470,9 +472,16 @@ void simpleTest(){
                 layer.layer[n].printWeights();
             }
             std::cout << std::endl;
-            
 
         }
+        std::cout << "Forward Pass \n";
+        neuralNetwork.forwardPass(inputs);
+        std::cout << "Back Pass \n";
+        neuralNetwork.backPropagateRMS(expected);
+
+
+        neuralNetwork.printNetworkDetailed();
+        neuralNetwork.printExpectedOutputs(expected);
 
         hold();
     }
@@ -482,8 +491,8 @@ void simpleTest(){
 }
 
 int main(){
-    simpleTest(); //for testing basic functionality with fixed data
-    //hardTest(); //for testing more complicated functionality with variable data
+    //simpleTest(); //for testing basic functionality with fixed data
+    hardTest(); //for testing more complicated functionality with variable data
 
     //hold();
     return 0;
