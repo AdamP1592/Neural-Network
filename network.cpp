@@ -96,7 +96,7 @@ struct network{
         //back prop call for output layer
         for(int i = 0; i < outputLayer.size; i++){
             Neuron &n = outputLayer.layer[i];
-            double err = n.backPropagateOutput(expectedValues[i], learningRate);
+            double err = n.backPropagateRMS(learningRate, 0.9, expectedValues[i]);
 
             //logging backprop
             std::ostringstream oss;
@@ -108,7 +108,7 @@ struct network{
             Layer &curLayer = layers[i];
             for(int j = 0; j < curLayer.size; j++){
                 Neuron &n = layers[i].layer[j];
-                double err = n.backPropagate(learningRate);
+                double err = n.backPropagateRMS(learningRate);
 
                 //logging with string builder
                 std::ostringstream oss;
@@ -152,6 +152,7 @@ struct network{
         hold();
         for(int i = layers.size() - 1; i > 0; i--){
             for(int j = 0; j < layers[i].layer.size(); j++){
+                Logger::log("Neuron (" + std::to_string(i) + ", " + std::to_string(j) + ")\n");
                 layers[i].layer[j].backPropagateRMS(learningRate, 0.9, expectedValues[j]);
             }
         }
@@ -491,8 +492,8 @@ void simpleTest(){
 }
 
 int main(){
-    //simpleTest(); //for testing basic functionality with fixed data
-    hardTest(); //for testing more complicated functionality with variable data
+    simpleTest(); //for testing basic functionality with fixed data
+    //hardTest(); //for testing more complicated functionality with variable data
 
     //hold();
     return 0;

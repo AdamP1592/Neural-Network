@@ -28,7 +28,7 @@ struct Layer{
 
         // Create a uniform real distribution between with a standard deviation
         double standardDev = std::sqrt(2.0/prevLayerNeuronReferences.size());
-        std::normal_distribution<double> dis(-standardDev, standardDev);
+        std::normal_distribution<double> dis(0.0, standardDev);
         for(int i = 0; i < size; i++){
             
             for(int j = 0; j < prevLayerNeuronReferences.size(); j++){

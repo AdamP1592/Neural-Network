@@ -5,6 +5,7 @@
 #include <vector>
 #include <functional>    // For std::reference_wrapper
 #include "activation_functions.h"
+#include "logger.h"
 
 class Neuron {
 public:
@@ -115,25 +116,37 @@ public:
         //if neuron is an output neuron start the backprop
         
         if (neuronType == 1){
-            delta = activationValue - targetValue;
+            delta = (activationValue - targetValue);
         }
         delta *= derivative;
-
+        //for passing the delta onwards
         for(int i = 0; i < weights.size(); i++){
             input_neurons[i].get().delta += weights[i] * delta;
         }
         for(int i = 0; i < weights.size(); i++){
 
+            double weightAdjustment;
+            Logger::log("Prev Layer Neuron " + std::to_string(i)); 
+            Logger::log("Delta" + std::to_string(delta));
+            Logger::log("Weight: " + std::to_string(weights[i]));
+            Logger::log("Historic Gradient: " + std::to_string(historicGradients[i]));
+
             double inputActivation = input_neurons[i].get().activationValue;
             double currentGradient =  delta * inputActivation;
-
+            Logger::log("Current Gradient: " + std::to_string(currentGradient));
             adjustedLearningRate = learningRate / (std::sqrt(historicGradients[i]) + epsilon);
 
             //clip learning rate at 5 to prevent network explosion as a result of an unused neuron
             //getting activated as a result of new data
             adjustedLearningRate = std::min(adjustedLearningRate, 5.0);
+            weightAdjustment = (adjustedLearningRate * currentGradient);
+            
+            Logger::log("Adjusted Learning Rate "  + std::to_string(adjustedLearningRate));
+            Logger::log("Weight Adjustment: " + std::to_string(weightAdjustment));
 
-            weights[i] -= (adjustedLearningRate * currentGradient);
+            Logger::log("\n");
+
+            weights[i] -= weightAdjustment;
 
             historicGradients[i] = rmsDecay * historicGradients[i] + (1 - rmsDecay) * (currentGradient * currentGradient);
 
