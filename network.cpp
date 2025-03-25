@@ -149,7 +149,6 @@ struct network{
             return;
         }
         //iterate backwards from the last layer to the first hidden layer
-        hold();
         for(int i = layers.size() - 1; i > 0; i--){
             for(int j = 0; j < layers[i].layer.size(); j++){
                 Logger::log("Neuron (" + std::to_string(i) + ", " + std::to_string(j) + ")\n");
@@ -386,9 +385,10 @@ void hardTest(){
     network neuralNet;
     //data points are 5 points, 4 of them are inputs 1 is expected
     //there are 3 types of expected values
-    std::vector<int> structure = {4, 5, 5, 3, 1};
+    std::vector<int> structure = {4, 5, 5, 8, 1};
 
     neuralNet.setupNetwork(structure);
+    neuralNet.learningRate = 0.005;
 
     //training
     Logger::log("Training");
@@ -461,9 +461,10 @@ void simpleTest(){
     structure = stringToStructure(layerStructure);
     structure = {3, 5, 2};
     network neuralNetwork;
+    neuralNetwork.learningRate = 0.001;
     neuralNetwork.setupNetwork(structure);
     
-    for(int i = 0; i < 20; i++){
+    for(int i = 0; i < 6000; i++){
         
         for(int l = 0; l < neuralNetwork.layers.size(); l++){
             Layer& layer = neuralNetwork.layers[l];
@@ -483,8 +484,6 @@ void simpleTest(){
 
         neuralNetwork.printNetworkDetailed();
         neuralNetwork.printExpectedOutputs(expected);
-
-        hold();
     }
     hold();
     hold();
@@ -492,8 +491,8 @@ void simpleTest(){
 }
 
 int main(){
-    simpleTest(); //for testing basic functionality with fixed data
-    //hardTest(); //for testing more complicated functionality with variable data
+    //simpleTest(); //for testing basic functionality with fixed data
+    hardTest(); //for testing more complicated functionality with variable data
 
     //hold();
     return 0;

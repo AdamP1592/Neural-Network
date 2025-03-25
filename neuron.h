@@ -64,6 +64,7 @@ public:
         ActivationResult reluValues = leakyRelu(sum);
         activationValue = reluValues.activatedValue;
         derivative = reluValues.derivative;
+        delta = 0;
 
         return activationValue;
     }
@@ -90,7 +91,7 @@ public:
     double backPropagate(double learningRate, double targetValue = 0.0){
 
         if (neuronType == 1){
-            double deltaOutput = (activationValue - targetValue) * derivative;
+            double deltaOutput = (activationValue - targetValue);
             delta = deltaOutput;
         }
         delta *= derivative;
@@ -126,8 +127,8 @@ public:
         for(int i = 0; i < weights.size(); i++){
 
             double weightAdjustment;
-            Logger::log("Prev Layer Neuron " + std::to_string(i)); 
-            Logger::log("Delta" + std::to_string(delta));
+            Logger::log("Prev Layer Neuron: " + std::to_string(i)); 
+            Logger::log("Delta: " + std::to_string(delta));
             Logger::log("Weight: " + std::to_string(weights[i]));
             Logger::log("Historic Gradient: " + std::to_string(historicGradients[i]));
 
@@ -141,14 +142,14 @@ public:
             adjustedLearningRate = std::min(adjustedLearningRate, 5.0);
             weightAdjustment = (adjustedLearningRate * currentGradient);
             
-            Logger::log("Adjusted Learning Rate "  + std::to_string(adjustedLearningRate));
+            Logger::log("Adjusted Learning Rate: "  + std::to_string(adjustedLearningRate));
             Logger::log("Weight Adjustment: " + std::to_string(weightAdjustment));
 
             Logger::log("\n");
 
             weights[i] -= weightAdjustment;
 
-            historicGradients[i] = rmsDecay * historicGradients[i] + (1 - rmsDecay) * (currentGradient * currentGradient);
+            historicGradients[i] = (rmsDecay * historicGradients[i]) + ((1 - rmsDecay) * (currentGradient * currentGradient));
 
         }
         bias -= delta * learningRate;
