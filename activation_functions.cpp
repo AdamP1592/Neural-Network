@@ -23,6 +23,14 @@ ActivationResult leakyRelu(double value){
     }
     return result;
 }
+ActivationResult tanH(double value){
+    ActivationResult result;
+    result.activatedValue = tanh(value);
+    result.derivative = 1 - (result.activatedValue * result.activatedValue);
+
+    return result;
+
+}
 
 
 
