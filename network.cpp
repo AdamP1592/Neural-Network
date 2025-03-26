@@ -6,6 +6,8 @@ struct network{
     void setupNetwork(std::vector<int> structure){
         //creates input layer
         Layer inputLayer = Layer(structure[0]);
+        //inputLayer.setActivation()
+        
         layers.push_back(inputLayer);
         //creates all hidden layers
         for(int i = 1; i < structure.size() ; i++){
@@ -490,6 +492,30 @@ void simpleTest(){
 
 }
 
+void useCaseExample(){
+    //inputs have to be the same size as the first value in structure
+    std::vector<double> inputs = {0, 0, 0};
+    //expected is the expected value for the output layer
+    std::vector<double> expected = {0, 0, 0, 0, 0};
+    //asign the structure
+    std::vector<int> structure = {3, 5, 5, 8, 5};
+
+    network neuralNetwork;
+    neuralNetwork.setupNetwork(structure);
+
+    for(Layer layer: neuralNetwork.layers){
+        //options
+        layer.setActivation("relu");
+        layer.setActivation("leakyrelu");
+        layer.setActivation("tanh");
+    }
+
+    neuralNetwork.forwardPass(inputs);
+    neuralNetwork.backPropagateRMS(expected);
+    //or 
+    neuralNetwork.backPropagate(expected);
+
+}
 int main(){
     //simpleTest(); //for testing basic functionality with fixed data
     hardTest(); //for testing more complicated functionality with variable data

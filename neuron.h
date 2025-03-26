@@ -16,6 +16,8 @@ public:
     double delta = 0.0;
     int neuronType = 0;
 
+    std::function<ActivationResult(double)> activationFunc = leakyRelu;
+
     std::vector<double> weights;
 
     std::vector<double> historicGradients;
@@ -61,7 +63,7 @@ public:
             // Access the neuron via .get() from the reference wrapper.
             sum += weights[i] * input_neurons[i].get().activationValue;
         }
-        ActivationResult reluValues = leakyRelu(sum);
+        ActivationResult reluValues = activationFunc(sum);
         activationValue = reluValues.activatedValue;
         derivative = reluValues.derivative;
         delta = 0;

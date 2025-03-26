@@ -31,8 +31,9 @@ The framework supports several activation functions. For example:
   - Derivative: $dReLU(x)=0 \text{ if } x<0,\; 1 \text{ if } x\ge0$
 
 - **Leaky ReLU:**  
-  - Function: $LeakyReLU(x)=\begin{cases} x & \text{if } x\ge0 \\ 0.01\times x & \text{if } x<0 \end{cases}$  
-    (Alternatively, you can write: $LeakyReLU(x)=x \text{ if } x\ge0,\; 0.01x \text{ if } x<0$)  
+  - Function: $LeakyReLU(x)=x\text{ if }x\ge0,\;0.01x\text{ if }x<0$  
+  - Derivative: $dLeakyReLU(x)=1\text{ if }x\ge0,\;0.01\text{ if }x<0$
+
   - Derivative: $dLeakyReLU(x)=1 \text{ if } x\ge0,\; 0.01 \text{ if } x<0$
 
 - **tanh (Hyperbolic Tangent):**  
@@ -174,6 +175,34 @@ These equations drive the training process to minimize the loss function by adju
 ---
 
 ## Usage and Extensions
+
+```cpp
+void useCaseExample(){
+    //inputs have to be the same size as the first value in structure
+    std::vector<double> inputs = {0, 0, 0};
+    //expected is the expected value for the output layer
+    std::vector<double> expected = {0, 0, 0, 0, 0};
+    //asign the structure
+    std::vector<int> structure = {3, 5, 5, 8, 5};
+
+    network neuralNetwork;
+    neuralNetwork.setupNetwork(structure);
+
+    for(Layer layer: neuralNetwork.layers){
+        //options
+        layer.setActivation("relu");
+        layer.setActivation("leakyrelu");
+        layer.setActivation("tanh");
+    }
+
+    neuralNetwork.forwardPass(inputs);
+    neuralNetwork.backPropagateRMS(expected);
+    //or 
+    neuralNetwork.backPropagate(expected);
+
+}
+
+```
 
 - **Customization:**  
   Modify the network structure by changing the structure vector (e.g., [input_size, hidden1, hidden2, output_size]).

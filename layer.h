@@ -1,4 +1,5 @@
 #include "neuron.h"
+#include "activation_functions.h"
 #include <vector>
 #include <functional>
 #include <random>
@@ -7,6 +8,8 @@ struct Layer{
     //simple layer storage for separation of logic
     // since some activation functions work at the layer scope
     std::vector<Neuron> layer;
+    std::function<ActivationResult(double)> activationFunc = leakyRelu;
+
     int size;
 
     Layer(int numNeurons, bool isOutput = false){
@@ -22,6 +25,19 @@ struct Layer{
             layer[i].delta = 0;
         }
     }
+    void setActivation(const std::string& functionName) {
+        if(functionName == "relu") {
+            activationFunc = relu;
+        } else if(functionName == "tanh") {
+            activationFunc = tanH;
+        } else {
+            activationFunc = leakyRelu;
+        }
+        for(int i = 0; i < layer.size(); i++){
+            layer[i].activationFunc = activationFunc;
+        }
+    }
+    
     void setupReferences(std::vector<std::reference_wrapper<Neuron>> prevLayerNeuronReferences){
         std::random_device rd;
         std::mt19937 gen(rd());
