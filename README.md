@@ -69,4 +69,92 @@ The Neuron module handles individual neurons. Key points include:
 
   $$ \text{adjusted\_learning\_rate} = \frac{\text{base\_learning\_rate}}{\sqrt{\text{historic\_gradient}} + \epsilon} $$
 
-  $$ \text{weight}
+  $$ \text{weight} = \text{weight} - \text{adjusted\_learning\_rate} \times (\delta \times \text{input}) $$
+
+  The historic gradient is updated as:
+
+  $$ \text{historic\_gradient} = (\text{rms\_decay} \times \text{historic\_gradient}) + (1 - \text{rms\_decay}) \times (\delta \times \text{input})^2 $$
+
+---
+
+## Layer Module
+
+Layers group neurons together. Each layer:
+
+- Contains a vector of neurons.
+- Provides a method to activate all neurons in the layer.
+- Connects neurons from the previous layer by initializing weights and historic gradients appropriately.
+- Ensures that the dimensionality of inputs and weights remains consistent.
+
+For example:
+- The input layer holds raw data.
+- Hidden and output layers perform the weighted sum, apply the activation function, and compute derivatives for backpropagation.
+
+---
+
+## Network Module
+
+The Network module organizes layers and provides methods for:
+
+- **Forward Pass:**  
+  Propagating input data through the network layer by layer. For each non-input layer, every neuron computes:
+
+  $$ \text{activated\_value} = \text{activation\_function}\left( \text{bias} + \sum_{i} (\text{weight}_i \times \text{previous\_layer\_activation}_i) \right) $$
+
+- **Backpropagation:**  
+  - For output neurons, compute the error:  
+    $$ \delta = (\text{activation} - \text{target}) \times d\text{activation} $$  
+  - For hidden layers, errors are propagated backward and used to update each neuron’s delta.
+  - Weight updates are performed using the RMSProp method described above.
+
+- **Training:**  
+  The training loop processes the dataset, performs forward passes, computes backpropagation errors, and updates weights accordingly.
+
+---
+
+## Training and Backpropagation
+
+Key equations used during training include:
+
+- **Forward Pass Calculation:**  
+  $$ \text{neuron\_output} = \text{activation\_function}\left( \text{bias} + \sum (\text{weight}_i \times \text{input}_i) \right) $$
+
+- **Error at Output Neuron:**  
+  $$ \delta = (\text{neuron\_output} - \text{target}) \times d\text{activation} $$
+
+- **Weight Update (RMSProp):**  
+  $$ \text{current\_gradient} = \delta \times \text{input\_activation} $$
+
+  $$ \text{adjusted\_learning\_rate} = \frac{\text{learning\_rate}}{\sqrt{\text{historic\_gradient}} + \epsilon} $$
+
+  $$ \text{weight} = \text{weight} - \text{adjusted\_learning\_rate} \times \text{current\_gradient} $$
+
+  Update historic gradient:
+
+  $$ \text{historic\_gradient} = (\text{rms\_decay} \times \text{historic\_gradient}) + ((1 - \text{rms\_decay}) \times \text{current\_gradient}^2) $$
+
+These equations drive the training process to minimize the loss function by adjusting the network's weights.
+
+---
+
+## Usage and Extensions
+
+- **Customization:**  
+  Modify the network structure by changing the structure vector (e.g., [input_size, hidden1, hidden2, output_size]).
+
+- **Activation Function Options:**  
+  Switch between activation functions (ReLU, Leaky ReLU, tanh) to explore their impact on performance.
+
+- **Batch Training and Momentum:**  
+  Although the current implementation updates weights per training example, it can be extended to support batch training. Momentum can also be integrated to accelerate convergence.
+
+- **Future Extensions:**  
+  - Add convolutional layers for image processing tasks.
+  - Implement dropout or batch normalization for improved generalization.
+  - Expand optimizer options to include methods like Adam, which combines RMSProp with momentum.
+
+---
+
+This framework is designed for educational and experimental purposes, allowing you to explore neural network training from the ground up. Feel free to modify and extend the code to meet your research or learning objectives.
+
+Happy coding and experimenting!
