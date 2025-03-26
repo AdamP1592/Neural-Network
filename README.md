@@ -28,17 +28,17 @@ The framework supports several activation functions. For example:
 
 - **ReLU (Rectified Linear Unit):**  
   - Function: $ReLU(x)=\max(0,x)$  
-  - Derivative: $dReLU(x)=\begin{cases}0 & \text{if } x<0\\1 & \text{if } x\ge0\end{cases}$
+  - Derivative: $dReLU(x)=0 \text{ if } x<0,\; 1 \text{ if } x\ge0$
 
 - **Leaky ReLU:**  
-  - Function: $LeakyReLU(x)=\begin{cases}x & \text{if } x\ge0\\0.01\times x & \text{if } x<0\end{cases}$  
-  - Derivative: $dLeakyReLU(x)=\begin{cases}1 & \text{if } x\ge0\\0.01 & \text{if } x<0\end{cases}$
+  - Function: $LeakyReLU(x)=\begin{cases} x & \text{if } x\ge0 \\ 0.01\times x & \text{if } x<0 \end{cases}$  
+    (Alternatively, you can write: $LeakyReLU(x)=x \text{ if } x\ge0,\; 0.01x \text{ if } x<0$)  
+  - Derivative: $dLeakyReLU(x)=1 \text{ if } x\ge0,\; 0.01 \text{ if } x<0$
 
 - **tanh (Hyperbolic Tangent):**  
   - Function: $tanh(x)=\frac{e^x-e^{-x}}{e^x+e^{-x}}$  
   - Derivative: $dtanh(x)=1-tanh^2(x)$  
-    Alternatively, it can be computed as:  
-    $dtanh(x)=\frac{1}{\cosh^2(x)}$
+    Alternatively, it can be computed as: $dtanh(x)=\frac{1}{\cosh^2(x)}$
 
 Each activation function returns both the activated value and its derivative for use during backpropagation.
 
@@ -55,19 +55,19 @@ The Neuron module handles individual neurons. Key points include:
   The neuron computes:
 
 $$
-sum = bias + \sum_{i=1}^{n}(weight_i \times input_i)
+\text{sum} = \text{bias} + \sum_{i=1}^{n}(weight_i \times input_i)
 $$
 
   The sum is then passed through the chosen activation function (e.g., Leaky ReLU or tanh).
 
 - **Backpropagation:**  
-  - For output neurons:  
+  - For output neurons:
 
 $$
 \delta = (activation - target) \times dactivation
 $$
 
-  - For hidden neurons:  
+  - For hidden neurons:
 
 $$
 \delta = \left( \sum(weight_{next} \times \delta_{next}) \right) \times dactivation
@@ -119,7 +119,7 @@ activated\_value = activation\_function\left(bias + \sum_{i}(weight_i \times pre
 $$
 
 - **Backpropagation:**  
-  - For output neurons, compute the error:  
+  - For output neurons, compute the error:
 
 $$
 \delta = (activation - target) \times dactivation
