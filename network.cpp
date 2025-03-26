@@ -517,6 +517,7 @@ void useCaseExample(){
 
 }
 int main(){
+    isLogging = false;
     //simpleTest(); //for testing basic functionality with fixed data
     hardTest(); //for testing more complicated functionality with variable data
 
