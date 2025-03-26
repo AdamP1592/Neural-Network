@@ -27,18 +27,18 @@ This framework is a fully connected feedforward neural network (multilayer perce
 The framework supports several activation functions. For example:
 
 - **ReLU (Rectified Linear Unit):**  
-  - Function: $ \text{ReLU}(x) = \max(0, x) $  
-  - Derivative: $ d\text{ReLU}(x) = \begin{cases} 0 & \text{if } x < 0 \\ 1 & \text{if } x \ge 0 \end{cases} $
+  - Function: $ReLU(x)=\max(0,x)$  
+  - Derivative: $dReLU(x)=\begin{cases}0 & \text{if } x<0\\1 & \text{if } x\ge0\end{cases}$
 
 - **Leaky ReLU:**  
-  - Function: $ \text{LeakyReLU}(x) = \begin{cases} x & \text{if } x \ge 0 \\ 0.01 \times x & \text{if } x < 0 \end{cases} $  
-  - Derivative: $ d\text{LeakyReLU}(x) = \begin{cases} 1 & \text{if } x \ge 0 \\ 0.01 & \text{if } x < 0 \end{cases} $
+  - Function: $LeakyReLU(x)=\begin{cases}x & \text{if } x\ge0\\0.01\times x & \text{if } x<0\end{cases}$  
+  - Derivative: $dLeakyReLU(x)=\begin{cases}1 & \text{if } x\ge0\\0.01 & \text{if } x<0\end{cases}$
 
 - **tanh (Hyperbolic Tangent):**  
-  - Function: $ \tanh(x) = \frac{e^x - e^{-x}}{e^x + e^{-x}} $  
-  - Derivative: $ d\tanh(x) = 1 - \tanh^2(x) $  
+  - Function: $tanh(x)=\frac{e^x-e^{-x}}{e^x+e^{-x}}$  
+  - Derivative: $dtanh(x)=1-tanh^2(x)$  
     Alternatively, it can be computed as:  
-    $ d\tanh(x) = \frac{1}{\cosh^2(x)} $
+    $dtanh(x)=\frac{1}{\cosh^2(x)}$
 
 Each activation function returns both the activated value and its derivative for use during backpropagation.
 
@@ -54,26 +54,41 @@ The Neuron module handles individual neurons. Key points include:
 - **Activation:**  
   The neuron computes:
 
-  $$ \text{sum} = \text{bias} + \sum_{i=1}^{n} (\text{weight}_i \times \text{input}_i) $$
+$$
+sum = bias + \sum_{i=1}^{n}(weight_i \times input_i)
+$$
 
   The sum is then passed through the chosen activation function (e.g., Leaky ReLU or tanh).
 
 - **Backpropagation:**  
   - For output neurons:  
-    $$ \delta = (\text{activation} - \text{target}) \times d\text{activation} $$  
+
+$$
+\delta = (activation - target) \times dactivation
+$$
+
   - For hidden neurons:  
-    $$ \delta = \left( \sum (\text{weight}_{\text{next}} \times \delta_{\text{next}}) \right) \times d\text{activation} $$
+
+$$
+\delta = \left( \sum(weight_{next} \times \delta_{next}) \right) \times dactivation
+$$
 
 - **RMSProp Integration:**  
   Each neuron maintains a vector of historic gradients. The weight update is computed using:
 
-  $$ \text{adjusted\_learning\_rate} = \frac{\text{base\_learning\_rate}}{\sqrt{\text{historic\_gradient}} + \epsilon} $$
+$$
+adjusted\_learning\_rate = \frac{base\_learning\_rate}{\sqrt{historic\_gradient} + \epsilon}
+$$
 
-  $$ \text{weight} = \text{weight} - \text{adjusted\_learning\_rate} \times (\delta \times \text{input}) $$
+$$
+weight = weight - adjusted\_learning\_rate \times (\delta \times input)
+$$
 
   The historic gradient is updated as:
 
-  $$ \text{historic\_gradient} = (\text{rms\_decay} \times \text{historic\_gradient}) + (1 - \text{rms\_decay}) \times (\delta \times \text{input})^2 $$
+$$
+historic\_gradient = (rms\_decay \times historic\_gradient) + (1 - rms\_decay) \times (\delta \times input)^2
+$$
 
 ---
 
@@ -99,11 +114,17 @@ The Network module organizes layers and provides methods for:
 - **Forward Pass:**  
   Propagating input data through the network layer by layer. For each non-input layer, every neuron computes:
 
-  $$ \text{activated\_value} = \text{activation\_function}\left( \text{bias} + \sum_{i} (\text{weight}_i \times \text{previous\_layer\_activation}_i) \right) $$
+$$
+activated\_value = activation\_function\left(bias + \sum_{i}(weight_i \times previous\_layer\_activation_i)\right)
+$$
 
 - **Backpropagation:**  
   - For output neurons, compute the error:  
-    $$ \delta = (\text{activation} - \text{target}) \times d\text{activation} $$  
+
+$$
+\delta = (activation - target) \times dactivation
+$$
+
   - For hidden layers, errors are propagated backward and used to update each neuron’s delta.
   - Weight updates are performed using the RMSProp method described above.
 
@@ -117,21 +138,36 @@ The Network module organizes layers and provides methods for:
 Key equations used during training include:
 
 - **Forward Pass Calculation:**  
-  $$ \text{neuron\_output} = \text{activation\_function}\left( \text{bias} + \sum (\text{weight}_i \times \text{input}_i) \right) $$
+
+$$
+neuron\_output = activation\_function\left(bias + \sum(weight_i \times input_i)\right)
+$$
 
 - **Error at Output Neuron:**  
-  $$ \delta = (\text{neuron\_output} - \text{target}) \times d\text{activation} $$
+
+$$
+\delta = (neuron\_output - target) \times dactivation
+$$
 
 - **Weight Update (RMSProp):**  
-  $$ \text{current\_gradient} = \delta \times \text{input\_activation} $$
 
-  $$ \text{adjusted\_learning\_rate} = \frac{\text{learning\_rate}}{\sqrt{\text{historic\_gradient}} + \epsilon} $$
+$$
+current\_gradient = \delta \times input\_activation
+$$
 
-  $$ \text{weight} = \text{weight} - \text{adjusted\_learning\_rate} \times \text{current\_gradient} $$
+$$
+adjusted\_learning\_rate = \frac{learning\_rate}{\sqrt{historic\_gradient} + \epsilon}
+$$
+
+$$
+weight = weight - adjusted\_learning\_rate \times current\_gradient
+$$
 
   Update historic gradient:
 
-  $$ \text{historic\_gradient} = (\text{rms\_decay} \times \text{historic\_gradient}) + ((1 - \text{rms\_decay}) \times \text{current\_gradient}^2) $$
+$$
+historic\_gradient = (rms\_decay \times historic\_gradient) + ((1 - rms\_decay) \times current\_gradient^2)
+$$
 
 These equations drive the training process to minimize the loss function by adjusting the network's weights.
 
