@@ -5,7 +5,7 @@
 #include <string>
 #include <mutex>
 #include <stdexcept>
-bool isLogging = true;
+bool isLogging = false;
 class Logger {
 public:
     // Log a message to the default log file.
