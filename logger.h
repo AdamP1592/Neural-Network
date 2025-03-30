@@ -5,24 +5,24 @@
 #include <string>
 #include <mutex>
 #include <stdexcept>
-bool isLogging = false;
+
 class Logger {
 public:
+    static bool isLogging;
+
     // Log a message to the default log file.
-    
     static void log(const std::string &message) {
-        if(!isLogging){
-            return;
-        }
-        std::lock_guard<std::mutex> lock(mtx);
-        // Open the file if it isn't already open.
-        if (!logFile.is_open()) {
-            logFile.open(filePath, std::ios::out | std::ios::trunc);
-            if (!logFile) {
-                throw std::runtime_error("Failed to open log file: " + filePath);
+        if(isLogging){
+            std::lock_guard<std::mutex> lock(mtx);
+            // Open the file if it isn't already open.
+            if (!logFile.is_open()) {
+                logFile.open(filePath, std::ios::out | std::ios::trunc);
+                if (!logFile) {
+                    throw std::runtime_error("Failed to open log file: " + filePath);
+                }
             }
+            logFile << message << std::endl;
         }
-        logFile << message << std::endl;
     }
     
     // Optionally, change the default file path at runtime.

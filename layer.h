@@ -9,21 +9,60 @@ struct Layer{
     // since some activation functions work at the layer scope
     std::vector<Neuron> layer;
     std::function<ActivationResult(double)> activationFunc = leakyRelu;
+    std::vector<double> totalDeltas;
+    double learningRate;
+
+    int batchSize = 0;
 
     int size;
+    bool batch = false;
 
-    Layer(int numNeurons, bool isOutput = false){
+    Layer(int numNeurons, bool isOutput = false, bool batchTrain = false, double learningRate = 0.001){
         size = numNeurons;
+        batch = batchTrain;
+        learningRate = learningRate;
+
         for(int i = 0; i < numNeurons; i++){
             Neuron n(0.1, int(isOutput));
+            totalDeltas.push_back(0);
             layer.push_back(n);
         }
     }
-    void activate(){
-        for(int i = 0; i < size; i++){
-            layer[i].activate();
-            layer[i].delta = 0;
+
+    void backPropRMS(std::vector<double> expected = {}){
+        if(expected.size() != 0 && expected.size() == layer.size()){
+            for(int i = 0; i < layer.size(); i++){
+                layer[i].backPropagateRMS(learningRate, 0.9, expected[i]);
+                totalDeltas[i] += layer[i].delta;
+
+                layer[i].delta = 0.0;
+            }
+            return;
         }
+        for(int i = 0; i < layer.size(); i++){
+            layer[i].backPropagateRMS(learningRate);
+            totalDeltas[i] += layer[i].delta;
+
+            layer[i].delta = 0.0;
+        }
+        
+
+    }
+    std::vector<double> activate(std::vector<double> inputs = {}){
+        std::vector<double> activations;
+        if(inputs.size() != 0 && inputs.size() == layer.size()){
+            for(int i = 0; i < size; i++){
+                layer[i].activationValue = inputs[i];
+                layer[i].delta = 0;
+            }
+            return activations;
+        }
+        for(int i = 0; i < size; i++){
+            activations.push_back(layer[i].activate());
+            layer[i].delta = 0;
+            
+        }
+        return activations;
     }
     void setActivation(const std::string& functionName) {
         if(functionName == "relu") {

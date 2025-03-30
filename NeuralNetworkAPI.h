@@ -21,7 +21,7 @@ void setupNetwork(NeuralNetworkHandle nn, const int* structure, int length);
 
 // Perform a forward pass with the given input values.
 // `inputValues` is an array of doubles with size equal to the number of input neurons.
-std::vector<double> forwardPass(NeuralNetworkHandle nn, const double* inputValues, int numInputs);
+void forwardPass(NeuralNetworkHandle nn, const double* inputValues, double* outputBuffer, int numInputs, int numOutputs);
 
 // Perform backpropagation using RMSProp with the given expected outputs.
 // `expectedValues` is an array of doubles with size equal to the number of output neurons.

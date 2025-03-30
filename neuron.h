@@ -14,6 +14,8 @@ public:
     double adjustedLearningRate = 0.0;
     double derivative = 0.0;
     double delta = 0.0;
+
+    bool batchTrain = false;
     int neuronType = 0;
 
     std::function<ActivationResult(double)> activationFunc = leakyRelu;
@@ -83,7 +85,7 @@ public:
         for(int i = 0; i < weights.size(); i++){
 
             double inputActivation = input_neurons[i].get().activationValue;
-            weights[i] -= learningRate * delta * inputActivation;
+            weights[i] -= learningRate * delta * inputActivation * (batchTrain == false);
 
         }
         bias -= delta * learningRate;
@@ -107,7 +109,7 @@ public:
             double inputActivation = input_neurons[i].get().activationValue;
             double currentGradient =  delta * inputActivation;
 
-            weights[i] -= currentGradient * learningRate;
+            weights[i] -= currentGradient * learningRate * (batchTrain == false);
 
         }
         bias -= delta * learningRate;
@@ -148,13 +150,13 @@ public:
             Logger::log("Weight Adjustment: " + std::to_string(weightAdjustment));
 
             Logger::log("\n");
+            if(!batchTrain){
+                weights[i] -= weightAdjustment;
 
-            weights[i] -= weightAdjustment;
-
-            historicGradients[i] = (rmsDecay * historicGradients[i]) + ((1 - rmsDecay) * (currentGradient * currentGradient));
-
+                historicGradients[i] = (rmsDecay * historicGradients[i]) + ((1 - rmsDecay) * (currentGradient * currentGradient));
+            }
         }
-        bias -= delta * learningRate;
+        bias -= delta * learningRate *(!batchTrain);
         
         return delta;
     }

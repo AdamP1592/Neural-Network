@@ -46,7 +46,20 @@ struct NeuralNetwork{
     void updateLearningRate(){
         learningRate /= 1.0001;
     }
+    std::vector<std::vector<double>> batchTrain(std::vector<std::vector<double>> inputs, std::vector<std::vector<double>> expectedOutputs){
+        std::vector<std::vector<double>> networkOutputs;
+        if(inputs.size() != expectedOutputs.size()){
+            std::cerr << "Error batch training: mismatch between inputs and outputs size";
+        }
+        for(int i = 0; i < inputs.size(); i++){
+            layers[0].activate();
+            for(int layerIndex = 1; i < layers.size(); layerIndex++){
 
+            }
+
+        }
+        return networkOutputs;
+    }
     //set activationValue for the input layer. Iterate all subsequent layers as a standard pass
     std::vector<double> forwardPass(std::vector<double>& inputValues){
 

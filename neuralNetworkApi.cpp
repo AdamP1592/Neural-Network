@@ -1,16 +1,21 @@
 #include "NeuralNetworkAPI.h"
 #include "network.h"  // Your C++ NeuralNetwork framework header
+namespace{
+    // Helper function to convert a C-style array to a std::vector<int>
+    std::vector<int> arrayToVectorInt(const int* arr, int length) {
+        return std::vector<int>(arr, arr + length);
+    }
 
-// Helper function to convert a C-style array to a std::vector<int>
-std::vector<int> arrayToVectorInt(const int* arr, int length) {
-    return std::vector<int>(arr, arr + length);
+    // Helper function to convert a C-style array to a std::vector<double>
+    std::vector<double> arrayToVectorDouble(const double* arr, int length) {
+        return std::vector<double>(arr, arr + length);
+    }
+    double* vectorToArray(const std::vector<double>& vec) {
+        double* arr = new double[vec.size()];
+        std::copy(vec.begin(), vec.end(), arr);
+        return arr;
+    }
 }
-
-// Helper function to convert a C-style array to a std::vector<double>
-std::vector<double> arrayToVectorDouble(const double* arr, int length) {
-    return std::vector<double>(arr, arr + length);
-}
-
 extern "C" {
 
 NeuralNetworkHandle createNeuralNetwork() {
@@ -32,14 +37,25 @@ void setupNetwork(NeuralNetworkHandle nn, const int* structure, int length) {
     net->setupNetwork(structVec);
 }
 
-std::vector<double> forwardPass(NeuralNetworkHandle nn, const double* inputValues, int numInputs) {
-    std::vector<double> inputs;
+void forwardPass(NeuralNetworkHandle nn, const double* inputValues, double* outputBuffer, int numInputs, int numOutputs) {
     if (!nn || !inputValues || numInputs <= 0)
-        return inputs;
+        return;
     NeuralNetwork* net = static_cast<NeuralNetwork*>(nn);
-    inputs = arrayToVectorDouble(inputValues, numInputs);
-    return net->forwardPass(inputs);
+
+    std::vector<double> inputVector = arrayToVectorDouble(inputValues, numInputs);
+    std::vector<double> outputs = net->forwardPass(inputVector);
+
+    
+    // Ensure that the outputs vector has the expected number of elements.
+    if (outputs.size() != static_cast<size_t>(numOutputs)) {
+        // Optionally, handle the error (e.g., log or copy as many as possible).
+        return;
+    }
+
+    // Copy the output data to the caller's pre-allocated buffer.
+    std::copy(outputs.begin(), outputs.end(), outputBuffer);
 }
+
 void backPropagateRMS(NeuralNetworkHandle nn, const double* expectedValues, int numExpected) {
     if (!nn || !expectedValues || numExpected <= 0)
         return;
