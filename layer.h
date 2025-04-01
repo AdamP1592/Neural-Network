@@ -8,6 +8,7 @@ struct Layer{
     //simple layer storage for separation of logic
     // since some activation functions work at the layer scope
     std::vector<Neuron> layer;
+    std::string activationName = "leakyRelu";
     std::function<ActivationResult(double)> activationFunc = leakyRelu;
     std::vector<double> totalDeltas;
     double learningRate;
@@ -16,17 +17,35 @@ struct Layer{
 
     int size;
     bool batch = false;
+    bool outputLayer = false;
 
     Layer(int numNeurons, bool isOutput = false, bool batchTrain = false, double learningRate = 0.001){
         size = numNeurons;
         batch = batchTrain;
-        learningRate = learningRate;
+        this->learningRate = learningRate;
+        outputLayer = isOutput;
+
 
         for(int i = 0; i < numNeurons; i++){
             Neuron n(0.1, int(isOutput));
             totalDeltas.push_back(0);
             layer.push_back(n);
         }
+    }
+    Layer copyLayer(){
+        Layer layerCopy = Layer(size, outputLayer, batch, learningRate);
+        
+        //to ensure its a copy of all the neurons instead of all the references
+        for(int i = 0; i < layer.size(); i++){
+            //copies neuron i to layerCopy 
+            layerCopy.layer[i] = layer[i];
+            //wipe all input neurons
+            std::vector<std::reference_wrapper<Neuron>> inputNeurons;
+            layerCopy.layer[i].input_neurons = inputNeurons;
+        }
+        layerCopy.totalDeltas = totalDeltas;
+        layerCopy.activationFunc = activationFunc;
+        return layerCopy;
     }
 
     void backPropRMS(std::vector<double> expected = {}){
@@ -48,6 +67,7 @@ struct Layer{
         
 
     }
+
     std::vector<double> activate(std::vector<double> inputs = {}){
         std::vector<double> activations;
         if(inputs.size() != 0 && inputs.size() == layer.size()){
@@ -65,6 +85,7 @@ struct Layer{
         return activations;
     }
     void setActivation(const std::string& functionName) {
+        activationName = functionName;
         if(functionName == "relu") {
             activationFunc = relu;
         } else if(functionName == "tanh") {
@@ -84,15 +105,23 @@ struct Layer{
         // Create a uniform real distribution between with a standard deviation
         double standardDev = std::sqrt(2.0/prevLayerNeuronReferences.size());
         std::normal_distribution<double> dis(0.0, standardDev);
+        bool isCopy = false;
         for(int i = 0; i < size; i++){
-            
-            for(int j = 0; j < prevLayerNeuronReferences.size(); j++){
-                layer[i].weights.push_back(dis(gen));
-                layer[i].historicGradients.push_back(1.0);
+            if(layer[i].weights.size() != prevLayerNeuronReferences.size()){
+                layer[i].weights.clear();
+                layer[i].historicGradients.clear();
+                for(int j = 0; j < prevLayerNeuronReferences.size(); j++){
+                    layer[i].weights.push_back(dis(gen));
+                    layer[i].historicGradients.push_back(1.0);
+                }
+            }else{
+                isCopy = true;
             }
             layer[i].input_neurons = prevLayerNeuronReferences;
         }
-
+        if(isCopy==true){
+            std::cout << "Layer Copy";
+        }
     }
     Neuron& getConnection(int neuronIndex){
         return layer[neuronIndex];

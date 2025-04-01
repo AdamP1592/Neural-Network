@@ -21,7 +21,7 @@ public:
                     throw std::runtime_error("Failed to open log file: " + filePath);
                 }
             }
-            logFile << message << std::endl;
+            logFile << message << "\n";
         }
     }
     

@@ -1,2 +1,2 @@
 #include "logger.h"
-bool Logger::isLogging = false;
+bool Logger::isLogging = true;

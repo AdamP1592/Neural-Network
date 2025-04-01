@@ -1,5 +1,7 @@
 #include "NeuralNetworkAPI.h"
 #include "network.h"  // Your C++ NeuralNetwork framework header
+
+#include <iostream>
 namespace{
     // Helper function to convert a C-style array to a std::vector<int>
     std::vector<int> arrayToVectorInt(const int* arr, int length) {
@@ -61,6 +63,7 @@ void backPropagateRMS(NeuralNetworkHandle nn, const double* expectedValues, int 
         return;
     NeuralNetwork* net = static_cast<NeuralNetwork*>(nn);
     std::vector<double> expected = arrayToVectorDouble(expectedValues, numExpected);
+
     net->backPropagateRMS(expected);
 }
 
@@ -70,6 +73,12 @@ void backPropagate(NeuralNetworkHandle nn, const double* expectedValues, int num
     NeuralNetwork* net = static_cast<NeuralNetwork*>(nn);
     std::vector<double> expected = arrayToVectorDouble(expectedValues, numExpected);
     net->backPropagate(expected);
+}
+
+void printNetwork(NeuralNetworkHandle nn){
+    NeuralNetwork* net = static_cast<NeuralNetwork*>(nn);
+    net->printNetworkDetailed();
+
 }
 
 } // extern "C"

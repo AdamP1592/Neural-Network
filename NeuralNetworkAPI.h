@@ -30,6 +30,8 @@ void backPropagateRMS(NeuralNetworkHandle nn, const double* expectedValues, int 
 // Optionally, you can add functions to call the standard backpropagation if needed.
 void backPropagate(NeuralNetworkHandle nn, const double* expectedValues, int numExpected);
 
+void printNetwork(NeuralNetworkHandle nn);
+
 #ifdef __cplusplus
 }
 #endif

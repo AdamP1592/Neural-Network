@@ -16,12 +16,16 @@
 #include "layer.h"
 #include "logger.h"
 
-#include "network.h"
 struct NeuralNetwork{
     std::vector<Layer> layers;
+    std::vector<int> nnStructure;
     double learningRate = 1.0;
     int step = 0;
+    std::vector<int> value;
+
     void setupNetwork(std::vector<int>& structure){
+
+        nnStructure = structure;
         //creates input layer
         Layer inputLayer = Layer(structure[0]);
         //inputLayer.setActivation()
@@ -42,7 +46,56 @@ struct NeuralNetwork{
             layers.push_back(thisLayer);
         }
     }
-    
+
+    void setupCopy(NeuralNetwork &nn){
+        nn.learningRate = learningRate;
+        for(int i = 0; i < layers.size(); i++){
+            Layer &l = nn.layers[i];
+            Layer &baseLayer = layers[i];
+            //copy layer info
+            l.setActivation(baseLayer.activationName);
+            l.batch = baseLayer.batch;
+            l.batchSize = baseLayer.batchSize;
+            l.outputLayer = baseLayer.outputLayer;
+            l.totalDeltas = baseLayer.totalDeltas;
+
+            //copy neuron info
+            for(int j = 0; j < l.layer.size(); j++){
+                l.layer[j].historicGradients = baseLayer.layer[j].historicGradients;
+                l.layer[j].delta = baseLayer.layer[j].delta;
+                l.layer[j].derivative = baseLayer.layer[j].derivative;
+                l.layer[j].activationValue = baseLayer.layer[j].activationValue;
+                l.layer[j].weights = baseLayer.layer[j].weights;
+                l.layer[j].bias = baseLayer.layer[j].bias;
+                // Optionally copy these if needed:
+                l.layer[j].batchTrain = baseLayer.layer[j].batchTrain;
+                l.layer[j].neuronType = baseLayer.layer[j].neuronType;
+            }
+        }
+    }
+    NeuralNetwork copy(){
+        NeuralNetwork nn;
+        nn.learningRate = learningRate;
+        //copy all layers
+        std::vector<Layer> copiedLayers;
+        Layer copiedFirstLayer = layers[0].copyLayer();
+
+        copiedLayers.push_back(copiedFirstLayer);
+        for(int i = 1; i < layers.size(); i++){
+            std::vector<std::reference_wrapper<Neuron>> prevLayerNeuronReferences;
+            Layer copiedLayer = layers[i].copyLayer();
+
+            for(int j = 0; j < copiedLayers[i-1].size; j++){
+                Neuron& refNeuron = copiedLayers[i-1].layer[j];
+                prevLayerNeuronReferences.push_back(refNeuron);
+            }
+            copiedLayer.setupReferences(prevLayerNeuronReferences);
+
+            copiedLayers.push_back(copiedLayer);
+        }
+        nn.layers = copiedLayers;
+        return nn;
+    }
     void updateLearningRate(){
         learningRate /= 1.0001;
     }
@@ -64,10 +117,11 @@ struct NeuralNetwork{
     std::vector<double> forwardPass(std::vector<double>& inputValues){
 
         std::vector<double> outputs;
-
-        Logger::log("forwardPass:\n");
-        Logger::log("Learning Rate: ");
-        Logger::log(std::to_string(learningRate));
+        if(Logger::isLogging){
+            Logger::log("forwardPass:\n");
+            Logger::log("Learning Rate: ");
+            Logger::log(std::to_string(learningRate));
+        }
         //catch cases for errors
         if(layers.empty()){
             std::cerr << "Error: No layers in the network.\n";
@@ -84,9 +138,11 @@ struct NeuralNetwork{
             n.activationValue = inputValues[i];
             
             //logging activation
-            std::ostringstream oss;
-            oss << "Neuron: (0, " << i << ") Effective learning rate: " << n.adjustedLearningRate << "Activation:" << inputValues[i];
-            Logger::log(oss.str());
+           
+            //    std::ostringstream oss;
+            //    oss << "Neuron: (0, " << i << ") Effective learning rate: " << n.adjustedLearningRate << "Activation:" << inputValues[i];
+            //    Logger::log(oss.str());
+            
         }
         //iterate each non input layer, activate all neurons in the layers
         int size = layers.size();
@@ -101,13 +157,15 @@ struct NeuralNetwork{
                 Neuron& n = thisLayer.layer[j];
 
                 //logging activation
-                std::ostringstream oss;
-                oss << "Neuron: (" << i << ", " << j << ") Activation:" << n.activationValue;
-                Logger::log(oss.str());
+
+                //  std::ostringstream oss;
+                //  oss << "Neuron: (" << i << ", " << j << ") Activation:" << n.activationValue;
+                //    Logger::log(oss.str());
+
             }
         }
 
-        Layer outputLayer = layers[layers.size() - 2];
+        Layer outputLayer = layers[layers.size() - 1];
         for(int i = 0; i < outputLayer.layer.size(); i++){
             outputs.push_back(outputLayer.layer[i].activationValue);
         }
@@ -165,6 +223,7 @@ struct NeuralNetwork{
     }
 
     void backPropagateRMS(std::vector<double>& expectedValues){
+        learningRate = 0.001;
         //catch case for empty network
         Logger::log("BackProp:");
         std::string expectedValuesString;
