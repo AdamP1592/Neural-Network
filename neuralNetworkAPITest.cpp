@@ -1,7 +1,7 @@
 #include "NeuralNetworkAPI.h"
 #include <iostream>
 #ifndef BUILD_DLL
-/*
+
 int main(){
     NeuralNetworkHandle nn = createNeuralNetwork();
 
@@ -25,8 +25,18 @@ int main(){
         printNetwork(nn);
     
     }
+    NeuralNetworkHandle newNN = copy(nn);
+
+    //ensures network copy doesnt just reference old network pointer
+    backPropagateRMS(nn, expectedOutputs, 2);
+    forwardPass(nn, inputValues, outputBuffer, 3, 2);
+
+    std::cout << "base network" << std::endl;
+    printNetwork(nn);
+    std::cout << "copy network" << std::endl;
+    printNetwork(newNN);
 
     destroyNeuralNetwork(nn);
 
-}*/
+}
 #endif

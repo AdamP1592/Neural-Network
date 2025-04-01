@@ -20,6 +20,11 @@ JNIEXPORT jlong JNICALL Java_neuralNetwork_NeuralNetworkWrapper_createNeuralNetw
 JNIEXPORT void JNICALL Java_neuralNetwork_NeuralNetworkWrapper_destroyNeuralNetwork(JNIEnv* env, jobject obj, jlong nn) {
     destroyNeuralNetwork((NeuralNetworkHandle)nn);
 }
+// JNI wrapper for: public native long copyNetwork(long nn);
+JNIEXPORT jlong JNICALL Java_neuralNetwork_NeuralNetworkWrapper_copyNetwork(JNIEnv* env, jobject obj, jlong nn) {
+    NeuralNetworkHandle newNNHandle = copy((NeuralNetworkHandle) nn);
+    return (jlong) newNNHandle;
+}
 
 // JNI wrapper for: public native void setUpNetwork(long nn, int[] structure, int length);
 JNIEXPORT void JNICALL Java_neuralNetwork_NeuralNetworkWrapper_setUpNetwork(JNIEnv* env, jobject obj, jlong nn, jintArray structure, jint length) {

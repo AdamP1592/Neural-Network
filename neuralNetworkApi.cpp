@@ -25,6 +25,18 @@ NeuralNetworkHandle createNeuralNetwork() {
     return new NeuralNetwork();
 }
 
+NeuralNetworkHandle copy(NeuralNetworkHandle nn){
+    NeuralNetwork* currentNet = static_cast<NeuralNetwork*>(nn);
+
+    std::vector<int> nnStructure = currentNet->nnStructure;
+    NeuralNetwork* newNN = new NeuralNetwork();
+
+    newNN->setupNetwork(nnStructure);
+    currentNet->setupCopy(*newNN);
+    
+    return newNN;
+}
+
 void destroyNeuralNetwork(NeuralNetworkHandle nn) {
     if (nn) {
         delete static_cast<NeuralNetwork*>(nn);

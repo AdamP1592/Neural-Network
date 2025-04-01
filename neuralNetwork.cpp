@@ -111,10 +111,11 @@ void simpleTest(){
     std::cout << "Base visualization\n";
     neuralNetwork.printNetwork();
 }
-
+/*
 #ifndef BUILD_DLL
 int main(){
     simpleTest();
     return 0;
 }
 #endif
+*/

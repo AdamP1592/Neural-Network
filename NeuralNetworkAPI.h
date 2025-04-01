@@ -12,6 +12,9 @@ typedef void* NeuralNetworkHandle;
 // Create a new neural network instance.
 NeuralNetworkHandle createNeuralNetwork();
 
+//copies existing neural network
+NeuralNetworkHandle copy(NeuralNetworkHandle nn);
+
 // Destroy an existing neural network instance.
 void destroyNeuralNetwork(NeuralNetworkHandle nn);
 
