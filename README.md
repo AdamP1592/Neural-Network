@@ -1,6 +1,6 @@
 # Custom Neural Network Framework
 
-This framework implements a feedforward neural network built from scratch in C++. It supports multiple layers, custom activation functions, and adaptive gradient descent using RMSProp. The code is organized into modules for activation functions, neurons, layers, and the overall network. Below, you’ll find an overview of the framework and key equations formatted using $$ for block equations and $ for inline equations.
+This framework implements a feedforward neural network built from scratch in C++. It supports multiple layers, custom activation functions, and adaptive gradient descent using RMSProp. The code is organized into modules for activation functions, neurons, layers, and the overall network. Below, you’ll find an overview of the framework and key equations.
 
 ---
 
